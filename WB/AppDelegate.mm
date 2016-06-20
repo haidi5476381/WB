@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import <YTKNetwork/YTKNetworkConfig.h>
+#import "YTKUrlArgumentsFilter.h"
 @interface AppDelegate ()
 
 @end
@@ -17,8 +18,24 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self setupRequestFilters];
     return YES;
 }
+
+
+/**
+ *  设置请求配置
+ */
+- (void)setupRequestFilters {
+    
+    YTKNetworkConfig *config = [YTKNetworkConfig sharedInstance];
+    YTKUrlArgumentsFilter *urlFilter = [YTKUrlArgumentsFilter filterWithArguments:@{@"platform":@"ios",@"appVersion": [HHNUtility appVersion]}];
+    [config addUrlFilter:urlFilter];
+    config.baseUrl= @"http://api.easylink.io";//所有的网络请求都会默认使用 YTKNetworkConfig 中baseUrl参数指定的地址
+}
+
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

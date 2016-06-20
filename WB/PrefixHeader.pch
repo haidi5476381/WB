@@ -5,11 +5,29 @@
 //  Created by 余海华 on 16/6/6.
 //  Copyright © 2016年 Haidi. All rights reserved.
 //
-
+#import <Availability.h>
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
-
-// Include any system framework and library headers here that should be included in all compilation units.
-// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
-
 #endif /* PrefixHeader_pch */
+
+#ifdef __OBJC__
+#import "Constant.h"
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <Masonry.h>
+#import "AFDownloadRequestOperation.h"
+#import "UIViewController+HUD.h"
+#import <MJExtension.h>
+#import <SDImageCache.h>
+#import <libextobjc/EXTScope.h>
+#import <UIImageView+WebCache.h>
+#import "CommonFileUtils.h"
+#import "Logger.h"
+#import "LogDefine.h"
+#import "HHNUtility.h"
+#import <FogCloud/MicoUserManager.h>
+#import <FogCloud/MicoDeviceManager.h>
+#import <FogCloud/MQTTKit.h>
+#endif
+
+

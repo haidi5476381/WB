@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ServiceCenter/CommonServiceCenter.h"
+#import "CommonServiceCenter.h"
 
 #define GetCore(className) ((className *)[CoreManager getCore:[className class]])
 #define GetCoreI(InterfaceName) ((id<InterfaceName>)[CoreManager getCoreFromProtocol:@protocol(InterfaceName)])
