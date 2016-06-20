@@ -1,0 +1,4 @@
+http://easylink.io/documents/doc_app.html#_2_为设备添加用户
+
+https://github.com/mxchipSDK/Fog2.0/tree/master/Native/iOS
+
