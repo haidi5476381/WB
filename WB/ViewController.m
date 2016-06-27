@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "LoginViewController.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self layoutLoginViewVc];
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+
+-(void) layoutLoginViewVc {
+    
+    LoginViewController *loginVc = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];
+    
+    [self.view addSubview:loginVc.view];
+    [self addChildViewController:loginVc];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import <YTKNetwork/YTKNetworkConfig.h>
 #import "YTKUrlArgumentsFilter.h"
+#import "DHNavigationViewController.h"
+#import "ViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -19,6 +21,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [self setupRequestFilters];
+  
+    ViewController *vc = [[ViewController alloc] init];
+    DHNavigationViewController *navVc = [[DHNavigationViewController alloc] initWithRootViewController:vc];
+    self.window.rootViewController = navVc;
     return YES;
 }
 

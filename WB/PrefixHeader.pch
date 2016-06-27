@@ -29,6 +29,7 @@
 #import <FogCloud/MicoDeviceManager.h>
 #import <FogCloud/MQTTKit.h>
 #import <FogCloud/EasyLink.h>
+#import "Mac.h"
 #endif
 
 
