@@ -34,12 +34,31 @@
 		0D58BE001D0E4E410015D636 /* UserDeviceService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D58BDFF1D0E4E410015D636 /* UserDeviceService.m */; };
 		0DC8422C1D20D1FD00B80830 /* LoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC8422A1D20D1FD00B80830 /* LoginTableViewCell.m */; };
 		0DC8422D1D20D1FD00B80830 /* LoginTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DC8422B1D20D1FD00B80830 /* LoginTableViewCell.xib */; };
-		0DC842301D20D43A00B80830 /* DHNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC8422F1D20D43A00B80830 /* DHNavigationViewController.m */; };
 		0DC842331D20D46300B80830 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC842321D20D46300B80830 /* UIBarButtonItem+Extension.m */; };
 		0DC842361D20D49900B80830 /* UIImage+color.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC842351D20D49900B80830 /* UIImage+color.m */; };
 		0DC8423A1D20D54900B80830 /* TimerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC842391D20D54900B80830 /* TimerButton.m */; };
 		0DC842431D21211800B80830 /* LoginFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC842421D21211800B80830 /* LoginFootView.m */; };
 		0DC842451D21212500B80830 /* LoginFootView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DC842441D21212500B80830 /* LoginFootView.xib */; };
+		0DC842491D22098B00B80830 /* ForgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC842471D22098B00B80830 /* ForgetViewController.m */; };
+		0DC8424A1D22098B00B80830 /* ForgetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DC842481D22098B00B80830 /* ForgetViewController.xib */; };
+		0DC8424D1D220A3700B80830 /* LoginButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC8424C1D220A3700B80830 /* LoginButtonView.m */; };
+		0DC8424F1D220A4100B80830 /* LoginButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DC8424E1D220A4100B80830 /* LoginButtonView.xib */; };
+		0DC842551D22543900B80830 /* Forget2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC842531D22543900B80830 /* Forget2ViewController.m */; };
+		0DC842561D22543900B80830 /* Forget2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DC842541D22543900B80830 /* Forget2ViewController.xib */; };
+		0DC8425A1D22556000B80830 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC842581D22556000B80830 /* RegisterViewController.m */; };
+		0DC8425B1D22556000B80830 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DC842591D22556000B80830 /* RegisterViewController.xib */; };
+		0DC842701D22581A00B80830 /* DHNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC8425F1D22581A00B80830 /* DHNavigationViewController.m */; };
+		0DC842711D22581A00B80830 /* DHTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC842611D22581A00B80830 /* DHTabBarViewController.m */; };
+		0DC842751D22581A00B80830 /* DHBadgeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC8426B1D22581A00B80830 /* DHBadgeButton.m */; };
+		0DC842761D22581A00B80830 /* DHTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC8426D1D22581A00B80830 /* DHTabBar.m */; };
+		0DC842771D22581A00B80830 /* DHTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC8426F1D22581A00B80830 /* DHTabBarButton.m */; };
+		0DC8427E1D2258AE00B80830 /* DevicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC8427C1D2258AE00B80830 /* DevicesViewController.m */; };
+		0DC8427F1D2258AE00B80830 /* DevicesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DC8427D1D2258AE00B80830 /* DevicesViewController.xib */; };
+		0DC842831D2258BB00B80830 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC842811D2258BB00B80830 /* SettingViewController.m */; };
+		0DC842841D2258BB00B80830 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DC842821D2258BB00B80830 /* SettingViewController.xib */; };
+		0DC842881D2258C600B80830 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC842861D2258C600B80830 /* AboutViewController.m */; };
+		0DC842891D2258C600B80830 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DC842871D2258C600B80830 /* AboutViewController.xib */; };
+		0DC8428C1D225A7300B80830 /* UIImage+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC8428B1D225A7300B80830 /* UIImage+MJ.m */; };
 		0DF320F21D17C3C800B9BB67 /* HHNUtility+app.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF320ED1D17C3C800B9BB67 /* HHNUtility+app.m */; };
 		0DF320F31D17C3C800B9BB67 /* HHNUtility+Device.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF320EE1D17C3C800B9BB67 /* HHNUtility+Device.m */; };
 		0DF320F41D17C3C800B9BB67 /* HHNUtility+Locale.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF320EF1D17C3C800B9BB67 /* HHNUtility+Locale.m */; };
@@ -102,8 +121,6 @@
 		0DC842291D20D1FD00B80830 /* LoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginTableViewCell.h; sourceTree = "<group>"; };
 		0DC8422A1D20D1FD00B80830 /* LoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginTableViewCell.m; sourceTree = "<group>"; };
 		0DC8422B1D20D1FD00B80830 /* LoginTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginTableViewCell.xib; sourceTree = "<group>"; };
-		0DC8422E1D20D43A00B80830 /* DHNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHNavigationViewController.h; sourceTree = "<group>"; };
-		0DC8422F1D20D43A00B80830 /* DHNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHNavigationViewController.m; sourceTree = "<group>"; };
 		0DC842311D20D46300B80830 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
 		0DC842321D20D46300B80830 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
 		0DC842341D20D49900B80830 /* UIImage+color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+color.h"; sourceTree = "<group>"; };
@@ -115,6 +132,39 @@
 		0DC842411D21211800B80830 /* LoginFootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginFootView.h; sourceTree = "<group>"; };
 		0DC842421D21211800B80830 /* LoginFootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginFootView.m; sourceTree = "<group>"; };
 		0DC842441D21212500B80830 /* LoginFootView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginFootView.xib; sourceTree = "<group>"; };
+		0DC842461D22098B00B80830 /* ForgetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetViewController.h; sourceTree = "<group>"; };
+		0DC842471D22098B00B80830 /* ForgetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetViewController.m; sourceTree = "<group>"; };
+		0DC842481D22098B00B80830 /* ForgetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForgetViewController.xib; sourceTree = "<group>"; };
+		0DC8424B1D220A3700B80830 /* LoginButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginButtonView.h; sourceTree = "<group>"; };
+		0DC8424C1D220A3700B80830 /* LoginButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginButtonView.m; sourceTree = "<group>"; };
+		0DC8424E1D220A4100B80830 /* LoginButtonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginButtonView.xib; sourceTree = "<group>"; };
+		0DC842521D22543900B80830 /* Forget2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Forget2ViewController.h; sourceTree = "<group>"; };
+		0DC842531D22543900B80830 /* Forget2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Forget2ViewController.m; sourceTree = "<group>"; };
+		0DC842541D22543900B80830 /* Forget2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Forget2ViewController.xib; sourceTree = "<group>"; };
+		0DC842571D22556000B80830 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		0DC842581D22556000B80830 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		0DC842591D22556000B80830 /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		0DC8425E1D22581A00B80830 /* DHNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHNavigationViewController.h; sourceTree = "<group>"; };
+		0DC8425F1D22581A00B80830 /* DHNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHNavigationViewController.m; sourceTree = "<group>"; };
+		0DC842601D22581A00B80830 /* DHTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHTabBarViewController.h; sourceTree = "<group>"; };
+		0DC842611D22581A00B80830 /* DHTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHTabBarViewController.m; sourceTree = "<group>"; };
+		0DC8426A1D22581A00B80830 /* DHBadgeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHBadgeButton.h; sourceTree = "<group>"; };
+		0DC8426B1D22581A00B80830 /* DHBadgeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHBadgeButton.m; sourceTree = "<group>"; };
+		0DC8426C1D22581A00B80830 /* DHTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHTabBar.h; sourceTree = "<group>"; };
+		0DC8426D1D22581A00B80830 /* DHTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHTabBar.m; sourceTree = "<group>"; };
+		0DC8426E1D22581A00B80830 /* DHTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHTabBarButton.h; sourceTree = "<group>"; };
+		0DC8426F1D22581A00B80830 /* DHTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHTabBarButton.m; sourceTree = "<group>"; };
+		0DC8427B1D2258AE00B80830 /* DevicesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DevicesViewController.h; sourceTree = "<group>"; };
+		0DC8427C1D2258AE00B80830 /* DevicesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DevicesViewController.m; sourceTree = "<group>"; };
+		0DC8427D1D2258AE00B80830 /* DevicesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DevicesViewController.xib; sourceTree = "<group>"; };
+		0DC842801D2258BB00B80830 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		0DC842811D2258BB00B80830 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		0DC842821D2258BB00B80830 /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		0DC842851D2258C600B80830 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		0DC842861D2258C600B80830 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		0DC842871D2258C600B80830 /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
+		0DC8428A1D225A7300B80830 /* UIImage+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MJ.h"; sourceTree = "<group>"; };
+		0DC8428B1D225A7300B80830 /* UIImage+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MJ.m"; sourceTree = "<group>"; };
 		0DF320ED1D17C3C800B9BB67 /* HHNUtility+app.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HHNUtility+app.m"; sourceTree = "<group>"; };
 		0DF320EE1D17C3C800B9BB67 /* HHNUtility+Device.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HHNUtility+Device.m"; sourceTree = "<group>"; };
 		0DF320EF1D17C3C800B9BB67 /* HHNUtility+Locale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HHNUtility+Locale.m"; sourceTree = "<group>"; };
@@ -150,6 +200,9 @@
 				0DC842411D21211800B80830 /* LoginFootView.h */,
 				0DC842421D21211800B80830 /* LoginFootView.m */,
 				0DC842441D21212500B80830 /* LoginFootView.xib */,
+				0DC8424B1D220A3700B80830 /* LoginButtonView.h */,
+				0DC8424C1D220A3700B80830 /* LoginButtonView.m */,
+				0DC8424E1D220A4100B80830 /* LoginButtonView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -170,6 +223,15 @@
 				0D1100041D18C8E9004CF6D2 /* LoginViewController.h */,
 				0D1100051D18C8E9004CF6D2 /* LoginViewController.m */,
 				0D1100061D18C8E9004CF6D2 /* LoginViewController.xib */,
+				0DC842461D22098B00B80830 /* ForgetViewController.h */,
+				0DC842471D22098B00B80830 /* ForgetViewController.m */,
+				0DC842481D22098B00B80830 /* ForgetViewController.xib */,
+				0DC842521D22543900B80830 /* Forget2ViewController.h */,
+				0DC842531D22543900B80830 /* Forget2ViewController.m */,
+				0DC842541D22543900B80830 /* Forget2ViewController.xib */,
+				0DC842571D22556000B80830 /* RegisterViewController.h */,
+				0DC842581D22556000B80830 /* RegisterViewController.m */,
+				0DC842591D22556000B80830 /* RegisterViewController.xib */,
 			);
 			path = UiViewControllers;
 			sourceTree = "<group>";
@@ -196,6 +258,10 @@
 		0D2DA3581D051497005609D2 /* WB */ = {
 			isa = PBXGroup;
 			children = (
+				0DC8427A1D22589F00B80830 /* About */,
+				0DC842791D22589400B80830 /* Setting */,
+				0DC842781D22588700B80830 /* Device */,
+				0DC8425C1D22581A00B80830 /* Main */,
 				0DF320FE1D17C9EB00B9BB67 /* Login */,
 				0DF320EB1D17C3BF00B9BB67 /* Assistat */,
 				0D2DA3841D055A8A005609D2 /* NetWork */,
@@ -203,8 +269,6 @@
 				0D2DA3771D052364005609D2 /* category */,
 				0D2DA35C1D051497005609D2 /* AppDelegate.h */,
 				0D2DA35D1D051497005609D2 /* AppDelegate.mm */,
-				0DC8422E1D20D43A00B80830 /* DHNavigationViewController.h */,
-				0DC8422F1D20D43A00B80830 /* DHNavigationViewController.m */,
 				0D1100011D18C8AD004CF6D2 /* BaseViewController.h */,
 				0D1100021D18C8AD004CF6D2 /* BaseViewController.m */,
 				0D2DA35F1D051497005609D2 /* ViewController.h */,
@@ -240,6 +304,8 @@
 		0D2DA3771D052364005609D2 /* category */ = {
 			isa = PBXGroup;
 			children = (
+				0DC8428A1D225A7300B80830 /* UIImage+MJ.h */,
+				0DC8428B1D225A7300B80830 /* UIImage+MJ.m */,
 				0DC842341D20D49900B80830 /* UIImage+color.h */,
 				0DC842351D20D49900B80830 /* UIImage+color.m */,
 				0DC842311D20D46300B80830 /* UIBarButtonItem+Extension.h */,
@@ -351,6 +417,69 @@
 				0DC842391D20D54900B80830 /* TimerButton.m */,
 			);
 			path = TimeButton;
+			sourceTree = "<group>";
+		};
+		0DC8425C1D22581A00B80830 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0DC8425D1D22581A00B80830 /* Contoller */,
+				0DC842691D22581A00B80830 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		0DC8425D1D22581A00B80830 /* Contoller */ = {
+			isa = PBXGroup;
+			children = (
+				0DC8425E1D22581A00B80830 /* DHNavigationViewController.h */,
+				0DC8425F1D22581A00B80830 /* DHNavigationViewController.m */,
+				0DC842601D22581A00B80830 /* DHTabBarViewController.h */,
+				0DC842611D22581A00B80830 /* DHTabBarViewController.m */,
+			);
+			path = Contoller;
+			sourceTree = "<group>";
+		};
+		0DC842691D22581A00B80830 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0DC8426A1D22581A00B80830 /* DHBadgeButton.h */,
+				0DC8426B1D22581A00B80830 /* DHBadgeButton.m */,
+				0DC8426C1D22581A00B80830 /* DHTabBar.h */,
+				0DC8426D1D22581A00B80830 /* DHTabBar.m */,
+				0DC8426E1D22581A00B80830 /* DHTabBarButton.h */,
+				0DC8426F1D22581A00B80830 /* DHTabBarButton.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0DC842781D22588700B80830 /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				0DC8427B1D2258AE00B80830 /* DevicesViewController.h */,
+				0DC8427C1D2258AE00B80830 /* DevicesViewController.m */,
+				0DC8427D1D2258AE00B80830 /* DevicesViewController.xib */,
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
+		0DC842791D22589400B80830 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				0DC842801D2258BB00B80830 /* SettingViewController.h */,
+				0DC842811D2258BB00B80830 /* SettingViewController.m */,
+				0DC842821D2258BB00B80830 /* SettingViewController.xib */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		0DC8427A1D22589F00B80830 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				0DC842851D2258C600B80830 /* AboutViewController.h */,
+				0DC842861D2258C600B80830 /* AboutViewController.m */,
+				0DC842871D2258C600B80830 /* AboutViewController.xib */,
+			);
+			path = About;
 			sourceTree = "<group>";
 		};
 		0DF320EB1D17C3BF00B9BB67 /* Assistat */ = {
@@ -470,13 +599,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DC8425B1D22556000B80830 /* RegisterViewController.xib in Resources */,
 				0D1100081D18C8E9004CF6D2 /* LoginViewController.xib in Resources */,
 				0D2DA3691D051498005609D2 /* LaunchScreen.storyboard in Resources */,
+				0DC842841D2258BB00B80830 /* SettingViewController.xib in Resources */,
+				0DC842561D22543900B80830 /* Forget2ViewController.xib in Resources */,
 				0D2DA3661D051498005609D2 /* Assets.xcassets in Resources */,
 				0DC842451D21212500B80830 /* LoginFootView.xib in Resources */,
+				0DC8424F1D220A4100B80830 /* LoginButtonView.xib in Resources */,
+				0DC842891D2258C600B80830 /* AboutViewController.xib in Resources */,
 				0DC8422D1D20D1FD00B80830 /* LoginTableViewCell.xib in Resources */,
+				0DC8427F1D2258AE00B80830 /* DevicesViewController.xib in Resources */,
 				0D2DA3761D051BDC005609D2 /* Others.bundle in Resources */,
 				0D2DA3641D051497005609D2 /* Main.storyboard in Resources */,
+				0DC8424A1D22098B00B80830 /* ForgetViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,32 +672,44 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D2DA38A1D055AA3005609D2 /* CoreManager.m in Sources */,
+				0DC842491D22098B00B80830 /* ForgetViewController.m in Sources */,
+				0DC842831D2258BB00B80830 /* SettingViewController.m in Sources */,
 				0DC8423A1D20D54900B80830 /* TimerButton.m in Sources */,
 				0D1100071D18C8E9004CF6D2 /* LoginViewController.m in Sources */,
 				0DC842361D20D49900B80830 /* UIImage+color.m in Sources */,
 				0DF320F41D17C3C800B9BB67 /* HHNUtility+Locale.m in Sources */,
-				0DC842301D20D43A00B80830 /* DHNavigationViewController.m in Sources */,
 				0DC8422C1D20D1FD00B80830 /* LoginTableViewCell.m in Sources */,
 				0D58BE001D0E4E410015D636 /* UserDeviceService.m in Sources */,
+				0DC8427E1D2258AE00B80830 /* DevicesViewController.m in Sources */,
 				0D2DA3891D055AA3005609D2 /* CoreFactory.m in Sources */,
+				0DC842551D22543900B80830 /* Forget2ViewController.m in Sources */,
 				0D2DA3611D051497005609D2 /* ViewController.m in Sources */,
 				0DC842431D21211800B80830 /* LoginFootView.m in Sources */,
 				0DF320F51D17C3C800B9BB67 /* HHNUtility.m in Sources */,
 				0D2DA39B1D055C2D005609D2 /* LoggerUtil.m in Sources */,
 				0DC842331D20D46300B80830 /* UIBarButtonItem+Extension.m in Sources */,
+				0DC842701D22581A00B80830 /* DHNavigationViewController.m in Sources */,
 				0DF320F31D17C3C800B9BB67 /* HHNUtility+Device.m in Sources */,
 				0D2DA38D1D055AD8005609D2 /* CommonServiceCenter.m in Sources */,
+				0DC842711D22581A00B80830 /* DHTabBarViewController.m in Sources */,
 				0D2DA39F1D055C56005609D2 /* ZipUtil.m in Sources */,
 				0D58BDF81D0E4CB80015D636 /* UserService.m in Sources */,
 				0D2DA35E1D051497005609D2 /* AppDelegate.mm in Sources */,
 				0DF320FC1D17C5A600B9BB67 /* YTKUrlArgumentsFilter.m in Sources */,
+				0DC8425A1D22556000B80830 /* RegisterViewController.m in Sources */,
+				0DC8428C1D225A7300B80830 /* UIImage+MJ.m in Sources */,
+				0DC842881D2258C600B80830 /* AboutViewController.m in Sources */,
 				0D1100031D18C8AD004CF6D2 /* BaseViewController.m in Sources */,
 				0DF320F21D17C3C800B9BB67 /* HHNUtility+app.m in Sources */,
+				0DC842771D22581A00B80830 /* DHTabBarButton.m in Sources */,
 				0D2DA3991D055C2D005609D2 /* LogDefine.m in Sources */,
+				0DC842751D22581A00B80830 /* DHBadgeButton.m in Sources */,
+				0DC8424D1D220A3700B80830 /* LoginButtonView.m in Sources */,
 				0D2DA37A1D05236E005609D2 /* UIViewController+HUD.m in Sources */,
 				0DF320F81D17C41900B9BB67 /* NSString+extension.m in Sources */,
 				0D2DA3911D055B45005609D2 /* CommonFileUtils.m in Sources */,
 				0D2DA35B1D051497005609D2 /* main.m in Sources */,
+				0DC842761D22581A00B80830 /* DHTabBar.m in Sources */,
 				0D2DA39A1D055C2D005609D2 /* Logger.m in Sources */,
 				0D58BDFC1D0E4DB40015D636 /* DeviceService.m in Sources */,
 			);

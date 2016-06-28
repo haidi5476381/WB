@@ -10,9 +10,8 @@
 #import "AppDelegate.h"
 #import "UIBarButtonItem+Extension.h"
 #import "UIImage+color.h"
-#import "CoreManager.h"
 
-@interface DHNavigationViewController ()<UIGestureRecognizerDelegate>
+@interface DHNavigationViewController ()
 
 @end
 
@@ -29,15 +28,6 @@
 }
 
 
--(void) loadView {
-    
-    [super loadView];
-
-    self.interactivePopGestureRecognizer.delegate =  self;
-
-    
-}
-
 -(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
     
@@ -46,11 +36,11 @@
         viewController.hidesBottomBarWhenPushed=YES;
         
         viewController.navigationController.navigationBar.titleTextAttributes=@{NSForegroundColorAttributeName:[UIColor blackColor]};
-//        拦截push操作，设置导航栏的左上角和右上角按钮
-        viewController.navigationItem.leftBarButtonItem=[[UIBarButtonItem alloc]initWithTitle:@"返回" style:UIBarButtonItemStyleDone target:self action:@selector(back:)];
+        //拦截push操作，设置导航栏的左上角和右上角按钮
+        //viewController.navigationItem.leftBarButtonItem=[[UIBarButtonItem alloc]initWithTitle:@"返回" style:UIBarButtonItemStyleDone target:self action:@selector(back:)];
         viewController.navigationItem.rightBarButtonItem=nil;
         
-        viewController.navigationItem.leftBarButtonItem=[UIBarButtonItem itemWithImageName:@"pr_back" highImageName:@"pr_back" target:self action:@selector(back:)];
+       viewController.navigationItem.leftBarButtonItem=[UIBarButtonItem itemWithImageName:@"pr_back-1" highImageName:@"pr_back-1" target:self action:@selector(back:)];
 
         
     }
@@ -74,7 +64,7 @@
 {
     [super viewWillAppear:animated];
     self.navigationController.navigationBarHidden=YES;
-
+    
     
     UIColor *barColor = IWColor(0, 185.0, 255.0);
     [[UINavigationBar appearance] setBackgroundImage:[UIImage imageWithColor:barColor] forBarMetrics:UIBarMetricsDefault];
@@ -82,7 +72,6 @@
     
     [UINavigationBar appearance].titleTextAttributes = @{NSFontAttributeName:[UIFont boldSystemFontOfSize:18],
                                                          NSForegroundColorAttributeName:[UIColor blackColor]};
-
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation

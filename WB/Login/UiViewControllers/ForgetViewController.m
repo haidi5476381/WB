@@ -1,45 +1,41 @@
 //
-//  LoginViewController.m
+//  ForgetViewController.m
 //  WB
 //
-//  Created by 余海华 on 16/6/21.
+//  Created by 余海华 on 16/6/28.
 //  Copyright © 2016年 Haidi. All rights reserved.
 //
 
-#import "LoginViewController.h"
-#import "LoginTableViewCell.h"
-#import "LoginFootView.h"
 #import "ForgetViewController.h"
-#import "RegisterViewController.h"
+#import "LoginButtonView.h"
+#import "LoginTableViewCell.h"
+#import "Forget2ViewController.h"
 
-@interface LoginViewController ()<UITableViewDelegate,UITableViewDataSource> {
+@interface ForgetViewController ()<UITableViewDelegate,UITableViewDataSource> {
     
-    UITableView *loginTableView;
-    __block NSArray *_placeTitleArray;
+    UITableView *_forgetTableView;
+    NSArray *_placeTitleArray;
     NSString *_userName;
     NSString *_passWord;
 }
 
 @end
 
-@implementation LoginViewController
+@implementation ForgetViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    
-    _placeTitleArray = [NSArray arrayWithObjects:@"请输入账号",@"请输入密码", nil];
+    _placeTitleArray = [NSArray arrayWithObjects:@"请输入账号",@"请输入短信验证码", nil];
     // Do any additional setup after loading the view from its nib.
-    loginTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight) style:UITableViewStylePlain];
-    loginTableView.dataSource = self;
-    loginTableView.delegate = self;
-    UIView *footView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 160)];
-    LoginFootView *loginFootView = [LoginFootView loginFootView];
-    UITapGestureRecognizer *passwordTap = [[UITapGestureRecognizer  alloc] initWithTarget:self action:@selector(forgetPassword)];
-    [loginFootView.forgetButton addGestureRecognizer:passwordTap];
-    
-    UITapGestureRecognizer *registerTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(registered)];
-    [loginFootView.registerButton addGestureRecognizer:registerTap];
+    _forgetTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight) style:UITableViewStylePlain];
+    _forgetTableView.dataSource = self;
+    _forgetTableView.delegate = self;
+    UIView *footView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 80)];
+    footView.backgroundColor = [UIColor redColor];
+    LoginButtonView *loginFootView = [LoginButtonView loginButtonView];
+    [loginFootView.loginButton setTitle:@"下一步" forState:UIControlStateNormal];
+    [loginFootView.loginButton addTarget:self action:@selector(forgetPassword2) forControlEvents:UIControlEventTouchUpInside];
     [footView addSubview:loginFootView];
     [loginFootView mas_makeConstraints:^(MASConstraintMaker *make){
         
@@ -48,25 +44,17 @@
         make.trailing.equalTo(footView.mas_trailing);
         make.bottom.equalTo(footView.mas_bottom);
     }];
-    loginTableView.tableFooterView = footView;
-  
-    [self.view addSubview:loginTableView];
+    _forgetTableView.tableFooterView = footView;
+    
+    [self.view addSubview:_forgetTableView];
 }
 
--(void) forgetPassword{
+-(void) forgetPassword2 {
     
-    ForgetViewController *forgetVc = [[ForgetViewController alloc] initWithNibName:@"ForgetViewController" bundle:nil];
-    [self.navigationController pushViewController:forgetVc animated:YES];
+    Forget2ViewController *forget2Vc = [[Forget2ViewController alloc] initWithNibName:@"Forget2ViewController" bundle:nil];
+    [self.navigationController pushViewController:forget2Vc animated:YES];
     
 }
-
--(void)registered {
-    
-    RegisterViewController *registerVc = [[RegisterViewController alloc] initWithNibName:@"RegisterViewController" bundle:nil];
-    [self.navigationController pushViewController:registerVc animated:YES];
-}
-
-
 #pragma mark UITableView
 -(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
@@ -111,7 +99,7 @@
             }
                 break;
             case 1: {
-             
+                
                 UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
                 [button setBackgroundImage:[[UIImage imageNamed:@"login_lock"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
                 textField.leftView = button;
@@ -126,7 +114,7 @@
         
         if (textFieldString == nil) {
             textField.placeholder = [_placeTitleArray objectAtIndex:indexPath.row];
-   
+            
         }else {
             textField.text = textFieldString;
         }
@@ -157,9 +145,10 @@
     loginCell.yanCodeButton.hidden = YES;
     if(indexPath.row == 1) {
         loginCell.topLineView.hidden = YES;
+         loginCell.yanCodeButton.hidden = NO;
         
     }
-
+    
 }
 
 
@@ -168,15 +157,6 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];// 取消选中
     //其他代码
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-
-
-
 /*
 #pragma mark - Navigation
 

@@ -11,30 +11,34 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9s-Tr-tp2">
-                    <rect key="frame" x="80" y="147" width="46" height="30"/>
-                    <state key="normal" title="Button"/>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9s-Tr-tp2">
+                    <rect key="frame" x="71" y="142" width="80" height="40"/>
+                    <state key="normal" image="login_forget"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eea-83-QfJ">
-                    <rect key="frame" x="327" y="143" width="46" height="30"/>
-                    <state key="normal" title="Button"/>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Xc-rv-Vsj">
-                    <rect key="frame" x="61" y="236" width="402" height="30"/>
-                    <state key="normal" title="登录"/>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eea-83-QfJ">
+                    <rect key="frame" x="283" y="138" width="134" height="40"/>
+                    <state key="normal" image="login_login"/>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="忘记密码？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odR-Jg-LuA">
                     <rect key="frame" x="37" y="321" width="85" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.72549019609999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="注册账号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLQ-mw-Gen">
                     <rect key="frame" x="382" y="315" width="68" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.72549019609999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Xc-rv-Vsj">
+                    <rect key="frame" x="71" y="219" width="402" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.72549019607843135" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="登录">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
@@ -47,13 +51,24 @@
                 <constraint firstItem="odR-Jg-LuA" firstAttribute="top" secondItem="4Xc-rv-Vsj" secondAttribute="bottom" constant="25" id="Voa-oD-Oqc"/>
                 <constraint firstItem="eea-83-QfJ" firstAttribute="bottom" secondItem="L9s-Tr-tp2" secondAttribute="bottom" id="Wwo-An-Oc5"/>
                 <constraint firstItem="eea-83-QfJ" firstAttribute="centerY" secondItem="L9s-Tr-tp2" secondAttribute="centerY" id="YEb-BW-Ugh"/>
-                <constraint firstItem="4Xc-rv-Vsj" firstAttribute="top" secondItem="L9s-Tr-tp2" secondAttribute="bottom" constant="20" id="Zd9-an-N9E"/>
+                <constraint firstItem="4Xc-rv-Vsj" firstAttribute="top" secondItem="L9s-Tr-tp2" secondAttribute="bottom" id="Zd9-an-N9E"/>
                 <constraint firstItem="eea-83-QfJ" firstAttribute="top" secondItem="L9s-Tr-tp2" secondAttribute="top" id="Zle-sh-Bqd"/>
                 <constraint firstAttribute="trailing" secondItem="eea-83-QfJ" secondAttribute="trailing" constant="20" id="bBl-Me-hmb"/>
                 <constraint firstItem="bLQ-mw-Gen" firstAttribute="top" secondItem="odR-Jg-LuA" secondAttribute="top" id="d4D-Cw-DRW"/>
                 <constraint firstAttribute="trailing" secondItem="4Xc-rv-Vsj" secondAttribute="trailing" constant="10" id="mMc-WC-d0K"/>
                 <constraint firstItem="L9s-Tr-tp2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="37" id="vUE-da-sug"/>
             </constraints>
+            <connections>
+                <outlet property="autoButton" destination="eea-83-QfJ" id="fX6-I9-BTx"/>
+                <outlet property="forgetButton" destination="odR-Jg-LuA" id="Qqf-p3-qYv"/>
+                <outlet property="loginButton" destination="4Xc-rv-Vsj" id="UYt-lZ-3Mm"/>
+                <outlet property="registerButton" destination="bLQ-mw-Gen" id="cZe-ei-WN3"/>
+                <outlet property="rememberButton" destination="L9s-Tr-tp2" id="7YS-vz-Ck0"/>
+            </connections>
         </view>
     </objects>
+    <resources>
+        <image name="login_forget" width="80" height="40"/>
+        <image name="login_login" width="80" height="40"/>
+    </resources>
 </document>

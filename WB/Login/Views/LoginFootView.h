@@ -10,4 +10,10 @@
 
 @interface LoginFootView : UIView
 
++(LoginFootView *) loginFootView;
+@property (weak, nonatomic) IBOutlet UIButton *rememberButton;
+@property (weak, nonatomic) IBOutlet UIButton *autoButton;
+@property (weak, nonatomic) IBOutlet UILabel *registerButton;
+@property (weak, nonatomic) IBOutlet UILabel *forgetButton;
+@property (weak, nonatomic) IBOutlet UIButton *loginButton;
 @end

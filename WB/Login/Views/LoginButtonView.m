@@ -1,21 +1,19 @@
 //
-//  LoginFootView.m
+//  LoginButtonView.m
 //  WB
 //
-//  Created by 余海华 on 16/6/27.
+//  Created by 余海华 on 16/6/28.
 //  Copyright © 2016年 Haidi. All rights reserved.
 //
 
-#import "LoginFootView.h"
+#import "LoginButtonView.h"
 
-@implementation LoginFootView
-+(LoginFootView *) loginFootView {
+@implementation LoginButtonView
++(LoginButtonView *) loginButtonView{
     
-    LoginFootView *view = [[[NSBundle mainBundle] loadNibNamed:@"LoginFootView" owner:self options:nil] objectAtIndex:0];
+    LoginButtonView *view = [[[NSBundle mainBundle] loadNibNamed:@"LoginButtonView" owner:self options:nil] objectAtIndex:0];
     view.loginButton.layer.cornerRadius = 5.0f;
     view.loginButton.layer.masksToBounds = YES;
-    view.forgetButton.userInteractionEnabled = YES;
-    view.registerButton.userInteractionEnabled = YES;
     return view;
 }
 /*

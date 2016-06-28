@@ -81,16 +81,18 @@
                     <constraint firstItem="uVg-k6-akb" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="0qD-l8-Kqa"/>
                     <constraint firstItem="xuZ-ov-r1K" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="3X2-Gt-G2w"/>
                     <constraint firstItem="uLX-cG-AsH" firstAttribute="leading" secondItem="xuZ-ov-r1K" secondAttribute="trailing" id="68X-qG-MEI"/>
-                    <constraint firstItem="n9G-EJ-sN6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="BwB-xh-eFL"/>
+                    <constraint firstItem="n9G-EJ-sN6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="BwB-xh-eFL"/>
                     <constraint firstItem="n9G-EJ-sN6" firstAttribute="top" secondItem="uLX-cG-AsH" secondAttribute="bottom" constant="5" id="Dc3-UW-1te"/>
-                    <constraint firstAttribute="trailing" secondItem="n9G-EJ-sN6" secondAttribute="trailing" id="G1Y-PT-mJI"/>
+                    <constraint firstAttribute="trailing" secondItem="n9G-EJ-sN6" secondAttribute="trailing" constant="20" id="G1Y-PT-mJI"/>
                     <constraint firstItem="uVg-k6-akb" firstAttribute="top" secondItem="a5r-nV-0B3" secondAttribute="bottom" constant="10" id="JPD-FG-yND"/>
                     <constraint firstItem="a5r-nV-0B3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="KTc-DH-KSC"/>
                     <constraint firstItem="xuZ-ov-r1K" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="M6Q-sN-VWF"/>
                     <constraint firstItem="a5r-nV-0B3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ahW-ln-nYt"/>
                     <constraint firstAttribute="bottom" secondItem="n9G-EJ-sN6" secondAttribute="bottom" id="gSJ-8j-ojQ"/>
                     <constraint firstAttribute="trailing" secondItem="xuZ-ov-r1K" secondAttribute="trailing" constant="100" id="kic-5o-ilT"/>
+                    <constraint firstAttribute="trailing" secondItem="a5r-nV-0B3" secondAttribute="trailing" constant="20" id="nIe-OF-aD4"/>
                     <constraint firstItem="uLX-cG-AsH" firstAttribute="top" secondItem="a5r-nV-0B3" secondAttribute="bottom" constant="5" id="oht-Ec-H38"/>
+                    <constraint firstItem="a5r-nV-0B3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="pkE-t7-sp4"/>
                     <constraint firstAttribute="trailing" secondItem="uLX-cG-AsH" secondAttribute="trailing" constant="20" id="psP-8K-ufN"/>
                     <constraint firstItem="n9G-EJ-sN6" firstAttribute="top" secondItem="uVg-k6-akb" secondAttribute="bottom" constant="10" id="rIO-lo-j6I"/>
                     <constraint firstAttribute="trailing" secondItem="uVg-k6-akb" secondAttribute="trailing" constant="10" id="wlp-Hr-ew3"/>
@@ -99,6 +101,8 @@
                 </constraints>
                 <variation key="default">
                     <mask key="constraints">
+                        <exclude reference="KTc-DH-KSC"/>
+                        <exclude reference="ySz-I9-lSm"/>
                         <exclude reference="rIO-lo-j6I"/>
                         <exclude reference="68X-qG-MEI"/>
                         <exclude reference="JPD-FG-yND"/>

@@ -1,45 +1,43 @@
 //
-//  LoginViewController.m
+//  RegisterViewController.m
 //  WB
 //
-//  Created by 余海华 on 16/6/21.
+//  Created by 余海华 on 16/6/28.
 //  Copyright © 2016年 Haidi. All rights reserved.
 //
 
-#import "LoginViewController.h"
-#import "LoginTableViewCell.h"
-#import "LoginFootView.h"
-#import "ForgetViewController.h"
 #import "RegisterViewController.h"
+#import "LoginButtonView.h"
+#import "LoginTableViewCell.h"
 
-@interface LoginViewController ()<UITableViewDelegate,UITableViewDataSource> {
+@interface RegisterViewController ()<UITableViewDelegate,UITableViewDataSource> {
     
-    UITableView *loginTableView;
-    __block NSArray *_placeTitleArray;
+    UITableView *registerTableView;
+    NSArray *_placeTitleArray;
     NSString *_userName;
-    NSString *_passWord;
+    NSString *_password;
+    NSString *_confirmPassword;
+    NSString *_yanPassword;
 }
 
 @end
 
-@implementation LoginViewController
+@implementation RegisterViewController
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
     
-    _placeTitleArray = [NSArray arrayWithObjects:@"请输入账号",@"请输入密码", nil];
+    _placeTitleArray = [NSArray arrayWithObjects:@"请输入手机号码或者邮箱",@"输入密码", @"确定密码",@"请输入短信验证码",nil];
     // Do any additional setup after loading the view from its nib.
-    loginTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight) style:UITableViewStylePlain];
-    loginTableView.dataSource = self;
-    loginTableView.delegate = self;
-    UIView *footView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 160)];
-    LoginFootView *loginFootView = [LoginFootView loginFootView];
-    UITapGestureRecognizer *passwordTap = [[UITapGestureRecognizer  alloc] initWithTarget:self action:@selector(forgetPassword)];
-    [loginFootView.forgetButton addGestureRecognizer:passwordTap];
-    
-    UITapGestureRecognizer *registerTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(registered)];
-    [loginFootView.registerButton addGestureRecognizer:registerTap];
+    registerTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight) style:UITableViewStylePlain];
+    registerTableView.dataSource = self;
+    registerTableView.delegate = self;
+    UIView *footView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 80)];
+    footView.backgroundColor = [UIColor redColor];
+    LoginButtonView *loginFootView = [LoginButtonView loginButtonView];
+    [loginFootView.loginButton setTitle:@"确定" forState:UIControlStateNormal];
+    [loginFootView.loginButton addTarget:self action:@selector(registered) forControlEvents:UIControlEventTouchUpInside];
     [footView addSubview:loginFootView];
     [loginFootView mas_makeConstraints:^(MASConstraintMaker *make){
         
@@ -48,30 +46,21 @@
         make.trailing.equalTo(footView.mas_trailing);
         make.bottom.equalTo(footView.mas_bottom);
     }];
-    loginTableView.tableFooterView = footView;
-  
-    [self.view addSubview:loginTableView];
+    registerTableView.tableFooterView = footView;
+    
+    [self.view addSubview:registerTableView];
 }
 
--(void) forgetPassword{
+-(void) registered {
     
-    ForgetViewController *forgetVc = [[ForgetViewController alloc] initWithNibName:@"ForgetViewController" bundle:nil];
-    [self.navigationController pushViewController:forgetVc animated:YES];
+    
     
 }
-
--(void)registered {
-    
-    RegisterViewController *registerVc = [[RegisterViewController alloc] initWithNibName:@"RegisterViewController" bundle:nil];
-    [self.navigationController pushViewController:registerVc animated:YES];
-}
-
-
 #pragma mark UITableView
 -(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
     
-    return 2;
+    return _placeTitleArray.count;
 }
 
 
@@ -104,20 +93,40 @@
             case 0: {
                 textFieldString = _userName;
                 UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
-                [button setBackgroundImage:[[UIImage imageNamed:@"login_person"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
+                [button setBackgroundImage:[[UIImage imageNamed:@"login_lock"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
                 textField.leftView = button;
                 textField.leftViewMode = UITextFieldViewModeAlways;
                 textField.secureTextEntry = YES;
             }
                 break;
             case 1: {
-             
+                
                 UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
                 [button setBackgroundImage:[[UIImage imageNamed:@"login_lock"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
                 textField.leftView = button;
                 textField.leftViewMode = UITextFieldViewModeAlways;
                 textField.secureTextEntry = YES;
-                textFieldString = _passWord ;
+                textFieldString = _password ;
+            }
+                break;
+            case 2: {
+                
+                UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
+                [button setBackgroundImage:[[UIImage imageNamed:@"login_lock"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
+                textField.leftView = button;
+                textField.leftViewMode = UITextFieldViewModeAlways;
+                textField.secureTextEntry = YES;
+                textFieldString = _confirmPassword ;
+            }
+                break;
+            case 3: {
+                
+                UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
+                [button setBackgroundImage:[[UIImage imageNamed:@"login_lock"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
+                textField.leftView = button;
+                textField.leftViewMode = UITextFieldViewModeAlways;
+                textField.secureTextEntry = YES;
+                textFieldString = _yanPassword ;
             }
                 break;
             default:break;
@@ -126,7 +135,7 @@
         
         if (textFieldString == nil) {
             textField.placeholder = [_placeTitleArray objectAtIndex:indexPath.row];
-   
+            
         }else {
             textField.text = textFieldString;
         }
@@ -135,7 +144,9 @@
             case 1:
                 textField.secureTextEntry = YES;
                 break;
-                
+            case 2:
+                textField.secureTextEntry = YES;
+                break;
             default:
                 break;
         }
@@ -148,18 +159,19 @@
                 _userName = [contextField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
                 break;
             case 1:
-                _passWord = [contextField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+                _password = [contextField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
                 break;
             default:
                 break;
         }
     };
     loginCell.yanCodeButton.hidden = YES;
-    if(indexPath.row == 1) {
+    if(indexPath.row == _placeTitleArray.count - 1) {
         loginCell.topLineView.hidden = YES;
+          loginCell.yanCodeButton.hidden = NO;
         
     }
-
+    
 }
 
 
@@ -168,15 +180,6 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];// 取消选中
     //其他代码
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-
-
-
 /*
 #pragma mark - Navigation
 

@@ -11,6 +11,7 @@
 #import "YTKUrlArgumentsFilter.h"
 #import "DHNavigationViewController.h"
 #import "ViewController.h"
+#import "DHTabBarViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -22,9 +23,9 @@
     // Override point for customization after application launch.
     [self setupRequestFilters];
   
-    ViewController *vc = [[ViewController alloc] init];
-    DHNavigationViewController *navVc = [[DHNavigationViewController alloc] initWithRootViewController:vc];
-    self.window.rootViewController = navVc;
+    DHTabBarViewController *tabarVC=[[DHTabBarViewController alloc] init];
+    DHNavigationViewController *dhNav = [[DHNavigationViewController alloc] initWithRootViewController:tabarVC];
+    self.window.rootViewController = dhNav;
     return YES;
 }
 
