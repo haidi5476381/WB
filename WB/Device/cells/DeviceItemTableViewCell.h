@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+static NSString *KDeviceItemTableViewCell = @"DeviceItemTableViewCell";
 @interface DeviceItemTableViewCell : UITableViewCell
+
++(DeviceItemTableViewCell *) deviceItemTableViewCell;
+@property (weak, nonatomic) IBOutlet UIImageView *itemImageView;
+@property (weak, nonatomic) IBOutlet UILabel *itemTitleLabel;
 
 @end

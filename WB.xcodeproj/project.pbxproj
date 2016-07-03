@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0975189D1D289FF90043CF31 /* PersonInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0975189B1D289FF90043CF31 /* PersonInfoTableViewCell.m */; };
+		0975189E1D289FF90043CF31 /* PersonInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0975189C1D289FF90043CF31 /* PersonInfoTableViewCell.xib */; };
+		097518A21D28A0150043CF31 /* SetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 097518A01D28A0150043CF31 /* SetTableViewCell.m */; };
+		097518A31D28A0150043CF31 /* SetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 097518A11D28A0150043CF31 /* SetTableViewCell.xib */; };
+		097518A81D28AC330043CF31 /* DeviceItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 097518A61D28AC330043CF31 /* DeviceItemTableViewCell.m */; };
+		097518A91D28AC330043CF31 /* DeviceItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 097518A71D28AC330043CF31 /* DeviceItemTableViewCell.xib */; };
 		0D1100031D18C8AD004CF6D2 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1100021D18C8AD004CF6D2 /* BaseViewController.m */; };
 		0D1100071D18C8E9004CF6D2 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1100051D18C8E9004CF6D2 /* LoginViewController.m */; };
 		0D1100081D18C8E9004CF6D2 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D1100061D18C8E9004CF6D2 /* LoginViewController.xib */; };
@@ -69,6 +75,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0975189A1D289FF90043CF31 /* PersonInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonInfoTableViewCell.h; sourceTree = "<group>"; };
+		0975189B1D289FF90043CF31 /* PersonInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonInfoTableViewCell.m; sourceTree = "<group>"; };
+		0975189C1D289FF90043CF31 /* PersonInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonInfoTableViewCell.xib; sourceTree = "<group>"; };
+		0975189F1D28A0150043CF31 /* SetTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetTableViewCell.h; sourceTree = "<group>"; };
+		097518A01D28A0150043CF31 /* SetTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetTableViewCell.m; sourceTree = "<group>"; };
+		097518A11D28A0150043CF31 /* SetTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SetTableViewCell.xib; sourceTree = "<group>"; };
+		097518A51D28AC330043CF31 /* DeviceItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceItemTableViewCell.h; sourceTree = "<group>"; };
+		097518A61D28AC330043CF31 /* DeviceItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceItemTableViewCell.m; sourceTree = "<group>"; };
+		097518A71D28AC330043CF31 /* DeviceItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeviceItemTableViewCell.xib; sourceTree = "<group>"; };
 		0D1100011D18C8AD004CF6D2 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		0D1100021D18C8AD004CF6D2 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		0D1100041D18C8E9004CF6D2 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -194,6 +209,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		097518991D289FF90043CF31 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0975189A1D289FF90043CF31 /* PersonInfoTableViewCell.h */,
+				0975189B1D289FF90043CF31 /* PersonInfoTableViewCell.m */,
+				0975189C1D289FF90043CF31 /* PersonInfoTableViewCell.xib */,
+				0975189F1D28A0150043CF31 /* SetTableViewCell.h */,
+				097518A01D28A0150043CF31 /* SetTableViewCell.m */,
+				097518A11D28A0150043CF31 /* SetTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		097518A41D28AC170043CF31 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				097518A51D28AC330043CF31 /* DeviceItemTableViewCell.h */,
+				097518A61D28AC330043CF31 /* DeviceItemTableViewCell.m */,
+				097518A71D28AC330043CF31 /* DeviceItemTableViewCell.xib */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
 		0D1100001D18C88E004CF6D2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -455,6 +493,7 @@
 		0DC842781D22588700B80830 /* Device */ = {
 			isa = PBXGroup;
 			children = (
+				097518A41D28AC170043CF31 /* cells */,
 				0DC8427B1D2258AE00B80830 /* DevicesViewController.h */,
 				0DC8427C1D2258AE00B80830 /* DevicesViewController.m */,
 				0DC8427D1D2258AE00B80830 /* DevicesViewController.xib */,
@@ -465,6 +504,7 @@
 		0DC842791D22589400B80830 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				097518991D289FF90043CF31 /* Cells */,
 				0DC842801D2258BB00B80830 /* SettingViewController.h */,
 				0DC842811D2258BB00B80830 /* SettingViewController.m */,
 				0DC842821D2258BB00B80830 /* SettingViewController.xib */,
@@ -599,9 +639,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0975189E1D289FF90043CF31 /* PersonInfoTableViewCell.xib in Resources */,
 				0DC8425B1D22556000B80830 /* RegisterViewController.xib in Resources */,
 				0D1100081D18C8E9004CF6D2 /* LoginViewController.xib in Resources */,
 				0D2DA3691D051498005609D2 /* LaunchScreen.storyboard in Resources */,
+				097518A91D28AC330043CF31 /* DeviceItemTableViewCell.xib in Resources */,
+				097518A31D28A0150043CF31 /* SetTableViewCell.xib in Resources */,
 				0DC842841D2258BB00B80830 /* SettingViewController.xib in Resources */,
 				0DC842561D22543900B80830 /* Forget2ViewController.xib in Resources */,
 				0D2DA3661D051498005609D2 /* Assets.xcassets in Resources */,
@@ -677,6 +720,7 @@
 				0DC8423A1D20D54900B80830 /* TimerButton.m in Sources */,
 				0D1100071D18C8E9004CF6D2 /* LoginViewController.m in Sources */,
 				0DC842361D20D49900B80830 /* UIImage+color.m in Sources */,
+				0975189D1D289FF90043CF31 /* PersonInfoTableViewCell.m in Sources */,
 				0DF320F41D17C3C800B9BB67 /* HHNUtility+Locale.m in Sources */,
 				0DC8422C1D20D1FD00B80830 /* LoginTableViewCell.m in Sources */,
 				0D58BE001D0E4E410015D636 /* UserDeviceService.m in Sources */,
@@ -707,10 +751,12 @@
 				0DC8424D1D220A3700B80830 /* LoginButtonView.m in Sources */,
 				0D2DA37A1D05236E005609D2 /* UIViewController+HUD.m in Sources */,
 				0DF320F81D17C41900B9BB67 /* NSString+extension.m in Sources */,
+				097518A21D28A0150043CF31 /* SetTableViewCell.m in Sources */,
 				0D2DA3911D055B45005609D2 /* CommonFileUtils.m in Sources */,
 				0D2DA35B1D051497005609D2 /* main.m in Sources */,
 				0DC842761D22581A00B80830 /* DHTabBar.m in Sources */,
 				0D2DA39A1D055C2D005609D2 /* Logger.m in Sources */,
+				097518A81D28AC330043CF31 /* DeviceItemTableViewCell.m in Sources */,
 				0D58BDFC1D0E4DB40015D636 /* DeviceService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -836,7 +882,7 @@
 				);
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/yuhaihua/Desktop/WB/WB/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "/Users/deng-haidi/Desktop/WB/WB/PrefixHeader.pch";
 				INFOPLIST_FILE = WB/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -861,7 +907,7 @@
 				);
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/yuhaihua/Desktop/WB/WB/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "/Users/deng-haidi/Desktop/WB/WB/PrefixHeader.pch";
 				INFOPLIST_FILE = WB/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

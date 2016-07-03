@@ -10,6 +10,11 @@
 
 @implementation DeviceItemTableViewCell
 
++(DeviceItemTableViewCell *) deviceItemTableViewCell {
+    
+    DeviceItemTableViewCell *cell = [[[NSBundle mainBundle] loadNibNamed:KDeviceItemTableViewCell owner:self options:nil] objectAtIndex:0];
+    return cell;
+}
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code

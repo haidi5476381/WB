@@ -7,8 +7,12 @@
 //
 
 #import "DevicesViewController.h"
+#import "DeviceItemTableViewCell.h"
 
-@interface DevicesViewController ()
+@interface DevicesViewController ()<UITableViewDelegate,UITableViewDataSource> {
+    
+    UITableView *smallTableView;
+}
 
 @end
 
@@ -17,11 +21,65 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"添加" style:UIBarButtonItemStyleDone target:self action:@selector(add)];
+    [self setSmallTableView];
+}
+
+-(void) setSmallTableView{
+    
+    smallTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 60) style:UITableViewStylePlain];
+    smallTableView.dataSource = self;
+    smallTableView.delegate = self;
+    
+}
+
+-(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
+    
+    if (tableView == smallTableView) {
+        
+        return 2.0f;
+    }
+    return 0;
+}
+
+-(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    return 30.0f;
+}
+
+
+-(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    UITableViewCell *cell = nil;
+    
+    if ([tableView isEqual:smallTableView]) {
+    
+        DeviceItemTableViewCell *deviceCell = [tableView dequeueReusableCellWithIdentifier:KDeviceItemTableViewCell];
+        if (deviceCell == nil) {
+            deviceCell = [DeviceItemTableViewCell deviceItemTableViewCell];
+        }
+        cell = deviceCell;
+    }
+    return cell;
+}
+
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+
+}
+
+-(void) add {
+    
+    [self.view addSubview:smallTableView];
+    [smallTableView reloadData];
+    
 }
 
 /*
