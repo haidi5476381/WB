@@ -8,7 +8,10 @@
 
 #import "SettingViewController.h"
 
-@interface SettingViewController ()
+@interface SettingViewController () {
+    
+
+}
 
 @end
 

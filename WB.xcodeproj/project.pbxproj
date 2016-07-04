@@ -59,6 +59,8 @@
 		0DC842881D2258C600B80830 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC842861D2258C600B80830 /* AboutViewController.m */; };
 		0DC842891D2258C600B80830 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DC842871D2258C600B80830 /* AboutViewController.xib */; };
 		0DC8428C1D225A7300B80830 /* UIImage+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC8428B1D225A7300B80830 /* UIImage+MJ.m */; };
+		0DC842911D22726300B80830 /* PersonInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC8428F1D22726300B80830 /* PersonInfoTableViewCell.m */; };
+		0DC842921D22726300B80830 /* PersonInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DC842901D22726300B80830 /* PersonInfoTableViewCell.xib */; };
 		0DF320F21D17C3C800B9BB67 /* HHNUtility+app.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF320ED1D17C3C800B9BB67 /* HHNUtility+app.m */; };
 		0DF320F31D17C3C800B9BB67 /* HHNUtility+Device.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF320EE1D17C3C800B9BB67 /* HHNUtility+Device.m */; };
 		0DF320F41D17C3C800B9BB67 /* HHNUtility+Locale.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF320EF1D17C3C800B9BB67 /* HHNUtility+Locale.m */; };
@@ -165,6 +167,9 @@
 		0DC842871D2258C600B80830 /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
 		0DC8428A1D225A7300B80830 /* UIImage+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MJ.h"; sourceTree = "<group>"; };
 		0DC8428B1D225A7300B80830 /* UIImage+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MJ.m"; sourceTree = "<group>"; };
+		0DC8428E1D22726300B80830 /* PersonInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonInfoTableViewCell.h; sourceTree = "<group>"; };
+		0DC8428F1D22726300B80830 /* PersonInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonInfoTableViewCell.m; sourceTree = "<group>"; };
+		0DC842901D22726300B80830 /* PersonInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonInfoTableViewCell.xib; sourceTree = "<group>"; };
 		0DF320ED1D17C3C800B9BB67 /* HHNUtility+app.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HHNUtility+app.m"; sourceTree = "<group>"; };
 		0DF320EE1D17C3C800B9BB67 /* HHNUtility+Device.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HHNUtility+Device.m"; sourceTree = "<group>"; };
 		0DF320EF1D17C3C800B9BB67 /* HHNUtility+Locale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HHNUtility+Locale.m"; sourceTree = "<group>"; };
@@ -465,6 +470,7 @@
 		0DC842791D22589400B80830 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				0DC8428D1D22725300B80830 /* Cells */,
 				0DC842801D2258BB00B80830 /* SettingViewController.h */,
 				0DC842811D2258BB00B80830 /* SettingViewController.m */,
 				0DC842821D2258BB00B80830 /* SettingViewController.xib */,
@@ -480,6 +486,16 @@
 				0DC842871D2258C600B80830 /* AboutViewController.xib */,
 			);
 			path = About;
+			sourceTree = "<group>";
+		};
+		0DC8428D1D22725300B80830 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0DC8428E1D22726300B80830 /* PersonInfoTableViewCell.h */,
+				0DC8428F1D22726300B80830 /* PersonInfoTableViewCell.m */,
+				0DC842901D22726300B80830 /* PersonInfoTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		0DF320EB1D17C3BF00B9BB67 /* Assistat */ = {
@@ -599,6 +615,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DC842921D22726300B80830 /* PersonInfoTableViewCell.xib in Resources */,
 				0DC8425B1D22556000B80830 /* RegisterViewController.xib in Resources */,
 				0D1100081D18C8E9004CF6D2 /* LoginViewController.xib in Resources */,
 				0D2DA3691D051498005609D2 /* LaunchScreen.storyboard in Resources */,
@@ -677,6 +694,7 @@
 				0DC8423A1D20D54900B80830 /* TimerButton.m in Sources */,
 				0D1100071D18C8E9004CF6D2 /* LoginViewController.m in Sources */,
 				0DC842361D20D49900B80830 /* UIImage+color.m in Sources */,
+				0DC842911D22726300B80830 /* PersonInfoTableViewCell.m in Sources */,
 				0DF320F41D17C3C800B9BB67 /* HHNUtility+Locale.m in Sources */,
 				0DC8422C1D20D1FD00B80830 /* LoginTableViewCell.m in Sources */,
 				0D58BE001D0E4E410015D636 /* UserDeviceService.m in Sources */,
