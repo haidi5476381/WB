@@ -32,6 +32,20 @@
 		0D58BDF81D0E4CB80015D636 /* UserService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D58BDF71D0E4CB80015D636 /* UserService.m */; };
 		0D58BDFC1D0E4DB40015D636 /* DeviceService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D58BDFB1D0E4DB40015D636 /* DeviceService.m */; };
 		0D58BE001D0E4E410015D636 /* UserDeviceService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D58BDFF1D0E4E410015D636 /* UserDeviceService.m */; };
+		0D7112241D29FCE800FE3A4E /* SettingItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7112221D29FCE800FE3A4E /* SettingItemTableViewCell.m */; };
+		0D7112251D29FCE800FE3A4E /* SettingItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D7112231D29FCE800FE3A4E /* SettingItemTableViewCell.xib */; };
+		0D7112291D2A068300FE3A4E /* YaokongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7112271D2A068300FE3A4E /* YaokongViewController.m */; };
+		0D71122A1D2A068300FE3A4E /* YaokongViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D7112281D2A068300FE3A4E /* YaokongViewController.xib */; };
+		0D71122E1D2A0B9F00FE3A4E /* WifiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D71122C1D2A0B9F00FE3A4E /* WifiViewController.m */; };
+		0D71122F1D2A0B9F00FE3A4E /* WifiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D71122D1D2A0B9F00FE3A4E /* WifiViewController.xib */; };
+		0D7112331D2A0E7000FE3A4E /* LoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7112311D2A0E7000FE3A4E /* LoadingViewController.m */; };
+		0D7112341D2A0E7000FE3A4E /* LoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D7112321D2A0E7000FE3A4E /* LoadingViewController.xib */; };
+		0D7112381D2A3FD800FE3A4E /* ItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7112361D2A3FD800FE3A4E /* ItemTableViewCell.m */; };
+		0D7112391D2A3FD800FE3A4E /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D7112371D2A3FD800FE3A4E /* ItemTableViewCell.xib */; };
+		0D71123D1D2A4CE600FE3A4E /* ItemEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D71123B1D2A4CE600FE3A4E /* ItemEditViewController.m */; };
+		0D71123E1D2A4CE600FE3A4E /* ItemEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D71123C1D2A4CE600FE3A4E /* ItemEditViewController.xib */; };
+		0D7112441D2A4D2C00FE3A4E /* PersonInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7112421D2A4D2C00FE3A4E /* PersonInfoTableViewCell.m */; };
+		0D7112451D2A4D2C00FE3A4E /* PersonInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D7112431D2A4D2C00FE3A4E /* PersonInfoTableViewCell.xib */; };
 		0DC8422C1D20D1FD00B80830 /* LoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC8422A1D20D1FD00B80830 /* LoginTableViewCell.m */; };
 		0DC8422D1D20D1FD00B80830 /* LoginTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DC8422B1D20D1FD00B80830 /* LoginTableViewCell.xib */; };
 		0DC842331D20D46300B80830 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC842321D20D46300B80830 /* UIBarButtonItem+Extension.m */; };
@@ -120,6 +134,27 @@
 		0D58BDFD1D0E4E050015D636 /* UserDeviceServiceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDeviceServiceProtocol.h; sourceTree = "<group>"; };
 		0D58BDFE1D0E4E410015D636 /* UserDeviceService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDeviceService.h; sourceTree = "<group>"; };
 		0D58BDFF1D0E4E410015D636 /* UserDeviceService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDeviceService.m; sourceTree = "<group>"; };
+		0D7112211D29FCE800FE3A4E /* SettingItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingItemTableViewCell.h; sourceTree = "<group>"; };
+		0D7112221D29FCE800FE3A4E /* SettingItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingItemTableViewCell.m; sourceTree = "<group>"; };
+		0D7112231D29FCE800FE3A4E /* SettingItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingItemTableViewCell.xib; sourceTree = "<group>"; };
+		0D7112261D2A068300FE3A4E /* YaokongViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YaokongViewController.h; sourceTree = "<group>"; };
+		0D7112271D2A068300FE3A4E /* YaokongViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YaokongViewController.m; sourceTree = "<group>"; };
+		0D7112281D2A068300FE3A4E /* YaokongViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YaokongViewController.xib; sourceTree = "<group>"; };
+		0D71122B1D2A0B9F00FE3A4E /* WifiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WifiViewController.h; sourceTree = "<group>"; };
+		0D71122C1D2A0B9F00FE3A4E /* WifiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WifiViewController.m; sourceTree = "<group>"; };
+		0D71122D1D2A0B9F00FE3A4E /* WifiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WifiViewController.xib; sourceTree = "<group>"; };
+		0D7112301D2A0E7000FE3A4E /* LoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingViewController.h; sourceTree = "<group>"; };
+		0D7112311D2A0E7000FE3A4E /* LoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingViewController.m; sourceTree = "<group>"; };
+		0D7112321D2A0E7000FE3A4E /* LoadingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingViewController.xib; sourceTree = "<group>"; };
+		0D7112351D2A3FD800FE3A4E /* ItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemTableViewCell.h; sourceTree = "<group>"; };
+		0D7112361D2A3FD800FE3A4E /* ItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemTableViewCell.m; sourceTree = "<group>"; };
+		0D7112371D2A3FD800FE3A4E /* ItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
+		0D71123A1D2A4CE600FE3A4E /* ItemEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemEditViewController.h; sourceTree = "<group>"; };
+		0D71123B1D2A4CE600FE3A4E /* ItemEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemEditViewController.m; sourceTree = "<group>"; };
+		0D71123C1D2A4CE600FE3A4E /* ItemEditViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemEditViewController.xib; sourceTree = "<group>"; };
+		0D7112411D2A4D2C00FE3A4E /* PersonInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonInfoTableViewCell.h; sourceTree = "<group>"; };
+		0D7112421D2A4D2C00FE3A4E /* PersonInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonInfoTableViewCell.m; sourceTree = "<group>"; };
+		0D7112431D2A4D2C00FE3A4E /* PersonInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonInfoTableViewCell.xib; sourceTree = "<group>"; };
 		0DC842291D20D1FD00B80830 /* LoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginTableViewCell.h; sourceTree = "<group>"; };
 		0DC8422A1D20D1FD00B80830 /* LoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginTableViewCell.m; sourceTree = "<group>"; };
 		0DC8422B1D20D1FD00B80830 /* LoginTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginTableViewCell.xib; sourceTree = "<group>"; };
@@ -415,6 +450,22 @@
 			path = "User-Device-Service";
 			sourceTree = "<group>";
 		};
+		0D7112201D29FC7900FE3A4E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0D7112411D2A4D2C00FE3A4E /* PersonInfoTableViewCell.h */,
+				0D7112421D2A4D2C00FE3A4E /* PersonInfoTableViewCell.m */,
+				0D7112431D2A4D2C00FE3A4E /* PersonInfoTableViewCell.xib */,
+				0D7112211D29FCE800FE3A4E /* SettingItemTableViewCell.h */,
+				0D7112221D29FCE800FE3A4E /* SettingItemTableViewCell.m */,
+				0D7112231D29FCE800FE3A4E /* SettingItemTableViewCell.xib */,
+				0D7112351D2A3FD800FE3A4E /* ItemTableViewCell.h */,
+				0D7112361D2A3FD800FE3A4E /* ItemTableViewCell.m */,
+				0D7112371D2A3FD800FE3A4E /* ItemTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		0DC842371D20D54900B80830 /* TimeButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -460,9 +511,22 @@
 		0DC842781D22588700B80830 /* Device */ = {
 			isa = PBXGroup;
 			children = (
+				0D7112201D29FC7900FE3A4E /* Cells */,
 				0DC8427B1D2258AE00B80830 /* DevicesViewController.h */,
 				0DC8427C1D2258AE00B80830 /* DevicesViewController.m */,
 				0DC8427D1D2258AE00B80830 /* DevicesViewController.xib */,
+				0D7112261D2A068300FE3A4E /* YaokongViewController.h */,
+				0D7112271D2A068300FE3A4E /* YaokongViewController.m */,
+				0D7112281D2A068300FE3A4E /* YaokongViewController.xib */,
+				0D71122B1D2A0B9F00FE3A4E /* WifiViewController.h */,
+				0D71122C1D2A0B9F00FE3A4E /* WifiViewController.m */,
+				0D71122D1D2A0B9F00FE3A4E /* WifiViewController.xib */,
+				0D7112301D2A0E7000FE3A4E /* LoadingViewController.h */,
+				0D7112311D2A0E7000FE3A4E /* LoadingViewController.m */,
+				0D7112321D2A0E7000FE3A4E /* LoadingViewController.xib */,
+				0D71123A1D2A4CE600FE3A4E /* ItemEditViewController.h */,
+				0D71123B1D2A4CE600FE3A4E /* ItemEditViewController.m */,
+				0D71123C1D2A4CE600FE3A4E /* ItemEditViewController.xib */,
 			);
 			path = Device;
 			sourceTree = "<group>";
@@ -615,19 +679,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D71122A1D2A068300FE3A4E /* YaokongViewController.xib in Resources */,
+				0D71122F1D2A0B9F00FE3A4E /* WifiViewController.xib in Resources */,
 				0DC842921D22726300B80830 /* PersonInfoTableViewCell.xib in Resources */,
 				0DC8425B1D22556000B80830 /* RegisterViewController.xib in Resources */,
+				0D7112451D2A4D2C00FE3A4E /* PersonInfoTableViewCell.xib in Resources */,
 				0D1100081D18C8E9004CF6D2 /* LoginViewController.xib in Resources */,
 				0D2DA3691D051498005609D2 /* LaunchScreen.storyboard in Resources */,
 				0DC842841D2258BB00B80830 /* SettingViewController.xib in Resources */,
 				0DC842561D22543900B80830 /* Forget2ViewController.xib in Resources */,
+				0D7112391D2A3FD800FE3A4E /* ItemTableViewCell.xib in Resources */,
 				0D2DA3661D051498005609D2 /* Assets.xcassets in Resources */,
+				0D7112341D2A0E7000FE3A4E /* LoadingViewController.xib in Resources */,
 				0DC842451D21212500B80830 /* LoginFootView.xib in Resources */,
 				0DC8424F1D220A4100B80830 /* LoginButtonView.xib in Resources */,
+				0D71123E1D2A4CE600FE3A4E /* ItemEditViewController.xib in Resources */,
 				0DC842891D2258C600B80830 /* AboutViewController.xib in Resources */,
 				0DC8422D1D20D1FD00B80830 /* LoginTableViewCell.xib in Resources */,
 				0DC8427F1D2258AE00B80830 /* DevicesViewController.xib in Resources */,
 				0D2DA3761D051BDC005609D2 /* Others.bundle in Resources */,
+				0D7112251D29FCE800FE3A4E /* SettingItemTableViewCell.xib in Resources */,
 				0D2DA3641D051497005609D2 /* Main.storyboard in Resources */,
 				0DC8424A1D22098B00B80830 /* ForgetViewController.xib in Resources */,
 			);
@@ -689,6 +760,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D2DA38A1D055AA3005609D2 /* CoreManager.m in Sources */,
+				0D7112291D2A068300FE3A4E /* YaokongViewController.m in Sources */,
 				0DC842491D22098B00B80830 /* ForgetViewController.m in Sources */,
 				0DC842831D2258BB00B80830 /* SettingViewController.m in Sources */,
 				0DC8423A1D20D54900B80830 /* TimerButton.m in Sources */,
@@ -702,11 +774,15 @@
 				0D2DA3891D055AA3005609D2 /* CoreFactory.m in Sources */,
 				0DC842551D22543900B80830 /* Forget2ViewController.m in Sources */,
 				0D2DA3611D051497005609D2 /* ViewController.m in Sources */,
+				0D7112331D2A0E7000FE3A4E /* LoadingViewController.m in Sources */,
 				0DC842431D21211800B80830 /* LoginFootView.m in Sources */,
 				0DF320F51D17C3C800B9BB67 /* HHNUtility.m in Sources */,
 				0D2DA39B1D055C2D005609D2 /* LoggerUtil.m in Sources */,
+				0D7112241D29FCE800FE3A4E /* SettingItemTableViewCell.m in Sources */,
 				0DC842331D20D46300B80830 /* UIBarButtonItem+Extension.m in Sources */,
+				0D71122E1D2A0B9F00FE3A4E /* WifiViewController.m in Sources */,
 				0DC842701D22581A00B80830 /* DHNavigationViewController.m in Sources */,
+				0D71123D1D2A4CE600FE3A4E /* ItemEditViewController.m in Sources */,
 				0DF320F31D17C3C800B9BB67 /* HHNUtility+Device.m in Sources */,
 				0D2DA38D1D055AD8005609D2 /* CommonServiceCenter.m in Sources */,
 				0DC842711D22581A00B80830 /* DHTabBarViewController.m in Sources */,
@@ -724,11 +800,13 @@
 				0DC842751D22581A00B80830 /* DHBadgeButton.m in Sources */,
 				0DC8424D1D220A3700B80830 /* LoginButtonView.m in Sources */,
 				0D2DA37A1D05236E005609D2 /* UIViewController+HUD.m in Sources */,
+				0D7112441D2A4D2C00FE3A4E /* PersonInfoTableViewCell.m in Sources */,
 				0DF320F81D17C41900B9BB67 /* NSString+extension.m in Sources */,
 				0D2DA3911D055B45005609D2 /* CommonFileUtils.m in Sources */,
 				0D2DA35B1D051497005609D2 /* main.m in Sources */,
 				0DC842761D22581A00B80830 /* DHTabBar.m in Sources */,
 				0D2DA39A1D055C2D005609D2 /* Logger.m in Sources */,
+				0D7112381D2A3FD800FE3A4E /* ItemTableViewCell.m in Sources */,
 				0D58BDFC1D0E4DB40015D636 /* DeviceService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

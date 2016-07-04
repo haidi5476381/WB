@@ -34,9 +34,9 @@
     
     // 初始化tabbar
     [self setupTabbar];
-    [self setupLogin];
+//    [self setupLogin];
     // 初始化所有的子控制器
-    //    [self setupAllChildViewControllers];
+        [self setupAllChildViewControllers];
 }
 
 -(void)setupLogin {

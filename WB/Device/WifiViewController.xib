@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WifiViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B7Q-ML-obC">
+                    <rect key="frame" x="27" y="36" width="500" height="550"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OiD-5f-Cmn">
+                            <rect key="frame" x="8" y="8" width="456" height="507"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Wifi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohu-ar-Bvf">
+                                    <rect key="frame" x="62" y="54" width="30" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="密码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXP-24-5ry">
+                                    <rect key="frame" x="65" y="143" width="34" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入wifi密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m6Q-fM-CUz">
+                                    <rect key="frame" x="142" y="143" width="167" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="120" id="Lw8-nX-tfe"/>
+                                        <constraint firstAttribute="height" constant="30" id="Oa8-2j-riy"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUp-6p-y0o">
+                                    <rect key="frame" x="81" y="279" width="256" height="48"/>
+                                    <state key="normal" title="Button"/>
+                                </button>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入wifi名称" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jm1-eu-B0m">
+                                    <rect key="frame" x="147" y="45" width="169" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="120" id="BLL-eH-rsE"/>
+                                        <constraint firstAttribute="height" constant="30" id="EkB-dC-c0W"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="jm1-eu-B0m" firstAttribute="top" secondItem="OiD-5f-Cmn" secondAttribute="top" constant="15" id="3uZ-XW-C6w"/>
+                                <constraint firstItem="m6Q-fM-CUz" firstAttribute="leading" secondItem="jm1-eu-B0m" secondAttribute="leading" id="8XE-ed-XF1"/>
+                                <constraint firstItem="jm1-eu-B0m" firstAttribute="centerY" secondItem="ohu-ar-Bvf" secondAttribute="centerY" id="9C3-RY-rib"/>
+                                <constraint firstItem="jm1-eu-B0m" firstAttribute="leading" secondItem="ohu-ar-Bvf" secondAttribute="trailing" constant="5" id="CyR-2u-rYx"/>
+                                <constraint firstItem="m6Q-fM-CUz" firstAttribute="top" secondItem="jm1-eu-B0m" secondAttribute="bottom" constant="10" id="LJY-AN-gt8"/>
+                                <constraint firstAttribute="bottom" secondItem="rUp-6p-y0o" secondAttribute="bottom" constant="140" id="Nch-KE-2IR"/>
+                                <constraint firstAttribute="trailing" secondItem="rUp-6p-y0o" secondAttribute="trailing" constant="20" id="YNR-dN-GZh"/>
+                                <constraint firstItem="m6Q-fM-CUz" firstAttribute="centerY" secondItem="vXP-24-5ry" secondAttribute="centerY" id="anN-fd-ooN"/>
+                                <constraint firstItem="vXP-24-5ry" firstAttribute="leading" secondItem="ohu-ar-Bvf" secondAttribute="leading" id="qVu-Zn-UpV"/>
+                                <constraint firstItem="ohu-ar-Bvf" firstAttribute="leading" secondItem="OiD-5f-Cmn" secondAttribute="leading" constant="10" id="srL-jz-zfd"/>
+                                <constraint firstItem="rUp-6p-y0o" firstAttribute="leading" secondItem="OiD-5f-Cmn" secondAttribute="leading" constant="20" id="uJg-nn-bw5"/>
+                                <constraint firstItem="rUp-6p-y0o" firstAttribute="top" secondItem="m6Q-fM-CUz" secondAttribute="bottom" constant="25" id="w4f-BP-tAx"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="OiD-5f-Cmn" firstAttribute="height" secondItem="B7Q-ML-obC" secondAttribute="height" id="NAk-Q0-zSw"/>
+                        <constraint firstItem="OiD-5f-Cmn" firstAttribute="leading" secondItem="B7Q-ML-obC" secondAttribute="leading" id="Q0Z-cM-ebj"/>
+                        <constraint firstAttribute="bottom" secondItem="OiD-5f-Cmn" secondAttribute="bottom" constant="20" id="TPX-qb-hR4"/>
+                        <constraint firstAttribute="trailing" secondItem="OiD-5f-Cmn" secondAttribute="trailing" id="e6P-Ep-Fta"/>
+                        <constraint firstItem="OiD-5f-Cmn" firstAttribute="width" secondItem="B7Q-ML-obC" secondAttribute="width" id="iRv-3S-Jop"/>
+                        <constraint firstItem="OiD-5f-Cmn" firstAttribute="top" secondItem="B7Q-ML-obC" secondAttribute="top" id="yyC-F1-vSO"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="B7Q-ML-obC" secondAttribute="trailing" id="do3-z8-yck"/>
+                <constraint firstItem="B7Q-ML-obC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="f8u-9H-hq8"/>
+                <constraint firstAttribute="bottom" secondItem="B7Q-ML-obC" secondAttribute="bottom" id="fpo-vU-rvg"/>
+                <constraint firstItem="B7Q-ML-obC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="kUp-L3-rLL"/>
+            </constraints>
+            <point key="canvasLocation" x="429" y="384"/>
+        </view>
+    </objects>
+</document>
