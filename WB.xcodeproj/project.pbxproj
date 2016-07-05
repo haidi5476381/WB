@@ -44,8 +44,17 @@
 		0D7112391D2A3FD800FE3A4E /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D7112371D2A3FD800FE3A4E /* ItemTableViewCell.xib */; };
 		0D71123D1D2A4CE600FE3A4E /* ItemEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D71123B1D2A4CE600FE3A4E /* ItemEditViewController.m */; };
 		0D71123E1D2A4CE600FE3A4E /* ItemEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D71123C1D2A4CE600FE3A4E /* ItemEditViewController.xib */; };
-		0D7112441D2A4D2C00FE3A4E /* PersonInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7112421D2A4D2C00FE3A4E /* PersonInfoTableViewCell.m */; };
-		0D7112451D2A4D2C00FE3A4E /* PersonInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D7112431D2A4D2C00FE3A4E /* PersonInfoTableViewCell.xib */; };
+		0D7112491D2A5AD700FE3A4E /* ProductsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7112471D2A5AD700FE3A4E /* ProductsCollectionViewCell.m */; };
+		0D71124A1D2A5AD700FE3A4E /* ProductsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D7112481D2A5AD700FE3A4E /* ProductsCollectionViewCell.xib */; };
+		0D71124E1D2A5B9400FE3A4E /* ItemAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D71124C1D2A5B9400FE3A4E /* ItemAddViewController.m */; };
+		0D71124F1D2A5B9400FE3A4E /* ItemAddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D71124D1D2A5B9400FE3A4E /* ItemAddViewController.xib */; };
+		0D7112531D2A5BAD00FE3A4E /* ItemAddTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7112511D2A5BAD00FE3A4E /* ItemAddTableViewCell.m */; };
+		0D7112541D2A5BAD00FE3A4E /* ItemAddTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D7112521D2A5BAD00FE3A4E /* ItemAddTableViewCell.xib */; };
+		0D7112581D2A5BF600FE3A4E /* IndexCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7112571D2A5BF600FE3A4E /* IndexCollectionView.m */; };
+		0D71125C1D2B472800FE3A4E /* DefaultCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D71125A1D2B472800FE3A4E /* DefaultCollectionViewCell.m */; };
+		0D71125D1D2B472800FE3A4E /* DefaultCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D71125B1D2B472800FE3A4E /* DefaultCollectionViewCell.xib */; };
+		0D7112611D2B991A00FE3A4E /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D71125F1D2B991A00FE3A4E /* AccountViewController.m */; };
+		0D7112621D2B991A00FE3A4E /* AccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D7112601D2B991A00FE3A4E /* AccountViewController.xib */; };
 		0DC8422C1D20D1FD00B80830 /* LoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC8422A1D20D1FD00B80830 /* LoginTableViewCell.m */; };
 		0DC8422D1D20D1FD00B80830 /* LoginTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DC8422B1D20D1FD00B80830 /* LoginTableViewCell.xib */; };
 		0DC842331D20D46300B80830 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC842321D20D46300B80830 /* UIBarButtonItem+Extension.m */; };
@@ -152,9 +161,23 @@
 		0D71123A1D2A4CE600FE3A4E /* ItemEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemEditViewController.h; sourceTree = "<group>"; };
 		0D71123B1D2A4CE600FE3A4E /* ItemEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemEditViewController.m; sourceTree = "<group>"; };
 		0D71123C1D2A4CE600FE3A4E /* ItemEditViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemEditViewController.xib; sourceTree = "<group>"; };
-		0D7112411D2A4D2C00FE3A4E /* PersonInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonInfoTableViewCell.h; sourceTree = "<group>"; };
-		0D7112421D2A4D2C00FE3A4E /* PersonInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonInfoTableViewCell.m; sourceTree = "<group>"; };
-		0D7112431D2A4D2C00FE3A4E /* PersonInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonInfoTableViewCell.xib; sourceTree = "<group>"; };
+		0D7112461D2A5AD700FE3A4E /* ProductsCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductsCollectionViewCell.h; sourceTree = "<group>"; };
+		0D7112471D2A5AD700FE3A4E /* ProductsCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductsCollectionViewCell.m; sourceTree = "<group>"; };
+		0D7112481D2A5AD700FE3A4E /* ProductsCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductsCollectionViewCell.xib; sourceTree = "<group>"; };
+		0D71124B1D2A5B9400FE3A4E /* ItemAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemAddViewController.h; sourceTree = "<group>"; };
+		0D71124C1D2A5B9400FE3A4E /* ItemAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemAddViewController.m; sourceTree = "<group>"; };
+		0D71124D1D2A5B9400FE3A4E /* ItemAddViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemAddViewController.xib; sourceTree = "<group>"; };
+		0D7112501D2A5BAD00FE3A4E /* ItemAddTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemAddTableViewCell.h; sourceTree = "<group>"; };
+		0D7112511D2A5BAD00FE3A4E /* ItemAddTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemAddTableViewCell.m; sourceTree = "<group>"; };
+		0D7112521D2A5BAD00FE3A4E /* ItemAddTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemAddTableViewCell.xib; sourceTree = "<group>"; };
+		0D7112561D2A5BF600FE3A4E /* IndexCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexCollectionView.h; sourceTree = "<group>"; };
+		0D7112571D2A5BF600FE3A4E /* IndexCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexCollectionView.m; sourceTree = "<group>"; };
+		0D7112591D2B472800FE3A4E /* DefaultCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultCollectionViewCell.h; sourceTree = "<group>"; };
+		0D71125A1D2B472800FE3A4E /* DefaultCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultCollectionViewCell.m; sourceTree = "<group>"; };
+		0D71125B1D2B472800FE3A4E /* DefaultCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DefaultCollectionViewCell.xib; sourceTree = "<group>"; };
+		0D71125E1D2B991A00FE3A4E /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
+		0D71125F1D2B991A00FE3A4E /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
+		0D7112601D2B991A00FE3A4E /* AccountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccountViewController.xib; sourceTree = "<group>"; };
 		0DC842291D20D1FD00B80830 /* LoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginTableViewCell.h; sourceTree = "<group>"; };
 		0DC8422A1D20D1FD00B80830 /* LoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginTableViewCell.m; sourceTree = "<group>"; };
 		0DC8422B1D20D1FD00B80830 /* LoginTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginTableViewCell.xib; sourceTree = "<group>"; };
@@ -453,17 +476,32 @@
 		0D7112201D29FC7900FE3A4E /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				0D7112411D2A4D2C00FE3A4E /* PersonInfoTableViewCell.h */,
-				0D7112421D2A4D2C00FE3A4E /* PersonInfoTableViewCell.m */,
-				0D7112431D2A4D2C00FE3A4E /* PersonInfoTableViewCell.xib */,
+				0D7112591D2B472800FE3A4E /* DefaultCollectionViewCell.h */,
+				0D71125A1D2B472800FE3A4E /* DefaultCollectionViewCell.m */,
+				0D71125B1D2B472800FE3A4E /* DefaultCollectionViewCell.xib */,
+				0D7112461D2A5AD700FE3A4E /* ProductsCollectionViewCell.h */,
+				0D7112471D2A5AD700FE3A4E /* ProductsCollectionViewCell.m */,
+				0D7112481D2A5AD700FE3A4E /* ProductsCollectionViewCell.xib */,
 				0D7112211D29FCE800FE3A4E /* SettingItemTableViewCell.h */,
 				0D7112221D29FCE800FE3A4E /* SettingItemTableViewCell.m */,
 				0D7112231D29FCE800FE3A4E /* SettingItemTableViewCell.xib */,
 				0D7112351D2A3FD800FE3A4E /* ItemTableViewCell.h */,
 				0D7112361D2A3FD800FE3A4E /* ItemTableViewCell.m */,
 				0D7112371D2A3FD800FE3A4E /* ItemTableViewCell.xib */,
+				0D7112501D2A5BAD00FE3A4E /* ItemAddTableViewCell.h */,
+				0D7112511D2A5BAD00FE3A4E /* ItemAddTableViewCell.m */,
+				0D7112521D2A5BAD00FE3A4E /* ItemAddTableViewCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		0D7112551D2A5BE800FE3A4E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0D7112561D2A5BF600FE3A4E /* IndexCollectionView.h */,
+				0D7112571D2A5BF600FE3A4E /* IndexCollectionView.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		0DC842371D20D54900B80830 /* TimeButton */ = {
@@ -511,6 +549,7 @@
 		0DC842781D22588700B80830 /* Device */ = {
 			isa = PBXGroup;
 			children = (
+				0D7112551D2A5BE800FE3A4E /* Views */,
 				0D7112201D29FC7900FE3A4E /* Cells */,
 				0DC8427B1D2258AE00B80830 /* DevicesViewController.h */,
 				0DC8427C1D2258AE00B80830 /* DevicesViewController.m */,
@@ -527,6 +566,9 @@
 				0D71123A1D2A4CE600FE3A4E /* ItemEditViewController.h */,
 				0D71123B1D2A4CE600FE3A4E /* ItemEditViewController.m */,
 				0D71123C1D2A4CE600FE3A4E /* ItemEditViewController.xib */,
+				0D71124B1D2A5B9400FE3A4E /* ItemAddViewController.h */,
+				0D71124C1D2A5B9400FE3A4E /* ItemAddViewController.m */,
+				0D71124D1D2A5B9400FE3A4E /* ItemAddViewController.xib */,
 			);
 			path = Device;
 			sourceTree = "<group>";
@@ -538,6 +580,9 @@
 				0DC842801D2258BB00B80830 /* SettingViewController.h */,
 				0DC842811D2258BB00B80830 /* SettingViewController.m */,
 				0DC842821D2258BB00B80830 /* SettingViewController.xib */,
+				0D71125E1D2B991A00FE3A4E /* AccountViewController.h */,
+				0D71125F1D2B991A00FE3A4E /* AccountViewController.m */,
+				0D7112601D2B991A00FE3A4E /* AccountViewController.xib */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -683,10 +728,12 @@
 				0D71122F1D2A0B9F00FE3A4E /* WifiViewController.xib in Resources */,
 				0DC842921D22726300B80830 /* PersonInfoTableViewCell.xib in Resources */,
 				0DC8425B1D22556000B80830 /* RegisterViewController.xib in Resources */,
-				0D7112451D2A4D2C00FE3A4E /* PersonInfoTableViewCell.xib in Resources */,
 				0D1100081D18C8E9004CF6D2 /* LoginViewController.xib in Resources */,
+				0D71125D1D2B472800FE3A4E /* DefaultCollectionViewCell.xib in Resources */,
 				0D2DA3691D051498005609D2 /* LaunchScreen.storyboard in Resources */,
 				0DC842841D2258BB00B80830 /* SettingViewController.xib in Resources */,
+				0D71124A1D2A5AD700FE3A4E /* ProductsCollectionViewCell.xib in Resources */,
+				0D71124F1D2A5B9400FE3A4E /* ItemAddViewController.xib in Resources */,
 				0DC842561D22543900B80830 /* Forget2ViewController.xib in Resources */,
 				0D7112391D2A3FD800FE3A4E /* ItemTableViewCell.xib in Resources */,
 				0D2DA3661D051498005609D2 /* Assets.xcassets in Resources */,
@@ -699,6 +746,8 @@
 				0DC8427F1D2258AE00B80830 /* DevicesViewController.xib in Resources */,
 				0D2DA3761D051BDC005609D2 /* Others.bundle in Resources */,
 				0D7112251D29FCE800FE3A4E /* SettingItemTableViewCell.xib in Resources */,
+				0D7112621D2B991A00FE3A4E /* AccountViewController.xib in Resources */,
+				0D7112541D2A5BAD00FE3A4E /* ItemAddTableViewCell.xib in Resources */,
 				0D2DA3641D051497005609D2 /* Main.storyboard in Resources */,
 				0DC8424A1D22098B00B80830 /* ForgetViewController.xib in Resources */,
 			);
@@ -773,16 +822,21 @@
 				0DC8427E1D2258AE00B80830 /* DevicesViewController.m in Sources */,
 				0D2DA3891D055AA3005609D2 /* CoreFactory.m in Sources */,
 				0DC842551D22543900B80830 /* Forget2ViewController.m in Sources */,
+				0D7112491D2A5AD700FE3A4E /* ProductsCollectionViewCell.m in Sources */,
+				0D71124E1D2A5B9400FE3A4E /* ItemAddViewController.m in Sources */,
 				0D2DA3611D051497005609D2 /* ViewController.m in Sources */,
 				0D7112331D2A0E7000FE3A4E /* LoadingViewController.m in Sources */,
 				0DC842431D21211800B80830 /* LoginFootView.m in Sources */,
 				0DF320F51D17C3C800B9BB67 /* HHNUtility.m in Sources */,
+				0D7112531D2A5BAD00FE3A4E /* ItemAddTableViewCell.m in Sources */,
 				0D2DA39B1D055C2D005609D2 /* LoggerUtil.m in Sources */,
+				0D7112611D2B991A00FE3A4E /* AccountViewController.m in Sources */,
 				0D7112241D29FCE800FE3A4E /* SettingItemTableViewCell.m in Sources */,
 				0DC842331D20D46300B80830 /* UIBarButtonItem+Extension.m in Sources */,
 				0D71122E1D2A0B9F00FE3A4E /* WifiViewController.m in Sources */,
 				0DC842701D22581A00B80830 /* DHNavigationViewController.m in Sources */,
 				0D71123D1D2A4CE600FE3A4E /* ItemEditViewController.m in Sources */,
+				0D7112581D2A5BF600FE3A4E /* IndexCollectionView.m in Sources */,
 				0DF320F31D17C3C800B9BB67 /* HHNUtility+Device.m in Sources */,
 				0D2DA38D1D055AD8005609D2 /* CommonServiceCenter.m in Sources */,
 				0DC842711D22581A00B80830 /* DHTabBarViewController.m in Sources */,
@@ -800,7 +854,7 @@
 				0DC842751D22581A00B80830 /* DHBadgeButton.m in Sources */,
 				0DC8424D1D220A3700B80830 /* LoginButtonView.m in Sources */,
 				0D2DA37A1D05236E005609D2 /* UIViewController+HUD.m in Sources */,
-				0D7112441D2A4D2C00FE3A4E /* PersonInfoTableViewCell.m in Sources */,
+				0D71125C1D2B472800FE3A4E /* DefaultCollectionViewCell.m in Sources */,
 				0DF320F81D17C41900B9BB67 /* NSString+extension.m in Sources */,
 				0D2DA3911D055B45005609D2 /* CommonFileUtils.m in Sources */,
 				0D2DA35B1D051497005609D2 /* main.m in Sources */,

@@ -45,7 +45,7 @@
 }
 
 -(void) updateTitle {
-    self.titleConstraint.constant = 20;
+    self.titleConstraint.constant = 10;
     [self.titleLabel updateConstraints];
 }
 

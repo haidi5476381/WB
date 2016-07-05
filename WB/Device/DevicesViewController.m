@@ -10,6 +10,7 @@
 #import "SettingItemTableViewCell.h"
 #import "YaokongViewController.h"
 #import "ItemTableViewCell.h"
+#import "ItemAddViewController.h"
 @interface DevicesViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
     UITableView *_settingitemTableView;
@@ -68,10 +69,14 @@
     return 0.0f;
 }
 
+-(NSInteger) numberOfSectionsInTableView:(UITableView *)tableView {
+    
+    return 2;
+}
 
 -(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return 2;
+    return 1;
 }
 
 -(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -100,8 +105,18 @@
     if ([tableView isEqual:_settingitemTableView]) {
         YaokongViewController *yaoKongVc = [[YaokongViewController alloc] initWithNibName:@"YaokongViewController" bundle:nil];
         [self.navigationController pushViewController:yaoKongVc animated:YES];
+    }else if([tableView isEqual:_itemTableView]) {
+        
+        if (indexPath.section == 1) {
+            
+        
+        }
+        
+        
     }
+    
 }
+
 
 //左滑菜单项
 -(NSArray<UITableViewRowAction *> *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -116,6 +131,9 @@
             //        [wkSelf.dataArray removeObjectAtIndex:indexPath.row];
             //        [tableView setEditing:NO animated:YES];
             //        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+            
+            ItemAddViewController *itemAddVc = [[ItemAddViewController alloc] initWithNibName:@"ItemAddViewController" bundle:nil];
+            [self.navigationController pushViewController:itemAddVc animated:YES];
         }];
         //编辑
         UITableViewRowAction *editAction=[UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"编辑" handler:^(UITableViewRowAction * action, NSIndexPath * indexPath) {
