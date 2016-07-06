@@ -25,12 +25,23 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"添加" style:UIBarButtonItemStyleDone target:self action:@selector(add)];
+    
+    
     _iteemAddTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight) style:UITableViewStylePlain];
     _iteemAddTableView.dataSource = self;
     _iteemAddTableView.delegate = self;
     [self.view addSubview:_iteemAddTableView];
     // Do any additional setup after loading the view from its nib.
 }
+
+-(void) add {
+    
+    
+}
+
+
 
 -(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     

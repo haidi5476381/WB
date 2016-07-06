@@ -8,6 +8,8 @@
 
 #import "SettingViewController.h"
 #import "PersonInfoTableViewCell.h"
+#import "AccountViewController.h"
+#import "SitComViewController.h"
 @interface SettingViewController () <UITableViewDelegate,UITableViewDataSource>{
     
     UITableView *_settingTableView;
@@ -92,6 +94,17 @@
     
     PersonInfoTableViewCell *personInfoCell = (PersonInfoTableViewCell *) cell;
     [personInfoCell updateTitle];
+    if(indexPath.section == 0) {
+        
+        personInfoCell.titleLabel.text = [_oneTitleArray objectAtIndex:indexPath.row];
+        
+    }else if (indexPath.section == 1) {
+        
+        personInfoCell.titleLabel.text = [_twoTitleArray objectAtIndex:indexPath.row];
+    }else if(indexPath.section == 2) {
+        
+        personInfoCell.titleLabel.text = [_threeTitleArray objectAtIndex:indexPath.row];
+    }
     if (indexPath.section < 2) {
         personInfoCell.subTitleLabel.hidden = YES;
     }else {
@@ -102,7 +115,16 @@
 
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    
+    if(indexPath.section == 0) {
+        
+        SitComViewController *sitConVc = [[SitComViewController alloc] initWithNibName:@"SitComViewController" bundle:nil];
+        [self.navigationController pushViewController:sitConVc animated:YES];
+        
+    }else if (indexPath.section == 1) {
+        
+        AccountViewController *accountVc = [[AccountViewController alloc] initWithNibName:@"AccountViewController" bundle:nil];
+        [self.navigationController pushViewController:accountVc animated:YES];
+    }
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

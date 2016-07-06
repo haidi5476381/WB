@@ -55,6 +55,12 @@
 		0D71125D1D2B472800FE3A4E /* DefaultCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D71125B1D2B472800FE3A4E /* DefaultCollectionViewCell.xib */; };
 		0D7112611D2B991A00FE3A4E /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D71125F1D2B991A00FE3A4E /* AccountViewController.m */; };
 		0D7112621D2B991A00FE3A4E /* AccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D7112601D2B991A00FE3A4E /* AccountViewController.xib */; };
+		0D7112681D2CA4E700FE3A4E /* ChangePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7112661D2CA4E700FE3A4E /* ChangePasswordViewController.m */; };
+		0D7112691D2CA4E700FE3A4E /* ChangePasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D7112671D2CA4E700FE3A4E /* ChangePasswordViewController.xib */; };
+		0D71126D1D2CE13900FE3A4E /* SitComViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D71126B1D2CE13900FE3A4E /* SitComViewController.m */; };
+		0D71126E1D2CE13900FE3A4E /* SitComViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D71126C1D2CE13900FE3A4E /* SitComViewController.xib */; };
+		0D7112721D2CEDE700FE3A4E /* AddSitComViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7112701D2CEDE700FE3A4E /* AddSitComViewController.m */; };
+		0D7112731D2CEDE700FE3A4E /* AddSitComViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D7112711D2CEDE700FE3A4E /* AddSitComViewController.xib */; };
 		0DC8422C1D20D1FD00B80830 /* LoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC8422A1D20D1FD00B80830 /* LoginTableViewCell.m */; };
 		0DC8422D1D20D1FD00B80830 /* LoginTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DC8422B1D20D1FD00B80830 /* LoginTableViewCell.xib */; };
 		0DC842331D20D46300B80830 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC842321D20D46300B80830 /* UIBarButtonItem+Extension.m */; };
@@ -178,6 +184,15 @@
 		0D71125E1D2B991A00FE3A4E /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
 		0D71125F1D2B991A00FE3A4E /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
 		0D7112601D2B991A00FE3A4E /* AccountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccountViewController.xib; sourceTree = "<group>"; };
+		0D7112651D2CA4E700FE3A4E /* ChangePasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePasswordViewController.h; sourceTree = "<group>"; };
+		0D7112661D2CA4E700FE3A4E /* ChangePasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePasswordViewController.m; sourceTree = "<group>"; };
+		0D7112671D2CA4E700FE3A4E /* ChangePasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChangePasswordViewController.xib; sourceTree = "<group>"; };
+		0D71126A1D2CE13900FE3A4E /* SitComViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SitComViewController.h; sourceTree = "<group>"; };
+		0D71126B1D2CE13900FE3A4E /* SitComViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SitComViewController.m; sourceTree = "<group>"; };
+		0D71126C1D2CE13900FE3A4E /* SitComViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SitComViewController.xib; sourceTree = "<group>"; };
+		0D71126F1D2CEDE700FE3A4E /* AddSitComViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddSitComViewController.h; sourceTree = "<group>"; };
+		0D7112701D2CEDE700FE3A4E /* AddSitComViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddSitComViewController.m; sourceTree = "<group>"; };
+		0D7112711D2CEDE700FE3A4E /* AddSitComViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddSitComViewController.xib; sourceTree = "<group>"; };
 		0DC842291D20D1FD00B80830 /* LoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginTableViewCell.h; sourceTree = "<group>"; };
 		0DC8422A1D20D1FD00B80830 /* LoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginTableViewCell.m; sourceTree = "<group>"; };
 		0DC8422B1D20D1FD00B80830 /* LoginTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginTableViewCell.xib; sourceTree = "<group>"; };
@@ -583,6 +598,15 @@
 				0D71125E1D2B991A00FE3A4E /* AccountViewController.h */,
 				0D71125F1D2B991A00FE3A4E /* AccountViewController.m */,
 				0D7112601D2B991A00FE3A4E /* AccountViewController.xib */,
+				0D7112651D2CA4E700FE3A4E /* ChangePasswordViewController.h */,
+				0D7112661D2CA4E700FE3A4E /* ChangePasswordViewController.m */,
+				0D7112671D2CA4E700FE3A4E /* ChangePasswordViewController.xib */,
+				0D71126A1D2CE13900FE3A4E /* SitComViewController.h */,
+				0D71126B1D2CE13900FE3A4E /* SitComViewController.m */,
+				0D71126C1D2CE13900FE3A4E /* SitComViewController.xib */,
+				0D71126F1D2CEDE700FE3A4E /* AddSitComViewController.h */,
+				0D7112701D2CEDE700FE3A4E /* AddSitComViewController.m */,
+				0D7112711D2CEDE700FE3A4E /* AddSitComViewController.xib */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -731,6 +755,7 @@
 				0D1100081D18C8E9004CF6D2 /* LoginViewController.xib in Resources */,
 				0D71125D1D2B472800FE3A4E /* DefaultCollectionViewCell.xib in Resources */,
 				0D2DA3691D051498005609D2 /* LaunchScreen.storyboard in Resources */,
+				0D7112691D2CA4E700FE3A4E /* ChangePasswordViewController.xib in Resources */,
 				0DC842841D2258BB00B80830 /* SettingViewController.xib in Resources */,
 				0D71124A1D2A5AD700FE3A4E /* ProductsCollectionViewCell.xib in Resources */,
 				0D71124F1D2A5B9400FE3A4E /* ItemAddViewController.xib in Resources */,
@@ -740,8 +765,10 @@
 				0D7112341D2A0E7000FE3A4E /* LoadingViewController.xib in Resources */,
 				0DC842451D21212500B80830 /* LoginFootView.xib in Resources */,
 				0DC8424F1D220A4100B80830 /* LoginButtonView.xib in Resources */,
+				0D7112731D2CEDE700FE3A4E /* AddSitComViewController.xib in Resources */,
 				0D71123E1D2A4CE600FE3A4E /* ItemEditViewController.xib in Resources */,
 				0DC842891D2258C600B80830 /* AboutViewController.xib in Resources */,
+				0D71126E1D2CE13900FE3A4E /* SitComViewController.xib in Resources */,
 				0DC8422D1D20D1FD00B80830 /* LoginTableViewCell.xib in Resources */,
 				0DC8427F1D2258AE00B80830 /* DevicesViewController.xib in Resources */,
 				0D2DA3761D051BDC005609D2 /* Others.bundle in Resources */,
@@ -816,10 +843,12 @@
 				0D1100071D18C8E9004CF6D2 /* LoginViewController.m in Sources */,
 				0DC842361D20D49900B80830 /* UIImage+color.m in Sources */,
 				0DC842911D22726300B80830 /* PersonInfoTableViewCell.m in Sources */,
+				0D7112681D2CA4E700FE3A4E /* ChangePasswordViewController.m in Sources */,
 				0DF320F41D17C3C800B9BB67 /* HHNUtility+Locale.m in Sources */,
 				0DC8422C1D20D1FD00B80830 /* LoginTableViewCell.m in Sources */,
 				0D58BE001D0E4E410015D636 /* UserDeviceService.m in Sources */,
 				0DC8427E1D2258AE00B80830 /* DevicesViewController.m in Sources */,
+				0D7112721D2CEDE700FE3A4E /* AddSitComViewController.m in Sources */,
 				0D2DA3891D055AA3005609D2 /* CoreFactory.m in Sources */,
 				0DC842551D22543900B80830 /* Forget2ViewController.m in Sources */,
 				0D7112491D2A5AD700FE3A4E /* ProductsCollectionViewCell.m in Sources */,
@@ -830,6 +859,7 @@
 				0DF320F51D17C3C800B9BB67 /* HHNUtility.m in Sources */,
 				0D7112531D2A5BAD00FE3A4E /* ItemAddTableViewCell.m in Sources */,
 				0D2DA39B1D055C2D005609D2 /* LoggerUtil.m in Sources */,
+				0D71126D1D2CE13900FE3A4E /* SitComViewController.m in Sources */,
 				0D7112611D2B991A00FE3A4E /* AccountViewController.m in Sources */,
 				0D7112241D29FCE800FE3A4E /* SettingItemTableViewCell.m in Sources */,
 				0DC842331D20D46300B80830 /* UIBarButtonItem+Extension.m in Sources */,
