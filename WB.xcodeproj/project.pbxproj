@@ -61,6 +61,13 @@
 		0D71126E1D2CE13900FE3A4E /* SitComViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D71126C1D2CE13900FE3A4E /* SitComViewController.xib */; };
 		0D7112721D2CEDE700FE3A4E /* AddSitComViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7112701D2CEDE700FE3A4E /* AddSitComViewController.m */; };
 		0D7112731D2CEDE700FE3A4E /* AddSitComViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D7112711D2CEDE700FE3A4E /* AddSitComViewController.xib */; };
+		0D7112771D2DF78A00FE3A4E /* AddSiteHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7112761D2DF78A00FE3A4E /* AddSiteHeadView.m */; };
+		0D7112791D2DF79F00FE3A4E /* AddSiteHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D7112781D2DF79F00FE3A4E /* AddSiteHeadView.xib */; };
+		0D71127D1D2E015A00FE3A4E /* TermTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D71127B1D2E015A00FE3A4E /* TermTableViewCell.m */; };
+		0D71127E1D2E015A00FE3A4E /* TermTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D71127C1D2E015A00FE3A4E /* TermTableViewCell.xib */; };
+		0D7112811D2E369600FE3A4E /* TableViewFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7112801D2E369600FE3A4E /* TableViewFootView.m */; };
+		0D7112831D2E36A000FE3A4E /* TableViewFootView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D7112821D2E36A000FE3A4E /* TableViewFootView.xib */; };
+		0D7112881D2E518D00FE3A4E /* DQAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7112871D2E518D00FE3A4E /* DQAlertView.m */; };
 		0DC8422C1D20D1FD00B80830 /* LoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC8422A1D20D1FD00B80830 /* LoginTableViewCell.m */; };
 		0DC8422D1D20D1FD00B80830 /* LoginTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DC8422B1D20D1FD00B80830 /* LoginTableViewCell.xib */; };
 		0DC842331D20D46300B80830 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC842321D20D46300B80830 /* UIBarButtonItem+Extension.m */; };
@@ -193,6 +200,17 @@
 		0D71126F1D2CEDE700FE3A4E /* AddSitComViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddSitComViewController.h; sourceTree = "<group>"; };
 		0D7112701D2CEDE700FE3A4E /* AddSitComViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddSitComViewController.m; sourceTree = "<group>"; };
 		0D7112711D2CEDE700FE3A4E /* AddSitComViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddSitComViewController.xib; sourceTree = "<group>"; };
+		0D7112751D2DF78A00FE3A4E /* AddSiteHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddSiteHeadView.h; sourceTree = "<group>"; };
+		0D7112761D2DF78A00FE3A4E /* AddSiteHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddSiteHeadView.m; sourceTree = "<group>"; };
+		0D7112781D2DF79F00FE3A4E /* AddSiteHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddSiteHeadView.xib; sourceTree = "<group>"; };
+		0D71127A1D2E015A00FE3A4E /* TermTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TermTableViewCell.h; sourceTree = "<group>"; };
+		0D71127B1D2E015A00FE3A4E /* TermTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TermTableViewCell.m; sourceTree = "<group>"; };
+		0D71127C1D2E015A00FE3A4E /* TermTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TermTableViewCell.xib; sourceTree = "<group>"; };
+		0D71127F1D2E369600FE3A4E /* TableViewFootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewFootView.h; sourceTree = "<group>"; };
+		0D7112801D2E369600FE3A4E /* TableViewFootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewFootView.m; sourceTree = "<group>"; };
+		0D7112821D2E36A000FE3A4E /* TableViewFootView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewFootView.xib; sourceTree = "<group>"; };
+		0D7112861D2E518D00FE3A4E /* DQAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQAlertView.h; sourceTree = "<group>"; };
+		0D7112871D2E518D00FE3A4E /* DQAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQAlertView.m; sourceTree = "<group>"; };
 		0DC842291D20D1FD00B80830 /* LoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginTableViewCell.h; sourceTree = "<group>"; };
 		0DC8422A1D20D1FD00B80830 /* LoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginTableViewCell.m; sourceTree = "<group>"; };
 		0DC8422B1D20D1FD00B80830 /* LoginTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginTableViewCell.xib; sourceTree = "<group>"; };
@@ -336,6 +354,7 @@
 		0D2DA3581D051497005609D2 /* WB */ = {
 			isa = PBXGroup;
 			children = (
+				0D7112841D2E518300FE3A4E /* 3rd */,
 				0DC8427A1D22589F00B80830 /* About */,
 				0DC842791D22589400B80830 /* Setting */,
 				0DC842781D22588700B80830 /* Device */,
@@ -519,6 +538,36 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		0D7112741D2DF77300FE3A4E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0D7112751D2DF78A00FE3A4E /* AddSiteHeadView.h */,
+				0D7112761D2DF78A00FE3A4E /* AddSiteHeadView.m */,
+				0D7112781D2DF79F00FE3A4E /* AddSiteHeadView.xib */,
+				0D71127F1D2E369600FE3A4E /* TableViewFootView.h */,
+				0D7112801D2E369600FE3A4E /* TableViewFootView.m */,
+				0D7112821D2E36A000FE3A4E /* TableViewFootView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0D7112841D2E518300FE3A4E /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+				0D7112851D2E518D00FE3A4E /* DQAlertView */,
+			);
+			path = 3rd;
+			sourceTree = "<group>";
+		};
+		0D7112851D2E518D00FE3A4E /* DQAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				0D7112861D2E518D00FE3A4E /* DQAlertView.h */,
+				0D7112871D2E518D00FE3A4E /* DQAlertView.m */,
+			);
+			path = DQAlertView;
+			sourceTree = "<group>";
+		};
 		0DC842371D20D54900B80830 /* TimeButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -591,6 +640,7 @@
 		0DC842791D22589400B80830 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				0D7112741D2DF77300FE3A4E /* Views */,
 				0DC8428D1D22725300B80830 /* Cells */,
 				0DC842801D2258BB00B80830 /* SettingViewController.h */,
 				0DC842811D2258BB00B80830 /* SettingViewController.m */,
@@ -627,6 +677,9 @@
 				0DC8428E1D22726300B80830 /* PersonInfoTableViewCell.h */,
 				0DC8428F1D22726300B80830 /* PersonInfoTableViewCell.m */,
 				0DC842901D22726300B80830 /* PersonInfoTableViewCell.xib */,
+				0D71127A1D2E015A00FE3A4E /* TermTableViewCell.h */,
+				0D71127B1D2E015A00FE3A4E /* TermTableViewCell.m */,
+				0D71127C1D2E015A00FE3A4E /* TermTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -756,6 +809,7 @@
 				0D71125D1D2B472800FE3A4E /* DefaultCollectionViewCell.xib in Resources */,
 				0D2DA3691D051498005609D2 /* LaunchScreen.storyboard in Resources */,
 				0D7112691D2CA4E700FE3A4E /* ChangePasswordViewController.xib in Resources */,
+				0D71127E1D2E015A00FE3A4E /* TermTableViewCell.xib in Resources */,
 				0DC842841D2258BB00B80830 /* SettingViewController.xib in Resources */,
 				0D71124A1D2A5AD700FE3A4E /* ProductsCollectionViewCell.xib in Resources */,
 				0D71124F1D2A5B9400FE3A4E /* ItemAddViewController.xib in Resources */,
@@ -765,6 +819,7 @@
 				0D7112341D2A0E7000FE3A4E /* LoadingViewController.xib in Resources */,
 				0DC842451D21212500B80830 /* LoginFootView.xib in Resources */,
 				0DC8424F1D220A4100B80830 /* LoginButtonView.xib in Resources */,
+				0D7112791D2DF79F00FE3A4E /* AddSiteHeadView.xib in Resources */,
 				0D7112731D2CEDE700FE3A4E /* AddSitComViewController.xib in Resources */,
 				0D71123E1D2A4CE600FE3A4E /* ItemEditViewController.xib in Resources */,
 				0DC842891D2258C600B80830 /* AboutViewController.xib in Resources */,
@@ -774,6 +829,7 @@
 				0D2DA3761D051BDC005609D2 /* Others.bundle in Resources */,
 				0D7112251D29FCE800FE3A4E /* SettingItemTableViewCell.xib in Resources */,
 				0D7112621D2B991A00FE3A4E /* AccountViewController.xib in Resources */,
+				0D7112831D2E36A000FE3A4E /* TableViewFootView.xib in Resources */,
 				0D7112541D2A5BAD00FE3A4E /* ItemAddTableViewCell.xib in Resources */,
 				0D2DA3641D051497005609D2 /* Main.storyboard in Resources */,
 				0DC8424A1D22098B00B80830 /* ForgetViewController.xib in Resources */,
@@ -848,16 +904,19 @@
 				0DC8422C1D20D1FD00B80830 /* LoginTableViewCell.m in Sources */,
 				0D58BE001D0E4E410015D636 /* UserDeviceService.m in Sources */,
 				0DC8427E1D2258AE00B80830 /* DevicesViewController.m in Sources */,
+				0D71127D1D2E015A00FE3A4E /* TermTableViewCell.m in Sources */,
 				0D7112721D2CEDE700FE3A4E /* AddSitComViewController.m in Sources */,
 				0D2DA3891D055AA3005609D2 /* CoreFactory.m in Sources */,
 				0DC842551D22543900B80830 /* Forget2ViewController.m in Sources */,
 				0D7112491D2A5AD700FE3A4E /* ProductsCollectionViewCell.m in Sources */,
 				0D71124E1D2A5B9400FE3A4E /* ItemAddViewController.m in Sources */,
 				0D2DA3611D051497005609D2 /* ViewController.m in Sources */,
+				0D7112811D2E369600FE3A4E /* TableViewFootView.m in Sources */,
 				0D7112331D2A0E7000FE3A4E /* LoadingViewController.m in Sources */,
 				0DC842431D21211800B80830 /* LoginFootView.m in Sources */,
 				0DF320F51D17C3C800B9BB67 /* HHNUtility.m in Sources */,
 				0D7112531D2A5BAD00FE3A4E /* ItemAddTableViewCell.m in Sources */,
+				0D7112881D2E518D00FE3A4E /* DQAlertView.m in Sources */,
 				0D2DA39B1D055C2D005609D2 /* LoggerUtil.m in Sources */,
 				0D71126D1D2CE13900FE3A4E /* SitComViewController.m in Sources */,
 				0D7112611D2B991A00FE3A4E /* AccountViewController.m in Sources */,
@@ -890,6 +949,7 @@
 				0D2DA35B1D051497005609D2 /* main.m in Sources */,
 				0DC842761D22581A00B80830 /* DHTabBar.m in Sources */,
 				0D2DA39A1D055C2D005609D2 /* Logger.m in Sources */,
+				0D7112771D2DF78A00FE3A4E /* AddSiteHeadView.m in Sources */,
 				0D7112381D2A3FD800FE3A4E /* ItemTableViewCell.m in Sources */,
 				0D58BDFC1D0E4DB40015D636 /* DeviceService.m in Sources */,
 			);
