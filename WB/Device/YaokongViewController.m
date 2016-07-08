@@ -23,8 +23,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.tipLabel.numberOfLines = 0;
+
+    self.tipLabel.text =  @"接通电源，长按设备按键，直到指示灯处于红灯快状态";
+
+    if (self.tag == 1) {
+        self.tipBigImageView.image = [UIImage imageNamed:@"banner_img_socket"];
+    }else{
+        
+        
+    }
+    self.tipImageView.layer.cornerRadius = 5.0f;
+    self.tipImageView.layer.masksToBounds = YES;
     // Do any additional setup after loading the view from its nib.
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

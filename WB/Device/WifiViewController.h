@@ -10,4 +10,8 @@
 
 @interface WifiViewController : BaseViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *wifiNameTextField;
+@property (weak, nonatomic) IBOutlet UIButton *configButton;
+- (IBAction)config:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextField *wifiPasswordTextField;
 @end

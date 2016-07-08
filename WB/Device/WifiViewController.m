@@ -7,6 +7,7 @@
 //
 
 #import "WifiViewController.h"
+#import "ConfigViewController.h"
 
 @interface WifiViewController ()
 
@@ -20,6 +21,8 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.configButton.layer.cornerRadius = 5.0f;
+    self.configButton.layer.masksToBounds = YES;
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -38,4 +41,9 @@
 }
 */
 
+- (IBAction)config:(id)sender {
+    
+    ConfigViewController *configVc = [[ConfigViewController alloc] initWithNibName:@"ConfigViewController" bundle:nil];
+    [self.navigationController pushViewController:configVc animated:YES];
+}
 @end

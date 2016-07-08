@@ -17,8 +17,8 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2ru-yQ-qfz">
                         <rect key="frame" x="17" y="14" width="124" height="77"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="25" id="QQN-Tk-Xwj"/>
-                            <constraint firstAttribute="width" constant="25" id="hEx-c0-AFU"/>
+                            <constraint firstAttribute="height" constant="45" id="QQN-Tk-Xwj"/>
+                            <constraint firstAttribute="width" constant="45" id="hEx-c0-AFU"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" misplaced="YES" text="插座以开启" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Edq-Bt-GCs">
@@ -30,8 +30,8 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aw1-ke-H7D">
                         <rect key="frame" x="352" y="27" width="57" height="47"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="15" id="Dtq-Cv-1tE"/>
-                            <constraint firstAttribute="height" constant="15" id="vXU-FN-fph"/>
+                            <constraint firstAttribute="width" constant="30" id="Dtq-Cv-1tE"/>
+                            <constraint firstAttribute="height" constant="30" id="vXU-FN-fph"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="智能插座" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mok-Pq-Yk2">
@@ -45,12 +45,12 @@
                     <constraint firstItem="Mok-Pq-Yk2" firstAttribute="top" secondItem="2ru-yQ-qfz" secondAttribute="top" id="2sw-LE-tyc"/>
                     <constraint firstItem="aw1-ke-H7D" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="DaK-tH-BQM"/>
                     <constraint firstAttribute="bottom" secondItem="Edq-Bt-GCs" secondAttribute="bottom" constant="10" id="EUA-NQ-nBn"/>
-                    <constraint firstItem="2ru-yQ-qfz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="RQa-Ce-CQA"/>
+                    <constraint firstItem="2ru-yQ-qfz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="RQa-Ce-CQA"/>
                     <constraint firstItem="Mok-Pq-Yk2" firstAttribute="leading" secondItem="2ru-yQ-qfz" secondAttribute="trailing" constant="10" id="fqi-F5-MYx"/>
                     <constraint firstItem="Edq-Bt-GCs" firstAttribute="top" secondItem="Mok-Pq-Yk2" secondAttribute="bottom" constant="4" id="jnU-qJ-ByV"/>
                     <constraint firstItem="2ru-yQ-qfz" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="mqv-wI-uja"/>
                     <constraint firstItem="Edq-Bt-GCs" firstAttribute="leading" secondItem="Mok-Pq-Yk2" secondAttribute="leading" id="od4-b1-wHa"/>
-                    <constraint firstAttribute="trailing" secondItem="aw1-ke-H7D" secondAttribute="trailing" constant="7" id="tHH-tT-2p7"/>
+                    <constraint firstAttribute="trailing" secondItem="aw1-ke-H7D" secondAttribute="trailing" constant="20" id="tHH-tT-2p7"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
@@ -58,6 +58,7 @@
                 <outlet property="itemStatuImageView" destination="DaK-tH-BQM" id="jwr-I7-szS"/>
                 <outlet property="itemSubTitleLabel" destination="Edq-Bt-GCs" id="3o0-X9-EWi"/>
                 <outlet property="itemTitleLabel" destination="Mok-Pq-Yk2" id="NlS-Kl-XZP"/>
+                <outlet property="leftImageView" destination="aw1-ke-H7D" id="JoX-RT-Vq3"/>
             </connections>
             <point key="canvasLocation" x="380" y="458.5"/>
         </tableViewCell>

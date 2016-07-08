@@ -16,6 +16,8 @@
     UITableView *_settingitemTableView;
     UITableView *_itemTableView;
     
+    NSArray *_settingItemTitleArray;
+    NSArray *_settingItemImageArray;
 }
 @end
 
@@ -24,8 +26,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
       self.automaticallyAdjustsScrollViewInsets=NO;
+    _settingItemTitleArray = [NSArray arrayWithObjects:@"智能遥控器", @"智能插座",nil];
+    _settingItemImageArray = [NSArray arrayWithObjects:@"device_btn_airconditioner_n",@"device_btn_airconditioner_n", nil];
     // Do any additional setup after loading the view from its nib.
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"添加" style:UIBarButtonItemStyleDone target:self action:@selector(add)];
+    self.navigationItem.rightBarButtonItem=[UIBarButtonItem itemWithImageName:@"navibar_btn_plus" highImageName:@"navibar_btn_plus" target:self action:@selector(add)];
     [self setItemTableView];
     [self layoutItemView];
 }
@@ -51,9 +56,10 @@
 
 -(void) setItemTableView {
     
-    _settingitemTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 60) style:UITableViewStylePlain];
+    _settingitemTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 110) style:UITableViewStylePlain];
     _settingitemTableView.dataSource = self;
     _settingitemTableView.delegate = self;
+    _settingitemTableView.scrollEnabled = NO;
 
 }
 
@@ -61,21 +67,22 @@
 -(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     if ([tableView isEqual:_settingitemTableView]) {
-        return 40.0f;
+        return 55.0f;
     }else if ([tableView isEqual:_itemTableView]) {
         
-        return 60.0f;
+        return 80.0f;
     }
     return 0.0f;
 }
 
--(NSInteger) numberOfSectionsInTableView:(UITableView *)tableView {
-    
-    return 2;
-}
+
 
 -(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
+    if ([tableView isEqual:_settingitemTableView]) {
+        
+        return 2;
+    }
     return 1;
 }
 
@@ -100,10 +107,28 @@
     return cell;
 }
 
+
+-(void) tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if ([tableView isEqual:_settingitemTableView]) {
+        
+        SettingItemTableViewCell *settingCell = (SettingItemTableViewCell *)cell;
+        settingCell.itemImageView.image = [UIImage imageNamed:[_settingItemImageArray objectAtIndex:indexPath.row]];
+        settingCell.itemTitleLabel.text = [_settingItemTitleArray objectAtIndex:indexPath.row];
+    }else if([tableView isEqual:_itemTableView]) {
+        
+        ItemTableViewCell *itemCell = (ItemTableViewCell *) cell;
+        itemCell.itemImageView.image = [UIImage imageNamed:[_settingItemImageArray objectAtIndex:indexPath.row]];
+        itemCell.itemTitleLabel.text = @"智能插座";
+        itemCell.itemSubTitleLabel.text = @"温度:20c 湿度：50%";
+        itemCell.leftImageView.image = [UIImage imageNamed:@"devicelist_btn_swichon"];
+    }
+}
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     if ([tableView isEqual:_settingitemTableView]) {
         YaokongViewController *yaoKongVc = [[YaokongViewController alloc] initWithNibName:@"YaokongViewController" bundle:nil];
+        
         [self.navigationController pushViewController:yaoKongVc animated:YES];
     }else if([tableView isEqual:_itemTableView]) {
         

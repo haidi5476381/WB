@@ -16,10 +16,10 @@
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Po-UK-UgA">
                         <rect key="frame" x="76" y="24" width="134" height="73"/>
-                        <color key="backgroundColor" red="1" green="0.1796600062" blue="0.1925758867" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="30" id="5qt-Ly-Lif"/>
-                            <constraint firstAttribute="width" constant="30" id="QVJ-0x-Scl"/>
+                            <constraint firstAttribute="height" constant="45" id="5qt-Ly-Lif"/>
+                            <constraint firstAttribute="width" constant="45" id="QVJ-0x-Scl"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="智能电视" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uqG-uN-onf">
@@ -32,10 +32,10 @@
                 <constraints>
                     <constraint firstItem="uqG-uN-onf" firstAttribute="centerY" secondItem="8Po-UK-UgA" secondAttribute="centerY" id="7Qf-EV-SSX"/>
                     <constraint firstItem="8Po-UK-UgA" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="OPF-fG-0Jg"/>
-                    <constraint firstItem="8Po-UK-UgA" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="VPs-c9-lCw"/>
+                    <constraint firstItem="8Po-UK-UgA" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="-20" id="VPs-c9-lCw"/>
                     <constraint firstAttribute="trailing" secondItem="uqG-uN-onf" secondAttribute="trailing" id="nXN-br-4aY"/>
                     <constraint firstItem="uqG-uN-onf" firstAttribute="centerX" secondItem="8Po-UK-UgA" secondAttribute="centerX" id="sCn-YL-JsZ"/>
-                    <constraint firstItem="uqG-uN-onf" firstAttribute="leading" secondItem="8Po-UK-UgA" secondAttribute="trailing" constant="3" id="yCY-rd-tdi"/>
+                    <constraint firstItem="uqG-uN-onf" firstAttribute="leading" secondItem="8Po-UK-UgA" secondAttribute="trailing" constant="5" id="yCY-rd-tdi"/>
                 </constraints>
                 <variation key="default">
                     <mask key="constraints">

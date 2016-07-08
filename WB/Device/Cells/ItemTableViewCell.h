@@ -17,4 +17,5 @@ static NSString * KItemTableViewCell = @"ItemTableViewCell";
 @property (weak, nonatomic) IBOutlet UILabel *itemTitleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *itemSubTitleLabel;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *itemStatuImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *leftImageView;
 @end

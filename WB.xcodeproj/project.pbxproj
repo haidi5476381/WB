@@ -68,6 +68,10 @@
 		0D7112811D2E369600FE3A4E /* TableViewFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7112801D2E369600FE3A4E /* TableViewFootView.m */; };
 		0D7112831D2E36A000FE3A4E /* TableViewFootView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D7112821D2E36A000FE3A4E /* TableViewFootView.xib */; };
 		0D7112881D2E518D00FE3A4E /* DQAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7112871D2E518D00FE3A4E /* DQAlertView.m */; };
+		0D71128C1D2F7F6C00FE3A4E /* ChaZouViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D71128A1D2F7F6C00FE3A4E /* ChaZouViewController.m */; };
+		0D71128D1D2F7F6C00FE3A4E /* ChaZouViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D71128B1D2F7F6C00FE3A4E /* ChaZouViewController.xib */; };
+		0D7112911D2F918C00FE3A4E /* ConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D71128F1D2F918C00FE3A4E /* ConfigViewController.m */; };
+		0D7112921D2F918C00FE3A4E /* ConfigViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D7112901D2F918C00FE3A4E /* ConfigViewController.xib */; };
 		0DC8422C1D20D1FD00B80830 /* LoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC8422A1D20D1FD00B80830 /* LoginTableViewCell.m */; };
 		0DC8422D1D20D1FD00B80830 /* LoginTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DC8422B1D20D1FD00B80830 /* LoginTableViewCell.xib */; };
 		0DC842331D20D46300B80830 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC842321D20D46300B80830 /* UIBarButtonItem+Extension.m */; };
@@ -211,6 +215,12 @@
 		0D7112821D2E36A000FE3A4E /* TableViewFootView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewFootView.xib; sourceTree = "<group>"; };
 		0D7112861D2E518D00FE3A4E /* DQAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQAlertView.h; sourceTree = "<group>"; };
 		0D7112871D2E518D00FE3A4E /* DQAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQAlertView.m; sourceTree = "<group>"; };
+		0D7112891D2F7F6C00FE3A4E /* ChaZouViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChaZouViewController.h; sourceTree = "<group>"; };
+		0D71128A1D2F7F6C00FE3A4E /* ChaZouViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChaZouViewController.m; sourceTree = "<group>"; };
+		0D71128B1D2F7F6C00FE3A4E /* ChaZouViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChaZouViewController.xib; sourceTree = "<group>"; };
+		0D71128E1D2F918C00FE3A4E /* ConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigViewController.h; sourceTree = "<group>"; };
+		0D71128F1D2F918C00FE3A4E /* ConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigViewController.m; sourceTree = "<group>"; };
+		0D7112901D2F918C00FE3A4E /* ConfigViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfigViewController.xib; sourceTree = "<group>"; };
 		0DC842291D20D1FD00B80830 /* LoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginTableViewCell.h; sourceTree = "<group>"; };
 		0DC8422A1D20D1FD00B80830 /* LoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginTableViewCell.m; sourceTree = "<group>"; };
 		0DC8422B1D20D1FD00B80830 /* LoginTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginTableViewCell.xib; sourceTree = "<group>"; };
@@ -633,6 +643,12 @@
 				0D71124B1D2A5B9400FE3A4E /* ItemAddViewController.h */,
 				0D71124C1D2A5B9400FE3A4E /* ItemAddViewController.m */,
 				0D71124D1D2A5B9400FE3A4E /* ItemAddViewController.xib */,
+				0D7112891D2F7F6C00FE3A4E /* ChaZouViewController.h */,
+				0D71128A1D2F7F6C00FE3A4E /* ChaZouViewController.m */,
+				0D71128B1D2F7F6C00FE3A4E /* ChaZouViewController.xib */,
+				0D71128E1D2F918C00FE3A4E /* ConfigViewController.h */,
+				0D71128F1D2F918C00FE3A4E /* ConfigViewController.m */,
+				0D7112901D2F918C00FE3A4E /* ConfigViewController.xib */,
 			);
 			path = Device;
 			sourceTree = "<group>";
@@ -809,6 +825,7 @@
 				0D71125D1D2B472800FE3A4E /* DefaultCollectionViewCell.xib in Resources */,
 				0D2DA3691D051498005609D2 /* LaunchScreen.storyboard in Resources */,
 				0D7112691D2CA4E700FE3A4E /* ChangePasswordViewController.xib in Resources */,
+				0D71128D1D2F7F6C00FE3A4E /* ChaZouViewController.xib in Resources */,
 				0D71127E1D2E015A00FE3A4E /* TermTableViewCell.xib in Resources */,
 				0DC842841D2258BB00B80830 /* SettingViewController.xib in Resources */,
 				0D71124A1D2A5AD700FE3A4E /* ProductsCollectionViewCell.xib in Resources */,
@@ -826,6 +843,7 @@
 				0D71126E1D2CE13900FE3A4E /* SitComViewController.xib in Resources */,
 				0DC8422D1D20D1FD00B80830 /* LoginTableViewCell.xib in Resources */,
 				0DC8427F1D2258AE00B80830 /* DevicesViewController.xib in Resources */,
+				0D7112921D2F918C00FE3A4E /* ConfigViewController.xib in Resources */,
 				0D2DA3761D051BDC005609D2 /* Others.bundle in Resources */,
 				0D7112251D29FCE800FE3A4E /* SettingItemTableViewCell.xib in Resources */,
 				0D7112621D2B991A00FE3A4E /* AccountViewController.xib in Resources */,
@@ -910,6 +928,7 @@
 				0DC842551D22543900B80830 /* Forget2ViewController.m in Sources */,
 				0D7112491D2A5AD700FE3A4E /* ProductsCollectionViewCell.m in Sources */,
 				0D71124E1D2A5B9400FE3A4E /* ItemAddViewController.m in Sources */,
+				0D7112911D2F918C00FE3A4E /* ConfigViewController.m in Sources */,
 				0D2DA3611D051497005609D2 /* ViewController.m in Sources */,
 				0D7112811D2E369600FE3A4E /* TableViewFootView.m in Sources */,
 				0D7112331D2A0E7000FE3A4E /* LoadingViewController.m in Sources */,
@@ -917,6 +936,7 @@
 				0DF320F51D17C3C800B9BB67 /* HHNUtility.m in Sources */,
 				0D7112531D2A5BAD00FE3A4E /* ItemAddTableViewCell.m in Sources */,
 				0D7112881D2E518D00FE3A4E /* DQAlertView.m in Sources */,
+				0D71128C1D2F7F6C00FE3A4E /* ChaZouViewController.m in Sources */,
 				0D2DA39B1D055C2D005609D2 /* LoggerUtil.m in Sources */,
 				0D71126D1D2CE13900FE3A4E /* SitComViewController.m in Sources */,
 				0D7112611D2B991A00FE3A4E /* AccountViewController.m in Sources */,
