@@ -40,8 +40,6 @@
         make.leading.equalTo(footView.mas_leading);
         make.trailing.equalTo(footView.mas_trailing);
         make.bottom.equalTo(footView.mas_bottom);
-        
-        
     }];
     _addSitComTableView.tableFooterView = footView;
     [self.view addSubview:_addSitComTableView];
