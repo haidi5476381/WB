@@ -23,7 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.title = @"账号管理";
     _titleArray = [NSArray arrayWithObjects:@"用户名",@"密码", nil];
     _accountTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight) style:UITableViewStylePlain];
     _accountTableView.delegate = self;

@@ -32,6 +32,9 @@
     _settingTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight) style:UITableViewStylePlain];
     _settingTableView.dataSource = self;
     _settingTableView.delegate = self;
+    _settingTableView.backgroundColor = [UIColor clearColor];
+    _settingTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+    self.view.backgroundColor = IWColor(240, 240, 240);
     [self.view addSubview:_settingTableView];
 }
 
@@ -59,7 +62,7 @@
 
 -(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    return 30.0f;
+    return 50.0f;
 }
 
 
@@ -72,7 +75,7 @@
 -(UIView *) tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     
     UIView *headView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 10)];
-    headView.backgroundColor = [UIColor redColor];
+    headView.backgroundColor = IWColor(240, 240, 240);
     return headView;
 }
 
@@ -104,13 +107,19 @@
     }else if(indexPath.section == 2) {
         
         personInfoCell.titleLabel.text = [_threeTitleArray objectAtIndex:indexPath.row];
-    }
-    if (indexPath.section < 2) {
-        personInfoCell.subTitleLabel.hidden = YES;
-    }else {
-        
         
     }
+    if (indexPath.section == 2) {
+        if (indexPath.row == 0 || indexPath.row == 1) {
+            personInfoCell.detailLabel.hidden = YES;
+            personInfoCell.touchIdSwitch.hidden = NO;
+        
+        }
+     
+        personInfoCell.bottomLineView.hidden = YES;
+    
+    }
+          personInfoCell.subTitleLabel.hidden = YES;
 }
 
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

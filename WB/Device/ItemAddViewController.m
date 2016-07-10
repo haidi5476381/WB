@@ -13,6 +13,9 @@
 @interface ItemAddViewController ()<UITableViewDelegate,UITableViewDataSource,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout> {
     
     UITableView *_iteemAddTableView;
+    NSArray *_titleArray;
+    NSArray *_imageArray;
+    
 }
 
 @end
@@ -26,9 +29,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"添加" style:UIBarButtonItemStyleDone target:self action:@selector(add)];
+    _titleArray = [NSArray arrayWithObjects:@"电视",@"空调",@"机顶盒", nil];
+    _imageArray = [NSArray arrayWithObjects:@"device_btn_tv_n",@"devicelist_icon_airconditioner",@"device_btn_box_n", nil];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"添加" style:UIBarButtonItemStyleDone target:self action:@selector(add)];
     
-    
+    self.title = @"添加";
     _iteemAddTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight) style:UITableViewStylePlain];
     _iteemAddTableView.dataSource = self;
     _iteemAddTableView.delegate = self;
@@ -50,7 +55,8 @@
 
 -(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    return 55.0f*3;
+    
+    return 110.0f*1;
 }
 
 
@@ -68,7 +74,7 @@
 
 -(NSInteger) numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     
-    return 3;
+    return 1;
 }
 
 
@@ -87,13 +93,15 @@
 
 -(CGSize) collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    return CGSizeMake(ScreenWidth / 3, 55.0f);
+    return CGSizeMake(ScreenWidth / 3, 110.0f);
 }
 
 
 -(UICollectionViewCell *) collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
      ProductsCollectionViewCell *productsCollectionViewCell = (ProductsCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:KProductsCollectionViewCell forIndexPath:indexPath];
+    productsCollectionViewCell.itemImageView.image = [UIImage imageNamed:[_imageArray objectAtIndex:indexPath.row]];
+    productsCollectionViewCell.itemLabel.text = [_titleArray objectAtIndex:indexPath.row];
     return productsCollectionViewCell;
 }
 
@@ -105,7 +113,10 @@
     [itemCell setIndexCollectioViewDelegate:self];
 }
 
-
+-(void) collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
