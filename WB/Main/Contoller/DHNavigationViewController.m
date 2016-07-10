@@ -40,7 +40,7 @@
         //viewController.navigationItem.leftBarButtonItem=[[UIBarButtonItem alloc]initWithTitle:@"返回" style:UIBarButtonItemStyleDone target:self action:@selector(back:)];
         viewController.navigationItem.rightBarButtonItem=nil;
         
-       viewController.navigationItem.leftBarButtonItem=[UIBarButtonItem itemWithImageName:@"pr_back-1" highImageName:@"pr_back-1" target:self action:@selector(back:)];
+       viewController.navigationItem.leftBarButtonItem=[UIBarButtonItem itemWithImageName:@"navbar_btn_Back" highImageName:@"navbar_btn_Back" target:self action:@selector(back:)];
 
         
     }

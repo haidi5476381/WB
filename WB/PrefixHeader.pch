@@ -31,6 +31,7 @@
 #import <FogCloud/EasyLink.h>
 #import "Mac.h"
 #import "Constant.h"
+#import <UITableView+FDTemplateLayoutCell.h>
 #endif
 
 

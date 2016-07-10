@@ -16,6 +16,7 @@
 #import "AboutViewController.h"
 #import "LoginViewController.h"
 #import "UIImage+MJ.h"
+#import "AppDelegate.h"
 
 @interface DHTabBarViewController() <DHTabBarDelegate>
 @property (nonatomic,strong) DevicesViewController *deviceVc;
@@ -33,16 +34,18 @@
     
     // 初始化tabbar
     [self setupTabbar];
-    [self setupLogin];
+//    [self setupLogin];
     // 初始化所有的子控制器
-    [self setupAllChildViewControllers];
+        [self setupAllChildViewControllers];
 }
 
 -(void)setupLogin {
     
     LoginViewController *loginVc = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];
-    [self presentViewController:loginVc animated:YES completion:nil];
+    [self.view.window.rootViewController presentViewController:loginVc animated:YES completion:nil];
 }
+
+
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
@@ -140,12 +143,12 @@
     if(to==1)
     {
     }else if(to==2)
-     {//更多
-   
-   }else if (to == 3) {
-
-        }
+    {//更多
         
+    }else if (to == 3) {
+        
+    }
+    
     
 }
 #pragma mark 实现委托LoginViewControllerDelegate
@@ -173,8 +176,8 @@
  */
 - (void)setupAllChildViewControllers
 {
-
-
+    
+    
     DevicesViewController *HomePageVC = [[DevicesViewController alloc] initWithNibName:@"DevicesViewController" bundle:nil];
     [self setupChildViewController:HomePageVC title:@"设备" imageName:@"tab_home_normal" selectedImageName:@"tab_home_sel"];
     self.deviceVc = HomePageVC;
@@ -183,12 +186,12 @@
     [self setupChildViewController:baoVc title:@"设置" imageName:@"shop_normal" selectedImageName:@"shop_select"];
     self.settingVc = baoVc;
     
-
+    
     AboutViewController *assistantVc = [[AboutViewController alloc] initWithNibName:@"AboutViewController" bundle:nil];
     [self setupChildViewController:assistantVc title:@"关于" imageName:@"tab_help_nor" selectedImageName:@"tab_help_sel"];
     self.aboutVc = assistantVc;
     
-
+    
     
 }
 

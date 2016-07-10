@@ -76,10 +76,17 @@
                             </mask>
                         </variation>
                     </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y1L-eD-dxx">
+                        <rect key="frame" x="18" y="74" width="69" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="uVg-k6-akb" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="0qD-l8-Kqa"/>
                     <constraint firstItem="xuZ-ov-r1K" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="3X2-Gt-G2w"/>
+                    <constraint firstItem="y1L-eD-dxx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="5A1-WL-pkz"/>
                     <constraint firstItem="uLX-cG-AsH" firstAttribute="leading" secondItem="xuZ-ov-r1K" secondAttribute="trailing" id="68X-qG-MEI"/>
                     <constraint firstItem="n9G-EJ-sN6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="BwB-xh-eFL"/>
                     <constraint firstItem="n9G-EJ-sN6" firstAttribute="top" secondItem="uLX-cG-AsH" secondAttribute="bottom" constant="5" id="Dc3-UW-1te"/>
@@ -89,6 +96,7 @@
                     <constraint firstItem="xuZ-ov-r1K" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="M6Q-sN-VWF"/>
                     <constraint firstItem="a5r-nV-0B3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ahW-ln-nYt"/>
                     <constraint firstAttribute="bottom" secondItem="n9G-EJ-sN6" secondAttribute="bottom" id="gSJ-8j-ojQ"/>
+                    <constraint firstItem="xuZ-ov-r1K" firstAttribute="centerY" secondItem="y1L-eD-dxx" secondAttribute="centerY" id="gXI-Dq-yno"/>
                     <constraint firstAttribute="trailing" secondItem="xuZ-ov-r1K" secondAttribute="trailing" constant="100" id="kic-5o-ilT"/>
                     <constraint firstAttribute="trailing" secondItem="a5r-nV-0B3" secondAttribute="trailing" constant="20" id="nIe-OF-aD4"/>
                     <constraint firstItem="uLX-cG-AsH" firstAttribute="top" secondItem="a5r-nV-0B3" secondAttribute="bottom" constant="5" id="oht-Ec-H38"/>
@@ -113,6 +121,7 @@
                 <outlet property="bottomLineView" destination="n9G-EJ-sN6" id="jJx-Da-hxA"/>
                 <outlet property="imageCodeImageView" destination="uLX-cG-AsH" id="1FI-GU-2wx"/>
                 <outlet property="titleContextTextField" destination="xuZ-ov-r1K" id="gDV-G0-5TR"/>
+                <outlet property="titleLabel" destination="y1L-eD-dxx" id="55F-oD-zpx"/>
                 <outlet property="topLineView" destination="a5r-nV-0B3" id="ai4-UM-xpJ"/>
                 <outlet property="yanCodeButton" destination="uVg-k6-akb" id="reR-fs-Xf4"/>
             </connections>

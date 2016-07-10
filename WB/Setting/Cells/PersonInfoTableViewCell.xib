@@ -109,7 +109,7 @@
                     <constraint firstItem="s3H-qG-pXD" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="y3v-vA-cpK"/>
                     <constraint firstItem="9z0-DF-7ht" firstAttribute="trailing" secondItem="IS3-hy-K4c" secondAttribute="trailing" id="yDD-MA-i7P"/>
                     <constraint firstAttribute="right" secondItem="YgH-WZ-2Ry" secondAttribute="right" constant="20" id="z0M-eE-bz5"/>
-                    <constraint firstItem="IS3-hy-K4c" firstAttribute="leading" secondItem="9z0-DF-7ht" secondAttribute="leading" id="zC0-b2-eZc"/>
+                    <constraint firstItem="IS3-hy-K4c" firstAttribute="leading" secondItem="9z0-DF-7ht" secondAttribute="leading" constant="-10" id="zC0-b2-eZc"/>
                     <constraint firstItem="YgH-WZ-2Ry" firstAttribute="centerY" secondItem="ooR-bA-mnp" secondAttribute="centerY" id="zJC-L0-Pgj"/>
                 </constraints>
                 <variation key="default">
