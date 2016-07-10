@@ -12,5 +12,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *tipBigImageView;
 @property (weak, nonatomic) IBOutlet UILabel *tipLabel;
 @property (weak, nonatomic) IBOutlet UIButton *cancelButton;
+- (IBAction)cancel:(id)sender;
 
 @end

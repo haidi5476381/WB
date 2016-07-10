@@ -7,17 +7,25 @@
 //
 
 #import "DevicesViewController.h"
-#import "DeviceItemTableViewCell.h"
-
-@interface DevicesViewController ()<UITableViewDelegate,UITableViewDataSource> {
+#import "SettingItemTableViewCell.h"
+#import "YaokongViewController.h"
+#import "ItemTableViewCell.h"
+#import "ItemAddViewController.h"
+@interface DevicesViewController ()<UITableViewDelegate,UITableViewDataSource>
+{
+    UITableView *_settingitemTableView;
+    UITableView *_itemTableView;
     
-    UITableView *smallTableView;
+    NSArray *_settingItemTitleArray;
+    NSArray *_settingItemImageArray;
 }
-
 @end
 
 @implementation DevicesViewController
 
+-(void) viewWillAppear:(BOOL)animated {
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
       self.automaticallyAdjustsScrollViewInsets=NO;
@@ -25,64 +33,176 @@
     _settingItemImageArray = [NSArray arrayWithObjects:@"device_btn_airconditioner_n",@"device_btn_airconditioner_n", nil];
     // Do any additional setup after loading the view from its nib.
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"添加" style:UIBarButtonItemStyleDone target:self action:@selector(add)];
-    [self setSmallTableView];
+    self.navigationItem.rightBarButtonItem=[UIBarButtonItem itemWithImageName:@"navibar_btn_plus" highImageName:@"navibar_btn_plus" target:self action:@selector(add)];
+    [self setItemTableView];
+    [self layoutItemView];
 }
 
--(void) setSmallTableView{
+-(void) layoutItemView {
     
-    smallTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 60) style:UITableViewStylePlain];
-    smallTableView.dataSource = self;
-    smallTableView.delegate = self;
-    
+    _itemTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight) style:UITableViewStylePlain];
+    _itemTableView.dataSource = self;
+    _itemTableView.delegate = self;
+    [self.view addSubview:_itemTableView];
 }
 
--(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+
+
+-(void) add {
     
     
-    if (tableView == smallTableView) {
-        
-        return 2.0f;
-    }
-    return 0;
+    [self.view addSubview:_settingitemTableView];
+    [_settingitemTableView reloadData];
 }
+
+
+
+-(void) setItemTableView {
+    
+    _settingitemTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 110) style:UITableViewStylePlain];
+    _settingitemTableView.dataSource = self;
+    _settingitemTableView.delegate = self;
+    _settingitemTableView.scrollEnabled = NO;
+
+}
+
 
 -(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    return 30.0f;
+    if ([tableView isEqual:_settingitemTableView]) {
+        return 55.0f;
+    }else if ([tableView isEqual:_itemTableView]) {
+        
+        return 80.0f;
+    }
+    return 0.0f;
 }
 
+
+
+-(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
+    if ([tableView isEqual:_settingitemTableView]) {
+        
+        return 2;
+    }
+    return 1;
+}
 
 -(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     UITableViewCell *cell = nil;
-    
-    if ([tableView isEqual:smallTableView]) {
-    
-        DeviceItemTableViewCell *deviceCell = [tableView dequeueReusableCellWithIdentifier:KDeviceItemTableViewCell];
-        if (deviceCell == nil) {
-            deviceCell = [DeviceItemTableViewCell deviceItemTableViewCell];
+    if ([tableView isEqual:_settingitemTableView]) {
+        
+        SettingItemTableViewCell *settingItemCell = [tableView dequeueReusableCellWithIdentifier:KSettingItemTableViewCell];
+        if (settingItemCell == nil) {
+            settingItemCell = [SettingItemTableViewCell settingItemTableViewCell];
+            cell = settingItemCell;
         }
-        cell = deviceCell;
+    }else if ([tableView isEqual:_itemTableView]) {
+        
+        ItemTableViewCell *itemTableCell = [tableView dequeueReusableCellWithIdentifier:KItemTableViewCell];
+        if (itemTableCell == nil) {
+            itemTableCell = [ItemTableViewCell itemTableViewCell];
+            cell = itemTableCell;
+        }
     }
     return cell;
 }
 
+
+-(void) tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if ([tableView isEqual:_settingitemTableView]) {
+        
+        SettingItemTableViewCell *settingCell = (SettingItemTableViewCell *)cell;
+        settingCell.itemImageView.image = [UIImage imageNamed:[_settingItemImageArray objectAtIndex:indexPath.row]];
+        settingCell.itemTitleLabel.text = [_settingItemTitleArray objectAtIndex:indexPath.row];
+    }else if([tableView isEqual:_itemTableView]) {
+        
+        ItemTableViewCell *itemCell = (ItemTableViewCell *) cell;
+        itemCell.itemImageView.image = [UIImage imageNamed:[_settingItemImageArray objectAtIndex:indexPath.row]];
+        itemCell.itemTitleLabel.text = @"智能插座";
+        itemCell.itemSubTitleLabel.text = @"温度:20c 湿度：50%";
+        itemCell.leftImageView.image = [UIImage imageNamed:@"devicelist_btn_swichon"];
+    }
+}
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    if ([tableView isEqual:_settingitemTableView]) {
+        
+      
+        YaokongViewController *yaoKongVc = [[YaokongViewController alloc] initWithNibName:@"YaokongViewController" bundle:nil];
+        
+        [self.navigationController pushViewController:yaoKongVc animated:YES];
+        
+        [_settingitemTableView removeFromSuperview];
+        _settingitemTableView = nil;
+        
+    }else if([tableView isEqual:_itemTableView]) {
+        
+        if (indexPath.section == 1) {
+            
+        
+        }
+        
+        
+    }
     
+}
+
+
+//左滑菜单项
+-(NSArray<UITableViewRowAction *> *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    if (tableView == _itemTableView) {
+        
+        __weak typeof(self) wkSelf=self;
+        //添加
+        UITableViewRowAction *addAction=[UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDestructive title:@"添加" handler:^(UITableViewRowAction *  action, NSIndexPath *  indexPath) {
+            //
+            //        [wkSelf.dataArray removeObjectAtIndex:indexPath.row];
+            //        [tableView setEditing:NO animated:YES];
+            //        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+            
+            ItemAddViewController *itemAddVc = [[ItemAddViewController alloc] initWithNibName:@"ItemAddViewController" bundle:nil];
+            [self.navigationController pushViewController:itemAddVc animated:YES];
+        }];
+        //编辑
+        UITableViewRowAction *editAction=[UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"编辑" handler:^(UITableViewRowAction * action, NSIndexPath * indexPath) {
+            //        id obj=[wkSelf.dataArray objectAtIndex:indexPath.row];
+            //        [wkSelf.dataArray removeObjectAtIndex:indexPath.row];
+            //        [wkSelf.dataArray insertObject:obj atIndex:0];
+            //        [tableView setEditing:NO animated:YES];
+            //        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            //            [tableView reloadData];
+            //        });
+        }];
+        
+        //删除
+        UITableViewRowAction *deleteAction=[UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"删除" handler:^(UITableViewRowAction * action, NSIndexPath * indexPath) {
+            //        id obj=[wkSelf.dataArray objectAtIndex:indexPath.row];
+            //        [wkSelf.dataArray removeObjectAtIndex:indexPath.row];
+            //        [wkSelf.dataArray insertObject:obj atIndex:0];
+            //        [tableView setEditing:NO animated:YES];
+            //        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            //            [tableView reloadData];
+            //        });
+        }];
+        
+        addAction.backgroundColor=IWColor(101, 198, 187);
+        editAction.backgroundColor = IWColor(81, 179, 216);
+        deleteAction.backgroundColor = [UIColor redColor];
+        
+        return @[deleteAction,editAction,addAction];
+    }
+    return nil;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-
-}
-
--(void) add {
-    
-    [self.view addSubview:smallTableView];
-    [smallTableView reloadData];
-    
 }
 
 /*
