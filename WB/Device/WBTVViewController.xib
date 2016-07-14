@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
@@ -33,16 +34,47 @@
                         <constraint firstItem="7E5-eM-JeT" firstAttribute="centerX" secondItem="poB-5U-U2V" secondAttribute="centerX" id="cw5-Y5-AOJ"/>
                     </constraints>
                 </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="telcontroler_icon_InneBase_n" translatesAutoresizingMaskIntoConstraints="NO" id="T7o-qu-ike">
+                    <rect key="frame" x="210" y="218" width="180" height="180"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="180" id="Puk-hs-yik"/>
+                        <constraint firstAttribute="height" constant="180" id="nC2-af-50Q"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ogh-y3-xiF">
+                    <rect key="frame" x="90" y="179" width="54" height="58"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="54" id="ahO-Bw-xwJ"/>
+                        <constraint firstAttribute="height" constant="58" id="fIi-64-ZN0"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="telcontroler_btn_soundson_n"/>
+                    <state key="selected" backgroundImage="telcontroler_btn_soundson_p"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rQv-uj-sKg">
+                    <rect key="frame" x="457" y="179" width="54" height="58"/>
+                    <state key="normal" backgroundImage="telcontroler_btn_on_n"/>
+                    <state key="selected" backgroundImage="telcontroler_btn_on_p"/>
+                </button>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.8901960784313725" green="0.88627450980392153" blue="0.8901960784313725" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstItem="Ogh-y3-xiF" firstAttribute="top" secondItem="poB-5U-U2V" secondAttribute="bottom" constant="19" id="6Eb-aH-QxI"/>
+                <constraint firstItem="T7o-qu-ike" firstAttribute="top" secondItem="poB-5U-U2V" secondAttribute="bottom" constant="58" id="BuL-kk-2SE"/>
                 <constraint firstAttribute="trailing" secondItem="poB-5U-U2V" secondAttribute="trailing" id="HAQ-om-ac9"/>
                 <constraint firstItem="poB-5U-U2V" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="SD4-DO-Dl4"/>
+                <constraint firstItem="T7o-qu-ike" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="VjN-af-zVn"/>
+                <constraint firstItem="T7o-qu-ike" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="210" id="a2S-I3-0fN"/>
+                <constraint firstItem="T7o-qu-ike" firstAttribute="leading" secondItem="Ogh-y3-xiF" secondAttribute="trailing" constant="66" id="kmi-9P-gb6"/>
                 <constraint firstItem="poB-5U-U2V" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rQI-4F-S1c"/>
             </constraints>
         </view>
     </objects>
     <resources>
         <image name="banner_img_tv" width="100" height="64"/>
+        <image name="telcontroler_btn_on_n" width="54" height="58"/>
+        <image name="telcontroler_btn_on_p" width="54" height="57"/>
+        <image name="telcontroler_btn_soundson_n" width="54" height="58"/>
+        <image name="telcontroler_btn_soundson_p" width="54" height="57"/>
+        <image name="telcontroler_icon_InneBase_n" width="65" height="67"/>
     </resources>
 </document>
