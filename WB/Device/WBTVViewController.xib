@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WBTVViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="poB-5U-U2V">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="160"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner_img_tv" translatesAutoresizingMaskIntoConstraints="NO" id="7E5-eM-JeT">
+                            <rect key="frame" x="250" y="48" width="100" height="64"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="64" id="5w4-m2-xQ4"/>
+                                <constraint firstAttribute="width" constant="100" id="JYK-on-YOe"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.086274509803921567" green="0.6588235294117647" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="tintColor" red="0.1019607843" green="0.59607843140000005" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="7E5-eM-JeT" firstAttribute="centerY" secondItem="poB-5U-U2V" secondAttribute="centerY" id="0J2-14-a5I"/>
+                        <constraint firstAttribute="height" constant="160" id="E7n-b5-fB0"/>
+                        <constraint firstItem="7E5-eM-JeT" firstAttribute="centerX" secondItem="poB-5U-U2V" secondAttribute="centerX" id="cw5-Y5-AOJ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="poB-5U-U2V" secondAttribute="trailing" id="HAQ-om-ac9"/>
+                <constraint firstItem="poB-5U-U2V" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="SD4-DO-Dl4"/>
+                <constraint firstItem="poB-5U-U2V" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rQI-4F-S1c"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="banner_img_tv" width="100" height="64"/>
+    </resources>
+</document>
