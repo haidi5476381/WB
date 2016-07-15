@@ -112,6 +112,10 @@
 		5C259D381D379271005B0D21 /* WBTVViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C259D361D379271005B0D21 /* WBTVViewController.xib */; };
 		5C259D3F1D3796FA005B0D21 /* AutoCodingObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C259D3C1D3796FA005B0D21 /* AutoCodingObject.m */; };
 		5C259D401D3796FA005B0D21 /* YDVCPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C259D3E1D3796FA005B0D21 /* YDVCPickerViewController.m */; };
+		5CF0C9AA1D38CC4800312BE0 /* WBDVDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CF0C9A81D38CC4800312BE0 /* WBDVDViewController.m */; };
+		5CF0C9AB1D38CC4800312BE0 /* WBDVDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CF0C9A91D38CC4800312BE0 /* WBDVDViewController.xib */; };
+		5CF0C9AF1D38D13B00312BE0 /* WBAirConditionerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CF0C9AD1D38D13B00312BE0 /* WBAirConditionerViewController.m */; };
+		5CF0C9B01D38D13B00312BE0 /* WBAirConditionerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CF0C9AE1D38D13B00312BE0 /* WBAirConditionerViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -291,6 +295,12 @@
 		5C259D3C1D3796FA005B0D21 /* AutoCodingObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoCodingObject.m; sourceTree = "<group>"; };
 		5C259D3D1D3796FA005B0D21 /* YDVCPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDVCPickerViewController.h; sourceTree = "<group>"; };
 		5C259D3E1D3796FA005B0D21 /* YDVCPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDVCPickerViewController.m; sourceTree = "<group>"; };
+		5CF0C9A71D38CC4800312BE0 /* WBDVDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBDVDViewController.h; sourceTree = "<group>"; };
+		5CF0C9A81D38CC4800312BE0 /* WBDVDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBDVDViewController.m; sourceTree = "<group>"; };
+		5CF0C9A91D38CC4800312BE0 /* WBDVDViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBDVDViewController.xib; sourceTree = "<group>"; };
+		5CF0C9AC1D38D13B00312BE0 /* WBAirConditionerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBAirConditionerViewController.h; sourceTree = "<group>"; };
+		5CF0C9AD1D38D13B00312BE0 /* WBAirConditionerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBAirConditionerViewController.m; sourceTree = "<group>"; };
+		5CF0C9AE1D38D13B00312BE0 /* WBAirConditionerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBAirConditionerViewController.xib; sourceTree = "<group>"; };
 		71BCFD2D5CE3D5F91D86B499 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8AA0C155551DF71DFA442400 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C403D67C21C0A4647D55D2D3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -664,6 +674,12 @@
 				5C259D341D379271005B0D21 /* WBTVViewController.h */,
 				5C259D351D379271005B0D21 /* WBTVViewController.m */,
 				5C259D361D379271005B0D21 /* WBTVViewController.xib */,
+				5CF0C9A71D38CC4800312BE0 /* WBDVDViewController.h */,
+				5CF0C9A81D38CC4800312BE0 /* WBDVDViewController.m */,
+				5CF0C9A91D38CC4800312BE0 /* WBDVDViewController.xib */,
+				5CF0C9AC1D38D13B00312BE0 /* WBAirConditionerViewController.h */,
+				5CF0C9AD1D38D13B00312BE0 /* WBAirConditionerViewController.m */,
+				5CF0C9AE1D38D13B00312BE0 /* WBAirConditionerViewController.xib */,
 			);
 			path = Device;
 			sourceTree = "<group>";
@@ -861,6 +877,8 @@
 				0D7112691D2CA4E700FE3A4E /* ChangePasswordViewController.xib in Resources */,
 				0D71128D1D2F7F6C00FE3A4E /* ChaZouViewController.xib in Resources */,
 				0D71127E1D2E015A00FE3A4E /* TermTableViewCell.xib in Resources */,
+				5CF0C9B01D38D13B00312BE0 /* WBAirConditionerViewController.xib in Resources */,
+				5CF0C9AB1D38CC4800312BE0 /* WBDVDViewController.xib in Resources */,
 				0DC842841D2258BB00B80830 /* SettingViewController.xib in Resources */,
 				0D71124A1D2A5AD700FE3A4E /* ProductsCollectionViewCell.xib in Resources */,
 				0D71124F1D2A5B9400FE3A4E /* ItemAddViewController.xib in Resources */,
@@ -962,6 +980,7 @@
 				0D2DA3891D055AA3005609D2 /* CoreFactory.m in Sources */,
 				0DC842551D22543900B80830 /* Forget2ViewController.m in Sources */,
 				0D7112491D2A5AD700FE3A4E /* ProductsCollectionViewCell.m in Sources */,
+				5CF0C9AF1D38D13B00312BE0 /* WBAirConditionerViewController.m in Sources */,
 				0D71124E1D2A5B9400FE3A4E /* ItemAddViewController.m in Sources */,
 				0D7112911D2F918C00FE3A4E /* ConfigViewController.m in Sources */,
 				0D2DA3611D051497005609D2 /* ViewController.m in Sources */,
@@ -990,6 +1009,7 @@
 				0D2DA39F1D055C56005609D2 /* ZipUtil.m in Sources */,
 				0D58BDF81D0E4CB80015D636 /* UserService.m in Sources */,
 				0D2DA35E1D051497005609D2 /* AppDelegate.mm in Sources */,
+				5CF0C9AA1D38CC4800312BE0 /* WBDVDViewController.m in Sources */,
 				0DF320FC1D17C5A600B9BB67 /* YTKUrlArgumentsFilter.m in Sources */,
 				0DC8425A1D22556000B80830 /* RegisterViewController.m in Sources */,
 				0DC8428C1D225A7300B80830 /* UIImage+MJ.m in Sources */,
