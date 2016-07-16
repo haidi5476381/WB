@@ -112,6 +112,10 @@
 		5C259D381D379271005B0D21 /* WBTVViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C259D361D379271005B0D21 /* WBTVViewController.xib */; };
 		5C259D3F1D3796FA005B0D21 /* AutoCodingObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C259D3C1D3796FA005B0D21 /* AutoCodingObject.m */; };
 		5C259D401D3796FA005B0D21 /* YDVCPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C259D3E1D3796FA005B0D21 /* YDVCPickerViewController.m */; };
+		5C5004D41D3A2CAB002D04F8 /* WBAppleControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5004D21D3A2CAB002D04F8 /* WBAppleControlViewController.m */; };
+		5C5004D51D3A2CAB002D04F8 /* WBAppleControlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C5004D31D3A2CAB002D04F8 /* WBAppleControlViewController.xib */; };
+		5C5004D91D3A2F71002D04F8 /* WBXiaoMiControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5004D71D3A2F71002D04F8 /* WBXiaoMiControlViewController.m */; };
+		5C5004DA1D3A2F71002D04F8 /* WBXiaoMiControlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C5004D81D3A2F71002D04F8 /* WBXiaoMiControlViewController.xib */; };
 		5CF0C9AA1D38CC4800312BE0 /* WBDVDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CF0C9A81D38CC4800312BE0 /* WBDVDViewController.m */; };
 		5CF0C9AB1D38CC4800312BE0 /* WBDVDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CF0C9A91D38CC4800312BE0 /* WBDVDViewController.xib */; };
 		5CF0C9AF1D38D13B00312BE0 /* WBAirConditionerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CF0C9AD1D38D13B00312BE0 /* WBAirConditionerViewController.m */; };
@@ -295,6 +299,12 @@
 		5C259D3C1D3796FA005B0D21 /* AutoCodingObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoCodingObject.m; sourceTree = "<group>"; };
 		5C259D3D1D3796FA005B0D21 /* YDVCPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDVCPickerViewController.h; sourceTree = "<group>"; };
 		5C259D3E1D3796FA005B0D21 /* YDVCPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDVCPickerViewController.m; sourceTree = "<group>"; };
+		5C5004D11D3A2CAB002D04F8 /* WBAppleControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBAppleControlViewController.h; sourceTree = "<group>"; };
+		5C5004D21D3A2CAB002D04F8 /* WBAppleControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBAppleControlViewController.m; sourceTree = "<group>"; };
+		5C5004D31D3A2CAB002D04F8 /* WBAppleControlViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBAppleControlViewController.xib; sourceTree = "<group>"; };
+		5C5004D61D3A2F71002D04F8 /* WBXiaoMiControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBXiaoMiControlViewController.h; sourceTree = "<group>"; };
+		5C5004D71D3A2F71002D04F8 /* WBXiaoMiControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBXiaoMiControlViewController.m; sourceTree = "<group>"; };
+		5C5004D81D3A2F71002D04F8 /* WBXiaoMiControlViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBXiaoMiControlViewController.xib; sourceTree = "<group>"; };
 		5CF0C9A71D38CC4800312BE0 /* WBDVDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBDVDViewController.h; sourceTree = "<group>"; };
 		5CF0C9A81D38CC4800312BE0 /* WBDVDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBDVDViewController.m; sourceTree = "<group>"; };
 		5CF0C9A91D38CC4800312BE0 /* WBDVDViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBDVDViewController.xib; sourceTree = "<group>"; };
@@ -680,6 +690,12 @@
 				5CF0C9AC1D38D13B00312BE0 /* WBAirConditionerViewController.h */,
 				5CF0C9AD1D38D13B00312BE0 /* WBAirConditionerViewController.m */,
 				5CF0C9AE1D38D13B00312BE0 /* WBAirConditionerViewController.xib */,
+				5C5004D11D3A2CAB002D04F8 /* WBAppleControlViewController.h */,
+				5C5004D21D3A2CAB002D04F8 /* WBAppleControlViewController.m */,
+				5C5004D31D3A2CAB002D04F8 /* WBAppleControlViewController.xib */,
+				5C5004D61D3A2F71002D04F8 /* WBXiaoMiControlViewController.h */,
+				5C5004D71D3A2F71002D04F8 /* WBXiaoMiControlViewController.m */,
+				5C5004D81D3A2F71002D04F8 /* WBXiaoMiControlViewController.xib */,
 			);
 			path = Device;
 			sourceTree = "<group>";
@@ -884,6 +900,7 @@
 				0D71124F1D2A5B9400FE3A4E /* ItemAddViewController.xib in Resources */,
 				0DC842561D22543900B80830 /* Forget2ViewController.xib in Resources */,
 				0D7112391D2A3FD800FE3A4E /* ItemTableViewCell.xib in Resources */,
+				5C5004DA1D3A2F71002D04F8 /* WBXiaoMiControlViewController.xib in Resources */,
 				0D2DA3661D051498005609D2 /* Assets.xcassets in Resources */,
 				0D7112341D2A0E7000FE3A4E /* LoadingViewController.xib in Resources */,
 				0DC842451D21212500B80830 /* LoginFootView.xib in Resources */,
@@ -891,6 +908,7 @@
 				0D7112791D2DF79F00FE3A4E /* AddSiteHeadView.xib in Resources */,
 				0D7112731D2CEDE700FE3A4E /* AddSitComViewController.xib in Resources */,
 				0D71123E1D2A4CE600FE3A4E /* ItemEditViewController.xib in Resources */,
+				5C5004D51D3A2CAB002D04F8 /* WBAppleControlViewController.xib in Resources */,
 				0DC842891D2258C600B80830 /* AboutViewController.xib in Resources */,
 				5C259D381D379271005B0D21 /* WBTVViewController.xib in Resources */,
 				0D71126E1D2CE13900FE3A4E /* SitComViewController.xib in Resources */,
@@ -986,6 +1004,7 @@
 				0D2DA3611D051497005609D2 /* ViewController.m in Sources */,
 				0D7112811D2E369600FE3A4E /* TableViewFootView.m in Sources */,
 				5C259D371D379271005B0D21 /* WBTVViewController.m in Sources */,
+				5C5004D91D3A2F71002D04F8 /* WBXiaoMiControlViewController.m in Sources */,
 				0D7112331D2A0E7000FE3A4E /* LoadingViewController.m in Sources */,
 				5C259D401D3796FA005B0D21 /* YDVCPickerViewController.m in Sources */,
 				0DC842431D21211800B80830 /* LoginFootView.m in Sources */,
@@ -995,6 +1014,7 @@
 				0D71128C1D2F7F6C00FE3A4E /* ChaZouViewController.m in Sources */,
 				5C259D3F1D3796FA005B0D21 /* AutoCodingObject.m in Sources */,
 				0D2DA39B1D055C2D005609D2 /* LoggerUtil.m in Sources */,
+				5C5004D41D3A2CAB002D04F8 /* WBAppleControlViewController.m in Sources */,
 				0D71126D1D2CE13900FE3A4E /* SitComViewController.m in Sources */,
 				0D7112611D2B991A00FE3A4E /* AccountViewController.m in Sources */,
 				0D7112241D29FCE800FE3A4E /* SettingItemTableViewCell.m in Sources */,

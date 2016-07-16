@@ -1,31 +1,25 @@
 //
-//  WBDVDViewController.m
+//  WBAppleControlViewController.m
 //  WB
 //
-//  Created by leihuiwu on 16/7/15.
+//  Created by LeiHuiwu on 16/7/16.
 //  Copyright © 2016年 Haidi. All rights reserved.
 //
 
-#import "WBDVDViewController.h"
+#import "WBAppleControlViewController.h"
 
-@interface WBDVDViewController ()
+@interface WBAppleControlViewController ()
 
 @end
 
-@implementation WBDVDViewController
+@implementation WBAppleControlViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    self.title = @"DVD";
+    self.title = @"苹果遥控";
 }
-
--(void) viewWillAppear:(BOOL)animated {
-    [self.navigationController setNavigationBarHidden:NO animated:animated];
-    [super viewWillAppear:animated];
-}
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

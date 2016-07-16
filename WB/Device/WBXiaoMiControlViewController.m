@@ -1,31 +1,23 @@
 //
-//  WBDVDViewController.m
+//  WBXiaoMiControlViewController.m
 //  WB
 //
-//  Created by leihuiwu on 16/7/15.
+//  Created by LeiHuiwu on 16/7/16.
 //  Copyright © 2016年 Haidi. All rights reserved.
 //
 
-#import "WBDVDViewController.h"
+#import "WBXiaoMiControlViewController.h"
 
-@interface WBDVDViewController ()
+@interface WBXiaoMiControlViewController ()
 
 @end
 
-@implementation WBDVDViewController
+@implementation WBXiaoMiControlViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
-    self.title = @"DVD";
 }
-
--(void) viewWillAppear:(BOOL)animated {
-    [self.navigationController setNavigationBarHidden:NO animated:animated];
-    [super viewWillAppear:animated];
-}
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
