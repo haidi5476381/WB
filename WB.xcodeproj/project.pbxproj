@@ -116,6 +116,8 @@
 		5C5004D51D3A2CAB002D04F8 /* WBAppleControlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C5004D31D3A2CAB002D04F8 /* WBAppleControlViewController.xib */; };
 		5C5004D91D3A2F71002D04F8 /* WBXiaoMiControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5004D71D3A2F71002D04F8 /* WBXiaoMiControlViewController.m */; };
 		5C5004DA1D3A2F71002D04F8 /* WBXiaoMiControlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C5004D81D3A2F71002D04F8 /* WBXiaoMiControlViewController.xib */; };
+		5C8883621D3CBAF600DD1F68 /* WBSoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C8883601D3CBAF600DD1F68 /* WBSoundViewController.m */; };
+		5C8883631D3CBAF600DD1F68 /* WBSoundViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C8883611D3CBAF600DD1F68 /* WBSoundViewController.xib */; };
 		5CF0C9AA1D38CC4800312BE0 /* WBDVDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CF0C9A81D38CC4800312BE0 /* WBDVDViewController.m */; };
 		5CF0C9AB1D38CC4800312BE0 /* WBDVDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CF0C9A91D38CC4800312BE0 /* WBDVDViewController.xib */; };
 		5CF0C9AF1D38D13B00312BE0 /* WBAirConditionerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CF0C9AD1D38D13B00312BE0 /* WBAirConditionerViewController.m */; };
@@ -305,6 +307,9 @@
 		5C5004D61D3A2F71002D04F8 /* WBXiaoMiControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBXiaoMiControlViewController.h; sourceTree = "<group>"; };
 		5C5004D71D3A2F71002D04F8 /* WBXiaoMiControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBXiaoMiControlViewController.m; sourceTree = "<group>"; };
 		5C5004D81D3A2F71002D04F8 /* WBXiaoMiControlViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBXiaoMiControlViewController.xib; sourceTree = "<group>"; };
+		5C88835F1D3CBAF600DD1F68 /* WBSoundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBSoundViewController.h; sourceTree = "<group>"; };
+		5C8883601D3CBAF600DD1F68 /* WBSoundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBSoundViewController.m; sourceTree = "<group>"; };
+		5C8883611D3CBAF600DD1F68 /* WBSoundViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBSoundViewController.xib; sourceTree = "<group>"; };
 		5CF0C9A71D38CC4800312BE0 /* WBDVDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBDVDViewController.h; sourceTree = "<group>"; };
 		5CF0C9A81D38CC4800312BE0 /* WBDVDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBDVDViewController.m; sourceTree = "<group>"; };
 		5CF0C9A91D38CC4800312BE0 /* WBDVDViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBDVDViewController.xib; sourceTree = "<group>"; };
@@ -696,6 +701,9 @@
 				5C5004D61D3A2F71002D04F8 /* WBXiaoMiControlViewController.h */,
 				5C5004D71D3A2F71002D04F8 /* WBXiaoMiControlViewController.m */,
 				5C5004D81D3A2F71002D04F8 /* WBXiaoMiControlViewController.xib */,
+				5C88835F1D3CBAF600DD1F68 /* WBSoundViewController.h */,
+				5C8883601D3CBAF600DD1F68 /* WBSoundViewController.m */,
+				5C8883611D3CBAF600DD1F68 /* WBSoundViewController.xib */,
 			);
 			path = Device;
 			sourceTree = "<group>";
@@ -918,6 +926,7 @@
 				0D2DA3761D051BDC005609D2 /* Others.bundle in Resources */,
 				0D7112251D29FCE800FE3A4E /* SettingItemTableViewCell.xib in Resources */,
 				0D7112621D2B991A00FE3A4E /* AccountViewController.xib in Resources */,
+				5C8883631D3CBAF600DD1F68 /* WBSoundViewController.xib in Resources */,
 				0D7112831D2E36A000FE3A4E /* TableViewFootView.xib in Resources */,
 				0D7112541D2A5BAD00FE3A4E /* ItemAddTableViewCell.xib in Resources */,
 				0D2DA3641D051497005609D2 /* Main.storyboard in Resources */,
@@ -999,6 +1008,7 @@
 				0DC842551D22543900B80830 /* Forget2ViewController.m in Sources */,
 				0D7112491D2A5AD700FE3A4E /* ProductsCollectionViewCell.m in Sources */,
 				5CF0C9AF1D38D13B00312BE0 /* WBAirConditionerViewController.m in Sources */,
+				5C8883621D3CBAF600DD1F68 /* WBSoundViewController.m in Sources */,
 				0D71124E1D2A5B9400FE3A4E /* ItemAddViewController.m in Sources */,
 				0D7112911D2F918C00FE3A4E /* ConfigViewController.m in Sources */,
 				0D2DA3611D051497005609D2 /* ViewController.m in Sources */,
