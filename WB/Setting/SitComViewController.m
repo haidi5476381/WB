@@ -13,6 +13,7 @@
     
     UITableView *_sitComTableView;
     NSArray *_titleArray;
+    NSArray *_imagesArray;
 }
 
 @end
@@ -21,8 +22,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"添加" style:UIBarButtonItemStyleDone target:self action:@selector(add)];
+    
+    self.title = @"情景模式";
+    self.navigationItem.rightBarButtonItem=[UIBarButtonItem itemWithImageName:@"navibar_btn_plus" highImageName:@"navibar_btn_plus" target:self action:@selector(add)];
     _titleArray = [NSArray arrayWithObjects:@"休闲模式",@"回家模式", nil];
+    _imagesArray = [NSArray arrayWithObjects:@"devicelist_icon_arder",@"devicelist_icon_homemode", nil];
     _sitComTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight) style:UITableViewStylePlain];
     _sitComTableView.dataSource = self;
     _sitComTableView.delegate = self;
@@ -68,6 +72,10 @@
     
     PersonInfoTableViewCell * personCell = (PersonInfoTableViewCell *)cell;
     personCell.titleLabel.text =  [_titleArray objectAtIndex:indexPath.row];
+    personCell.headImageView.image =[UIImage imageNamed:[_imagesArray objectAtIndex:indexPath.row]] ;
+    personCell.subTitleLabel.hidden = YES;
+    personCell.detailTextLabel.hidden = YES;
+    personCell.touchIdSwitch.hidden = NO;
     
 }
 

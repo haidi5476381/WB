@@ -28,6 +28,9 @@
     _accountTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight) style:UITableViewStylePlain];
     _accountTableView.delegate = self;
     _accountTableView.dataSource = self;
+    _accountTableView.backgroundColor = [UIColor clearColor];
+    _accountTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    self.view.backgroundColor = IWColor(240, 240, 240);
     [self.view addSubview:_accountTableView];
     // Do any additional setup after loading the view from its nib.
 }
@@ -43,6 +46,19 @@
     return 50.0f;
 }
 
+-(UIView *) tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    
+    UIView *headView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 20)];
+    headView.backgroundColor = IWColor(240, 240, 240);
+    return headView;
+}
+
+
+-(CGFloat) tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    
+    
+    return 20.0f;
+}
 -(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
     if (section == 0) {
@@ -61,15 +77,16 @@
             LoginTableViewCell *loginCell = [tableView dequeueReusableCellWithIdentifier:KLoginTableViewCell];
         if (loginCell == nil) {
             loginCell = [LoginTableViewCell loginTableViewCell];
-            cell = loginCell;
+      
         }
+              cell = loginCell;
     }else if (indexPath.section == 1) {
         
         PersonInfoTableViewCell *personInfoCell = [tableView dequeueReusableCellWithIdentifier:KPersonInfoTableViewCell];
         if (personInfoCell == nil) {
             personInfoCell = [PersonInfoTableViewCell personInfoTableViewCell];
-            cell = personInfoCell;
         }
+              cell = personInfoCell;
     }
    
     return cell;
@@ -86,6 +103,7 @@
         PersonInfoTableViewCell *personInfoCell = (PersonInfoTableViewCell *) cell;
         personInfoCell.titleLabel.text = @"修改密码";
         personInfoCell.subTitleLabel.hidden = YES;
+        [personInfoCell updateTitle];
     }
 }
 

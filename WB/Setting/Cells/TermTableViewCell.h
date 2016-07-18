@@ -12,4 +12,5 @@ static  NSString *KTermTableViewCell = @"TermTableViewCell";
 @interface TermTableViewCell : UITableViewCell
 +(TermTableViewCell *) termTableViewCell;
 
+@property (weak, nonatomic) IBOutlet UIView *bottomLineView;
 @end

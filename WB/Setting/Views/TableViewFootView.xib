@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -11,18 +11,40 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6z6-wy-9GS">
+                    <rect key="frame" x="152" y="149" width="240" height="128"/>
+                    <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="wKF-uS-9tA"/>
+                    </constraints>
+                </view>
                 <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bui-qm-D0H">
-                    <rect key="frame" x="248" y="285" width="113" height="30"/>
-                    <state key="normal" title="添加设备"/>
+                    <rect key="frame" x="244" y="285" width="113" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Vg6-t5-9gt"/>
+                    </constraints>
+                    <state key="normal" title="添加设备">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="6z6-wy-9GS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1SQ-dS-wgd"/>
                 <constraint firstItem="Bui-qm-D0H" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="7E7-AI-0Uv"/>
                 <constraint firstItem="Bui-qm-D0H" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="KkL-Ma-h1L"/>
-                <constraint firstAttribute="bottom" secondItem="Bui-qm-D0H" secondAttribute="bottom" id="a4h-tm-jP5"/>
+                <constraint firstItem="6z6-wy-9GS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="O8I-11-kHz"/>
+                <constraint firstAttribute="bottom" secondItem="Bui-qm-D0H" secondAttribute="bottom" constant="10" id="a4h-tm-jP5"/>
+                <constraint firstItem="Bui-qm-D0H" firstAttribute="top" secondItem="6z6-wy-9GS" secondAttribute="bottom" constant="10" id="hcg-Dj-nmy"/>
                 <constraint firstAttribute="trailing" secondItem="Bui-qm-D0H" secondAttribute="trailing" id="p0N-jj-VyC"/>
+                <constraint firstAttribute="trailing" secondItem="6z6-wy-9GS" secondAttribute="trailing" id="uYu-zp-P8v"/>
             </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="KkL-Ma-h1L"/>
+                    <exclude reference="hcg-Dj-nmy"/>
+                </mask>
+            </variation>
             <connections>
                 <outlet property="titleButton" destination="Bui-qm-D0H" id="MDT-Qf-5rN"/>
             </connections>

@@ -13,12 +13,15 @@
 #import "TableViewFootView.h"
 #import "ItemAddViewController.h"
 #import "DQAlertView.h"
-
+#import "ActionTableViewCell.h"
+#import "TimeingViewController.h"
 @interface AddSitComViewController ()<UITableViewDelegate,UITableViewDataSource> {
     
     UITableView *_addSitComTableView;
     UITableView *alertTableView;
     NSArray *_oneTitleArray;
+    NSArray *twoTitleArray;
+    DQAlertView * alertView;
 }
 
 @end
@@ -27,11 +30,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"添加";
+    
     _oneTitleArray = [NSArray arrayWithObjects:@"名称",@"请选择情景图标", nil];
+    twoTitleArray = [NSArray arrayWithObjects:@"定时开启", @"定时关闭",@"音量+",@"音量-",nil];
     _addSitComTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight) style:UITableViewStylePlain];
     _addSitComTableView.dataSource = self;
     _addSitComTableView.delegate = self;
-    UIView *footView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 30)];
+    _addSitComTableView.backgroundColor = [UIColor clearColor];
+    _addSitComTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    self.view.backgroundColor = IWColor(240, 240, 240);
+    UIView *footView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 70)];
     TableViewFootView *tableViewFootView = [TableViewFootView tableViewFootView];
     [tableViewFootView.titleButton addTarget:self action:@selector(addSit) forControlEvents:UIControlEventTouchUpInside];
     [footView addSubview:tableViewFootView];
@@ -48,6 +57,7 @@
 
 -(void) addSit {
     
+            [alertView dismiss];
     ItemAddViewController *itemAddVc = [[ItemAddViewController alloc] initWithNibName:@"ItemAddViewController" bundle:nil];
     [self.navigationController pushViewController:itemAddVc animated:YES];
 }
@@ -61,6 +71,11 @@
         return 1;
     }
     return 0;
+}
+
+-(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    return 50.0f;
 }
 
 -(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -78,7 +93,7 @@
         }
     }else if ([tableView isEqual:alertTableView]) {
         
-        return 4;
+        return twoTitleArray.count;
     }
 
     return 0;
@@ -87,10 +102,13 @@
 -(UIView *) tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     
     UIView *view = nil;
-    if (section == 1 || section == 2) {
-        
-        AddSiteHeadView *addSiteHeadView = [AddSiteHeadView addSiteHeadView];
+      AddSiteHeadView *addSiteHeadView = [AddSiteHeadView addSiteHeadView];
+    if (section == 1) {
         addSiteHeadView.headerTitleLabel.text = @"执行条件";
+        view = addSiteHeadView;
+    }else if (section == 2) {
+        
+        addSiteHeadView.headerTitleLabel.text = @"执行动作";
         view = addSiteHeadView;
     }
     return view;
@@ -106,7 +124,7 @@
             return 0.0f;
         }else if (section == 1 || section == 2) {
             
-            return 40.0f;
+            return 55.0f;
         }
     }
 
@@ -143,12 +161,11 @@
         }
     }else if ([tableView isEqual:alertTableView]) {
         
-       cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"ss"];
-        
-        if (cell == nil){
-            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"ss"];
-            cell.textLabel.text = @"测试";
+        ActionTableViewCell *actionCell = [tableView dequeueReusableCellWithIdentifier:KActionTableViewCell];
+        if (actionCell == nil) {
+            actionCell = [ActionTableViewCell actionTableViewCell];
         }
+        cell = actionCell;
     }
     
     return cell;
@@ -159,39 +176,90 @@
     if ([tableView isEqual:_addSitComTableView]) {
         
         if (indexPath.section == 0) {
+             PersonInfoTableViewCell *personCell = (PersonInfoTableViewCell *)cell;
+            if (indexPath.row == 0) {
+                personCell.titleLabel.text = @"名称";
+                personCell.subTitleLabel.text = @"请输入情景名称";
+                personCell.headImageView2.hidden = YES;
+            }else if (indexPath.row == 1) {
+                
+                personCell.headImageView2.image = [UIImage imageNamed:@"devicelist_icon_homemode"];
+                personCell.titleLabel.text = @"请输入情景模式";
+                personCell.headImageView2.hidden = NO;
+                personCell.subTitleLabel.hidden = YES;
+            }
+
+            [personCell updateTitle];
             
-            PersonInfoTableViewCell *personCell = (PersonInfoTableViewCell *)cell;
-            personCell.titleLabel.text = [_oneTitleArray objectAtIndex:indexPath.row];
+        }else if (indexPath.section == 1) {
+            TermTableViewCell *termTableViewCell  = (TermTableViewCell *) cell;
+            termTableViewCell.bottomLineView.hidden = YES;
             
+        }else if(indexPath.section == 2) {
+            
+             PersonInfoTableViewCell *personCell = (PersonInfoTableViewCell *)cell;
+            if (indexPath.row ==  0) {
+                personCell.titleLabel.text = @"插座";
+                personCell.subTitleLabel.text = @"开启";
+            }else if (indexPath.row == 1) {
+                
+                personCell.titleLabel.text = @"空调";
+                 personCell.subTitleLabel.text = @"选择空调执行";
+            }
+            [personCell updateTitle];
         }
+    }else if ([tableView isEqual:alertTableView]) {
+        ActionTableViewCell *actionCell  = (ActionTableViewCell *) cell;
+        actionCell.selectTitleLabel.text =[twoTitleArray objectAtIndex:indexPath.row];
+        
     }
     
  
 }
 
 
+
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-   
-    DQAlertView * alertView = [[DQAlertView alloc] initWithTitle:@"执行动作" message:@"" cancelButtonTitle:@"Cancel" otherButtonTitle:@"OK"];
+
+    if ([tableView isEqual:_addSitComTableView]) {
+        
     
-    UIView *contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 300)];
-    contentView.backgroundColor = [UIColor yellowColor];
-    if(alertTableView == nil) {
-    alertTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 200, 300) style:UITableViewStylePlain];
-    alertTableView.delegate = self;
-    alertTableView.dataSource = self;
-    alertView.contentView = alertTableView;
+    if (alertView == nil) {
+        
+        
+        alertView = [[DQAlertView alloc] initWithTitle:@"执行动作" message:@"" cancelButtonTitle:@"" otherButtonTitle:@""];
+        alertView.buttonHeight = 0;
+        UIView *contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 300)];
+        contentView.backgroundColor = [UIColor yellowColor];
+        if(alertTableView == nil) {
+            alertTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 200, 300) style:UITableViewStylePlain];
+            alertTableView.delegate = self;
+            alertTableView.dataSource = self;
+            alertTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+            UIView *footView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 50)];
+            TableViewFootView *tableViewFootView = [TableViewFootView tableViewFootView];
+            [tableViewFootView.titleButton addTarget:self action:@selector(addSit) forControlEvents:UIControlEventTouchUpInside];
+            [footView addSubview:tableViewFootView];
+            [tableViewFootView mas_makeConstraints:^(MASConstraintMaker *make){
+                make.top.equalTo(footView.mas_top).offset(10);
+                make.leading.equalTo(footView.mas_leading);
+                make.trailing.equalTo(footView.mas_trailing);
+                make.bottom.equalTo(footView.mas_bottom);
+            }];
+            alertTableView.tableFooterView = footView;
+            alertView.contentView = alertTableView;
     }
+
     [alertView show];
     
-    alertView.cancelButtonAction = ^{
-        NSLog(@"Cancel Clicked");
-    };
-    
-    alertView.otherButtonAction = ^{
-        NSLog(@"OK Clicked");
-    };
 
+    }
+    }else {
+        
+        [alertView dismiss];
+        TimeingViewController *timingVc = [[TimeingViewController alloc] initWithNibName:@"TimeingViewController" bundle:nil];
+        [self.navigationController pushViewController:timingVc animated:YES];
+    }
 }
 
 

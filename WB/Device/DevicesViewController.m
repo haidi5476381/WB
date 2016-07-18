@@ -32,7 +32,6 @@
     _settingItemTitleArray = [NSArray arrayWithObjects:@"智能遥控器", @"智能插座",nil];
     _settingItemImageArray = [NSArray arrayWithObjects:@"device_btn_airconditioner_n",@"device_btn_airconditioner_n", nil];
     // Do any additional setup after loading the view from its nib.
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"添加" style:UIBarButtonItemStyleDone target:self action:@selector(add)];
     self.navigationItem.rightBarButtonItem=[UIBarButtonItem itemWithImageName:@"navibar_btn_plus" highImageName:@"navibar_btn_plus" target:self action:@selector(add)];
     [self setItemTableView];
     [self layoutItemView];

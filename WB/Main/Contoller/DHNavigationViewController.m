@@ -71,7 +71,7 @@
     //设置导航默认标题的颜色及字体大小
     
     [UINavigationBar appearance].titleTextAttributes = @{NSFontAttributeName:[UIFont boldSystemFontOfSize:18],
-                                                         NSForegroundColorAttributeName:[UIColor blackColor]};
+                                                         NSForegroundColorAttributeName:[UIColor whiteColor]};
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
