@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WBDVDViewController">
             <connections>
+                <outlet property="topBottomView" destination="97e-Hc-Kgd" id="t8f-sl-WqD"/>
                 <outlet property="view" destination="dER-JR-elv" id="Y3l-Ox-fRx"/>
             </connections>
         </placeholder>
@@ -15,25 +16,6 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="97e-Hc-Kgd">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="160"/>
-                    <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner_img_dvd" translatesAutoresizingMaskIntoConstraints="NO" id="bH9-cF-8yg">
-                            <rect key="frame" x="227" y="63" width="147" height="33"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="33" id="BaS-sj-9eK"/>
-                                <constraint firstAttribute="width" constant="147" id="OQm-ju-H7F"/>
-                            </constraints>
-                        </imageView>
-                    </subviews>
-                    <color key="backgroundColor" red="0.086274509799999996" green="0.6588235294" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <color key="tintColor" red="0.1019607843" green="0.59607843140000005" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstItem="bH9-cF-8yg" firstAttribute="centerX" secondItem="97e-Hc-Kgd" secondAttribute="centerX" id="P0N-Qg-mNI"/>
-                        <constraint firstItem="bH9-cF-8yg" firstAttribute="centerY" secondItem="97e-Hc-Kgd" secondAttribute="centerY" id="e5b-cV-hTd"/>
-                        <constraint firstAttribute="height" constant="160" id="uAC-nA-Mtd"/>
-                    </constraints>
-                </view>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="telcontroler_icon_InneBase_n" translatesAutoresizingMaskIntoConstraints="NO" id="vEK-ot-hxo">
                     <rect key="frame" x="210" y="218" width="180" height="180"/>
                     <constraints>
@@ -242,6 +224,25 @@
                         <color key="titleColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                 </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="97e-Hc-Kgd">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="160"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner_img_dvd" translatesAutoresizingMaskIntoConstraints="NO" id="bH9-cF-8yg">
+                            <rect key="frame" x="227" y="63" width="147" height="33"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="33" id="BaS-sj-9eK"/>
+                                <constraint firstAttribute="width" constant="147" id="OQm-ju-H7F"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.082352941176470587" green="0.62352941176470589" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="tintColor" red="0.086274509803921567" green="0.66666666666666663" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="bH9-cF-8yg" firstAttribute="centerX" secondItem="97e-Hc-Kgd" secondAttribute="centerX" id="P0N-Qg-mNI"/>
+                        <constraint firstItem="bH9-cF-8yg" firstAttribute="centerY" secondItem="97e-Hc-Kgd" secondAttribute="centerY" id="e5b-cV-hTd"/>
+                        <constraint firstAttribute="height" constant="160" id="uAC-nA-Mtd"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="0.89019607840000003" green="0.8862745098" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>

@@ -65,8 +65,8 @@
     [super viewWillAppear:animated];
     self.navigationController.navigationBarHidden=YES;
     
-    
-    UIColor *barColor = IWColor(0, 185.0, 255.0);
+
+    UIColor *barColor = IWColor(0, 177.0, 255.0);
     [[UINavigationBar appearance] setBackgroundImage:[UIImage imageWithColor:barColor] forBarMetrics:UIBarMetricsDefault];
     //设置导航默认标题的颜色及字体大小
     

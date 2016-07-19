@@ -118,6 +118,8 @@
 		5C3890B31D3DFE17006C18FC /* WBCustomControlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C3890B11D3DFE17006C18FC /* WBCustomControlViewController.xib */; };
 		5C3890BA1D3E00BE006C18FC /* WBLivingRoomSocketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3890B81D3E00BE006C18FC /* WBLivingRoomSocketViewController.m */; };
 		5C3890BB1D3E00BE006C18FC /* WBLivingRoomSocketViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C3890B91D3E00BE006C18FC /* WBLivingRoomSocketViewController.xib */; };
+		5C3890BF1D3E23CA006C18FC /* WBDeviceBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3890BD1D3E23CA006C18FC /* WBDeviceBaseViewController.m */; };
+		5C3890C01D3E23CA006C18FC /* WBDeviceBaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C3890BE1D3E23CA006C18FC /* WBDeviceBaseViewController.xib */; };
 		5C5004D41D3A2CAB002D04F8 /* WBAppleControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5004D21D3A2CAB002D04F8 /* WBAppleControlViewController.m */; };
 		5C5004D51D3A2CAB002D04F8 /* WBAppleControlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C5004D31D3A2CAB002D04F8 /* WBAppleControlViewController.xib */; };
 		5C5004D91D3A2F71002D04F8 /* WBXiaoMiControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5004D71D3A2F71002D04F8 /* WBXiaoMiControlViewController.m */; };
@@ -316,6 +318,9 @@
 		5C3890B71D3E00BE006C18FC /* WBLivingRoomSocketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBLivingRoomSocketViewController.h; sourceTree = "<group>"; };
 		5C3890B81D3E00BE006C18FC /* WBLivingRoomSocketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBLivingRoomSocketViewController.m; sourceTree = "<group>"; };
 		5C3890B91D3E00BE006C18FC /* WBLivingRoomSocketViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBLivingRoomSocketViewController.xib; sourceTree = "<group>"; };
+		5C3890BC1D3E23CA006C18FC /* WBDeviceBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBDeviceBaseViewController.h; sourceTree = "<group>"; };
+		5C3890BD1D3E23CA006C18FC /* WBDeviceBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBDeviceBaseViewController.m; sourceTree = "<group>"; };
+		5C3890BE1D3E23CA006C18FC /* WBDeviceBaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBDeviceBaseViewController.xib; sourceTree = "<group>"; };
 		5C5004D11D3A2CAB002D04F8 /* WBAppleControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBAppleControlViewController.h; sourceTree = "<group>"; };
 		5C5004D21D3A2CAB002D04F8 /* WBAppleControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBAppleControlViewController.m; sourceTree = "<group>"; };
 		5C5004D31D3A2CAB002D04F8 /* WBAppleControlViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBAppleControlViewController.xib; sourceTree = "<group>"; };
@@ -728,6 +733,9 @@
 				5C3890B71D3E00BE006C18FC /* WBLivingRoomSocketViewController.h */,
 				5C3890B81D3E00BE006C18FC /* WBLivingRoomSocketViewController.m */,
 				5C3890B91D3E00BE006C18FC /* WBLivingRoomSocketViewController.xib */,
+				5C3890BC1D3E23CA006C18FC /* WBDeviceBaseViewController.h */,
+				5C3890BD1D3E23CA006C18FC /* WBDeviceBaseViewController.m */,
+				5C3890BE1D3E23CA006C18FC /* WBDeviceBaseViewController.xib */,
 			);
 			path = Device;
 			sourceTree = "<group>";
@@ -949,6 +957,7 @@
 				0DC8427F1D2258AE00B80830 /* DevicesViewController.xib in Resources */,
 				0D7112921D2F918C00FE3A4E /* ConfigViewController.xib in Resources */,
 				0D2DA3761D051BDC005609D2 /* Others.bundle in Resources */,
+				5C3890C01D3E23CA006C18FC /* WBDeviceBaseViewController.xib in Resources */,
 				0D7112251D29FCE800FE3A4E /* SettingItemTableViewCell.xib in Resources */,
 				0D7112621D2B991A00FE3A4E /* AccountViewController.xib in Resources */,
 				5C3890BB1D3E00BE006C18FC /* WBLivingRoomSocketViewController.xib in Resources */,
@@ -1021,6 +1030,7 @@
 				0DC842491D22098B00B80830 /* ForgetViewController.m in Sources */,
 				0DC842831D2258BB00B80830 /* SettingViewController.m in Sources */,
 				5C3890BA1D3E00BE006C18FC /* WBLivingRoomSocketViewController.m in Sources */,
+				5C3890BF1D3E23CA006C18FC /* WBDeviceBaseViewController.m in Sources */,
 				0DC8423A1D20D54900B80830 /* TimerButton.m in Sources */,
 				0D1100071D18C8E9004CF6D2 /* LoginViewController.m in Sources */,
 				0DC842361D20D49900B80830 /* UIImage+color.m in Sources */,

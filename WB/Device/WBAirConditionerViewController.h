@@ -6,8 +6,8 @@
 //  Copyright © 2016年 Haidi. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "WBDeviceBaseViewController.h"
 
-@interface WBAirConditionerViewController : BaseViewController
+@interface WBAirConditionerViewController : WBDeviceBaseViewController
 
 @end

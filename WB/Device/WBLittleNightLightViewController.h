@@ -6,8 +6,8 @@
 //  Copyright © 2016年 Haidi. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "WBDeviceBaseViewController.h"
 
-@interface WBLittleNightLightViewController : BaseViewController
+@interface WBLittleNightLightViewController : WBDeviceBaseViewController
 
 @end

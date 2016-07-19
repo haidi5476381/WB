@@ -10,6 +10,7 @@
 
 @interface WBDVDViewController ()
 
+
 @end
 
 @implementation WBDVDViewController
@@ -19,12 +20,10 @@
     // Do any additional setup after loading the view from its nib.
     
     self.title = @"DVD";
+    
+  //  self.topBottomView.backgroundColor = IWColor(0, 177.0, 255.0);
 }
 
--(void) viewWillAppear:(BOOL)animated {
-    [self.navigationController setNavigationBarHidden:NO animated:animated];
-    [super viewWillAppear:animated];
-}
 
 
 - (void)didReceiveMemoryWarning {

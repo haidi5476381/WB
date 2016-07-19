@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseViewController.h"
 
-@interface WBDVDViewController : BaseViewController
+#import "WBDeviceBaseViewController.h"
+
+@interface WBDVDViewController : WBDeviceBaseViewController
 
 @end

@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-#import "BaseViewController.h"
+#import "WBDeviceBaseViewController.h"
 
-@interface WBXiaoMiControlViewController : BaseViewController
+@interface WBXiaoMiControlViewController : WBDeviceBaseViewController
 
 @end
