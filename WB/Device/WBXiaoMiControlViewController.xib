@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WBXiaoMiControlViewController">
+            <connections>
+                <outlet property="view" destination="kIU-J8-HSd" id="kf2-0E-agp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="kIU-J8-HSd">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AO2-62-0hD">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="160"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner_img_tv" translatesAutoresizingMaskIntoConstraints="NO" id="Psm-GK-QB6">
+                            <rect key="frame" x="250" y="48" width="100" height="64"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="64" id="QZR-Qx-b1s"/>
+                                <constraint firstAttribute="width" constant="100" id="ZoY-d0-sRr"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.086274509799999996" green="0.6588235294" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="tintColor" red="0.1019607843" green="0.59607843140000005" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="Psm-GK-QB6" firstAttribute="centerX" secondItem="AO2-62-0hD" secondAttribute="centerX" id="ZJT-ai-H1K"/>
+                        <constraint firstAttribute="height" constant="160" id="fuB-Hc-aQ1"/>
+                        <constraint firstItem="Psm-GK-QB6" firstAttribute="centerY" secondItem="AO2-62-0hD" secondAttribute="centerY" id="syj-FA-Hf4"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="telcontroler_icon_InneBase_n" translatesAutoresizingMaskIntoConstraints="NO" id="i1B-mf-H9m">
+                    <rect key="frame" x="210" y="218" width="180" height="180"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="180" id="ES9-4E-QnQ"/>
+                        <constraint firstAttribute="height" constant="180" id="IuE-wm-5kh"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTw-xj-wJY">
+                    <rect key="frame" x="228" y="288" width="30" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="ARt-Wj-5eY"/>
+                        <constraint firstAttribute="height" constant="40" id="Elv-gu-j3Y"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="telcontroler_btn_left_n"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adF-ZQ-ABe">
+                    <rect key="frame" x="280" y="234" width="40" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="SKp-1i-yYV"/>
+                        <constraint firstAttribute="height" constant="30" id="eGB-Qb-aTy"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="telcontroler_btn_up_n"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xp3-sk-upv">
+                    <rect key="frame" x="280" y="349" width="40" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="mXG-u9-Jxm"/>
+                        <constraint firstAttribute="height" constant="30" id="oz5-cb-Yzk"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="telcontroler_btn_down_n"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfH-mY-yXc">
+                    <rect key="frame" x="343" y="288" width="30" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="uWP-Iy-c2v"/>
+                        <constraint firstAttribute="height" constant="40" id="x5N-pP-x75"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="telcontroler_btn_right_n"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ykb-14-WSE">
+                    <rect key="frame" x="273" y="279" width="54" height="57"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="54" id="UGP-dF-eIr"/>
+                        <constraint firstAttribute="height" constant="57" id="jcK-iX-nR6"/>
+                    </constraints>
+                    <state key="normal" title="OK" backgroundImage="telcontroler_btnbg_round_p"/>
+                    <state key="highlighted" backgroundImage="telcontroler_btnbg_round_p"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5os-AV-8lb">
+                    <rect key="frame" x="379" y="179" width="54" height="58"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="54" id="J6j-gX-3y7"/>
+                        <constraint firstAttribute="height" constant="58" id="L8c-9B-Gm4"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="telcontroler_btn_on_n"/>
+                    <state key="selected" backgroundImage="telcontroler_btn_on_p"/>
+                    <state key="highlighted" backgroundImage="telcontroler_btn_on_p"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CiC-LS-rkm">
+                    <rect key="frame" x="191" y="432" width="55" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="8Jo-JE-rkR"/>
+                        <constraint firstAttribute="width" constant="55" id="iaF-H4-Dog"/>
+                    </constraints>
+                    <state key="normal" image="telcontroler_btn_mihome" backgroundImage="telcontroler_icon_InneBase_n">
+                        <color key="titleColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hC-tF-XPv">
+                    <rect key="frame" x="259" y="432" width="55" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="cMr-RT-VsS"/>
+                        <constraint firstAttribute="width" constant="55" id="eKk-Uy-wgH"/>
+                    </constraints>
+                    <state key="normal" image="telcontroler_btn_milist" backgroundImage="telcontroler_icon_InneBase_n">
+                        <color key="titleColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tL-bN-GiM">
+                    <rect key="frame" x="329" y="432" width="55" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="55" id="LB2-mZ-seF"/>
+                        <constraint firstAttribute="height" constant="55" id="LlA-2E-a8u"/>
+                    </constraints>
+                    <state key="normal" image="telcontroler_btn_milast2" backgroundImage="telcontroler_icon_InneBase_n">
+                        <color key="titleColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="telcontroler_btnbg_long_n" translatesAutoresizingMaskIntoConstraints="NO" id="GTw-37-hhn">
+                    <rect key="frame" x="392" y="406" width="48" height="107"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="107" id="uQd-op-5df"/>
+                        <constraint firstAttribute="width" constant="48" id="ukg-Rz-AGb"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zXg-ok-ytG">
+                    <rect key="frame" x="408" y="423" width="17" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="2SJ-yF-B0b"/>
+                        <constraint firstAttribute="width" constant="17" id="Q6A-ha-1uD"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="telcontroler_btn_miplus"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gzi-NE-3Gh">
+                    <rect key="frame" x="408" y="477" width="17" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="0jH-ot-pUM"/>
+                        <constraint firstAttribute="width" constant="17" id="3GB-6O-fRB"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="telcontroler_btn_miminus"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.89019607840000003" green="0.8862745098" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="zXg-ok-ytG" firstAttribute="centerX" secondItem="GTw-37-hhn" secondAttribute="centerX" id="1fN-Wz-9Qs"/>
+                <constraint firstItem="0tL-bN-GiM" firstAttribute="leading" secondItem="2hC-tF-XPv" secondAttribute="trailing" constant="15" id="1pA-0d-Qyc"/>
+                <constraint firstItem="xp3-sk-upv" firstAttribute="centerX" secondItem="i1B-mf-H9m" secondAttribute="centerX" id="CQB-aC-INo"/>
+                <constraint firstItem="5os-AV-8lb" firstAttribute="leading" secondItem="i1B-mf-H9m" secondAttribute="trailing" constant="-11" id="CtL-Rg-rRz"/>
+                <constraint firstItem="Gzi-NE-3Gh" firstAttribute="top" secondItem="GTw-37-hhn" secondAttribute="bottom" constant="-36" id="DMB-fr-fud"/>
+                <constraint firstItem="mfH-mY-yXc" firstAttribute="trailing" secondItem="i1B-mf-H9m" secondAttribute="trailing" constant="-17" id="F8f-HM-8Ae"/>
+                <constraint firstItem="adF-ZQ-ABe" firstAttribute="centerX" secondItem="i1B-mf-H9m" secondAttribute="centerX" id="I0c-oU-QsV"/>
+                <constraint firstItem="i1B-mf-H9m" firstAttribute="top" secondItem="AO2-62-0hD" secondAttribute="bottom" constant="58" id="O6k-54-sLb"/>
+                <constraint firstItem="AO2-62-0hD" firstAttribute="top" secondItem="kIU-J8-HSd" secondAttribute="top" id="OUt-Du-B5h"/>
+                <constraint firstItem="TTw-xj-wJY" firstAttribute="centerY" secondItem="i1B-mf-H9m" secondAttribute="centerY" id="Oxe-AR-R0J"/>
+                <constraint firstItem="CiC-LS-rkm" firstAttribute="top" secondItem="i1B-mf-H9m" secondAttribute="bottom" constant="34" id="PdT-kq-5HK"/>
+                <constraint firstItem="adF-ZQ-ABe" firstAttribute="top" secondItem="i1B-mf-H9m" secondAttribute="top" constant="16" id="QwL-tD-qYB"/>
+                <constraint firstItem="5os-AV-8lb" firstAttribute="top" secondItem="AO2-62-0hD" secondAttribute="bottom" constant="19" id="RCB-ds-wLm"/>
+                <constraint firstItem="GTw-37-hhn" firstAttribute="leading" secondItem="0tL-bN-GiM" secondAttribute="trailing" constant="8" id="T7f-eu-hh1"/>
+                <constraint firstItem="i1B-mf-H9m" firstAttribute="centerX" secondItem="kIU-J8-HSd" secondAttribute="centerX" id="TAJ-yv-Mpg"/>
+                <constraint firstItem="GTw-37-hhn" firstAttribute="centerY" secondItem="0tL-bN-GiM" secondAttribute="centerY" id="TvA-gO-RP3"/>
+                <constraint firstItem="xp3-sk-upv" firstAttribute="bottom" secondItem="i1B-mf-H9m" secondAttribute="bottom" constant="-19" id="Tzk-g4-Cja"/>
+                <constraint firstItem="Ykb-14-WSE" firstAttribute="centerX" secondItem="i1B-mf-H9m" secondAttribute="centerX" id="UDR-fo-3a1"/>
+                <constraint firstAttribute="trailing" secondItem="AO2-62-0hD" secondAttribute="trailing" id="XJJ-ly-D34"/>
+                <constraint firstItem="mfH-mY-yXc" firstAttribute="top" secondItem="i1B-mf-H9m" secondAttribute="bottom" constant="-110" id="coW-ep-7gY"/>
+                <constraint firstItem="Gzi-NE-3Gh" firstAttribute="centerX" secondItem="GTw-37-hhn" secondAttribute="centerX" id="dad-KT-07s"/>
+                <constraint firstItem="0tL-bN-GiM" firstAttribute="centerY" secondItem="2hC-tF-XPv" secondAttribute="centerY" id="doq-5J-nUY"/>
+                <constraint firstItem="2hC-tF-XPv" firstAttribute="centerY" secondItem="CiC-LS-rkm" secondAttribute="centerY" id="e60-7U-Npu"/>
+                <constraint firstItem="2hC-tF-XPv" firstAttribute="leading" secondItem="CiC-LS-rkm" secondAttribute="trailing" constant="13" id="p0e-io-cOz"/>
+                <constraint firstItem="AO2-62-0hD" firstAttribute="leading" secondItem="kIU-J8-HSd" secondAttribute="leading" id="qOI-7w-kAk"/>
+                <constraint firstItem="GTw-37-hhn" firstAttribute="top" secondItem="zXg-ok-ytG" secondAttribute="bottom" constant="-34" id="r1g-NU-Sm5"/>
+                <constraint firstItem="Ykb-14-WSE" firstAttribute="centerY" secondItem="i1B-mf-H9m" secondAttribute="centerY" id="w8F-LU-tov"/>
+                <constraint firstItem="CiC-LS-rkm" firstAttribute="centerX" secondItem="i1B-mf-H9m" secondAttribute="centerX" constant="-81.5" id="wub-ka-gSW"/>
+                <constraint firstItem="TTw-xj-wJY" firstAttribute="leading" secondItem="i1B-mf-H9m" secondAttribute="leading" constant="18" id="zee-KB-aic"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="banner_img_tv" width="100" height="64"/>
+        <image name="telcontroler_btn_down_n" width="40" height="30"/>
+        <image name="telcontroler_btn_left_n" width="30" height="40"/>
+        <image name="telcontroler_btn_mihome" width="20" height="20"/>
+        <image name="telcontroler_btn_milast2" width="20" height="20"/>
+        <image name="telcontroler_btn_milist" width="20" height="20"/>
+        <image name="telcontroler_btn_miminus" width="20" height="20"/>
+        <image name="telcontroler_btn_miplus" width="20" height="20"/>
+        <image name="telcontroler_btn_on_n" width="54" height="58"/>
+        <image name="telcontroler_btn_on_p" width="54" height="57"/>
+        <image name="telcontroler_btn_right_n" width="30" height="40"/>
+        <image name="telcontroler_btn_up_n" width="40" height="30"/>
+        <image name="telcontroler_btnbg_long_n" width="47" height="107"/>
+        <image name="telcontroler_btnbg_round_p" width="54" height="57"/>
+        <image name="telcontroler_icon_InneBase_n" width="65" height="67"/>
+    </resources>
+</document>

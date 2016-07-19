@@ -11,6 +11,11 @@
 #import "YaokongViewController.h"
 #import "ItemTableViewCell.h"
 #import "ItemAddViewController.h"
+
+/// controller
+#import "YDVCPickerViewController.h"
+#import "WBTVViewController.h"
+
 @interface DevicesViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
     UITableView *_settingitemTableView;
@@ -35,6 +40,9 @@
     self.navigationItem.rightBarButtonItem=[UIBarButtonItem itemWithImageName:@"navibar_btn_plus" highImageName:@"navibar_btn_plus" target:self action:@selector(add)];
     [self setItemTableView];
     [self layoutItemView];
+    
+    //    // 显示“传送门”，注意在添加rootVC后调用
+    [YDVCPickerViewController showFinderWithClassPrefix:@[@"WB"]];
 }
 
 -(void) layoutItemView {
@@ -142,7 +150,7 @@
         
         if (indexPath.section == 1) {
             
-        
+            
         }
         
         

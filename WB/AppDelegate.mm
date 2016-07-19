@@ -12,6 +12,8 @@
 #import "DHNavigationViewController.h"
 #import "ViewController.h"
 #import "DHTabBarViewController.h"
+
+
 @interface AppDelegate ()
 
 @end
@@ -26,6 +28,9 @@
     DHTabBarViewController *tabarVC=[[DHTabBarViewController alloc] init];
     DHNavigationViewController *dhNav = [[DHNavigationViewController alloc] initWithRootViewController:tabarVC];
     self.window.rootViewController = dhNav;
+    
+    
+    
     return YES;
 }
 
