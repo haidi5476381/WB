@@ -42,7 +42,7 @@
 //        [self setTitleColor:IWTabBarButtonTitleSelectedColor forState:UIControlStateSelected];
         //        // 文字颜色
         [self setTitleColor:IWColor(147, 146, 144) forState:UIControlStateNormal];
-        [self setTitleColor:IWColor(181, 116, 15) forState:UIControlStateSelected];
+        [self setTitleColor:IWColor(0, 177.0, 255.0) forState:UIControlStateSelected];
         
     }
     return self;

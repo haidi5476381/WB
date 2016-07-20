@@ -179,16 +179,16 @@
     
     
     DevicesViewController *HomePageVC = [[DevicesViewController alloc] initWithNibName:@"DevicesViewController" bundle:nil];
-    [self setupChildViewController:HomePageVC title:@"设备" imageName:@"tab_home_normal" selectedImageName:@"tab_home_sel"];
+    [self setupChildViewController:HomePageVC title:@"设备" imageName:@"devicelist_btn_wifidevice_n" selectedImageName:@"devicelist_btn_wifidevice_p"];
     self.deviceVc = HomePageVC;
     
     SettingViewController *baoVc = [[SettingViewController alloc] initWithNibName:@"SettingViewController" bundle:nil];
-    [self setupChildViewController:baoVc title:@"设置" imageName:@"shop_normal" selectedImageName:@"shop_select"];
+    [self setupChildViewController:baoVc title:@"设置" imageName:@"devicelist_btn_setting_n" selectedImageName:@"devicelist_btn_setting_p"];
     self.settingVc = baoVc;
     
     
     AboutViewController *assistantVc = [[AboutViewController alloc] initWithNibName:@"AboutViewController" bundle:nil];
-    [self setupChildViewController:assistantVc title:@"关于" imageName:@"tab_help_nor" selectedImageName:@"tab_help_sel"];
+    [self setupChildViewController:assistantVc title:@"关于" imageName:@"devicelist_btn_moreee_n" selectedImageName:@"devicelist_btn_moreee_p"];
     self.aboutVc = assistantVc;
     
     
@@ -216,6 +216,8 @@
     } else {
         childVc.tabBarItem.selectedImage = selectedImage;
     }
+    
+    
     
     // 2.包装一个导航控制器
     DHNavigationViewController *nav = [[DHNavigationViewController alloc] initWithRootViewController:childVc];
