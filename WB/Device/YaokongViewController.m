@@ -38,6 +38,11 @@
     // Do any additional setup after loading the view from its nib.
 }
 
+#pragma mark - action event
+- (IBAction)cancelBtnAction:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 
 
 - (void)didReceiveMemoryWarning {
